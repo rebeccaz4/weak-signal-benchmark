@@ -1,0 +1,8 @@
+[
+  "Tree of Thoughts (ToT)",
+  "Monte Carlo Tree Search for LLM Reasoning (MCTS-LLM)",
+  "World Model for Text Generation (WMT)",
+  "Direct Preference Optimization (DPO)",
+  "LLM-as-a-Judge for Preference Elicitation",
+  "Simulational RL with LLMs (SimuRL)"
+]

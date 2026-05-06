@@ -1,0 +1,32 @@
+model_name: qwen3_8b_rag
+judge_model: gpt-5-mini
+temperature: 1.0
+n_runs: 10
+seed: 27
+output_xlsx: Evaluations/llm_judge_summary_qwen3_8b_rag.xlsx
+evaluations:
+- signal_type: problem
+  year_bucket: 2020-2022
+  topic: Reward Type - Process or Outcome
+  ground_truth: data/ground_truth/problem/2020-2022/reward_type_process_or_outcome.json
+  external: data/external/qwen3_8b_rag/problem/2020-2022/reward_type_process_or_outcome.json
+- signal_type: problem
+  year_bucket: 2023-2024
+  topic: Reward Type - Process or Outcome
+  ground_truth: data/ground_truth/problem/2023-2024/reward_type_process_or_outcome.json
+  external: data/external/qwen3_8b_rag/problem/2023-2024/reward_type_process_or_outcome.json
+- signal_type: solution
+  year_bucket: 2020-2022
+  topic: Model-based RL for LLMs
+  ground_truth: data/ground_truth/solution/2020-2022/model_based_rl_for_llms.json
+  external: data/external/qwen3_8b_rag/solution/2020-2022/model_based_rl_for_llms.json
+- signal_type: solution
+  year_bucket: 2023-2024
+  topic: Model-based RL for LLMs
+  ground_truth: data/ground_truth/solution/2023-2024/model_based_rl_for_llms.json
+  external: data/external/qwen3_8b_rag/solution/2023-2024/model_based_rl_for_llms.json
+- signal_type: application
+  year_bucket: 2022-2024
+  topic: Large Language Models
+  ground_truth: data/ground_truth/application/2022-2024/large_language_models.json
+  external: data/external/qwen3_8b_rag/application/2022-2024/large_language_models.json

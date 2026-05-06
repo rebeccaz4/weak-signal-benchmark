@@ -1,0 +1,4 @@
+[
+  "Use of pre-trained language models (PLMs) as implicit task-specific priors to guide exploration and policy learning in reinforcement learning (RL) frameworks, particularly in dialogue and instruction-following settings",
+  "Integration of model-based reinforcement learning (MBRL) with symbolic or logical constraints derived from natural language specifications to guide policy learning in structured environments"
+]

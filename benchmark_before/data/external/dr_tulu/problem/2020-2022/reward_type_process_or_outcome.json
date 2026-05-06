@@ -1,0 +1,12 @@
+[
+  "Language-augmented reward shaping (LEARN): learn “progress” from language to shape step rewards",
+  "Speaker–listener modeling as process supervision in embodied instruction following",
+  "Matching critics and self-critique rewards for trajectory-level consistency",
+  "Self-critic baseline and trajectory-level reward shaping in discrete, latent-space generation",
+  "Hindsight instruction relabeling and curiosity-driven exploration for process-guided RL",
+  "Preference over trajectories via intrinsic step rewards in embodied decision-making",
+  "Non-Markovian and uncertainty-aware rewards in assistance systems (POMDP/RLHF context)",
+  "Consistency verification and grounded command reward shaping for process faithfulness",
+  "Uncertainty-aware critique and refinement in decision-making",
+  "Process-grounded language relabeling and intrinsic reward design in hierarchical RL"
+]

@@ -1,0 +1,8 @@
+[
+  "Learning interpretable, multi-component rewards from language for instruction following",
+  "Interpreting natural language as reward-related signals (IRD/IRL over reward functions)",
+  "Narration- and embedding-based reward shaping that grounds intermediate goals",
+  "Distributional/process-conditioned outcome rewards and safety shaping",
+  "Intrinsic instruction fidelity and cross-modal grounding as process rewards in sparse-feedback tasks",
+  "Language hierarchies and reward shaping without explicit task decomposition"
+]

@@ -1,0 +1,4 @@
+[
+  "The distinction between feedback based on the **step-by-step reasoning process** (e.g., logical derivation, intermediate claims) versus **only the final answer (outcome)** in math word problem solving, with the claim that process-based feedback leads to more robust and generalizable model behavior.",
+  "The use of **structured, step-level annotations** in natural language problem-solving tasks to guide model training not just on answers, but on the **validity and coherence of intermediate reasoning steps**, enabling models to learn not just what the answer is, but how to arrive at it."
+]

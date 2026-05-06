@@ -1,0 +1,2214 @@
+[
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "AIoT-driven smart management of EV charging infrastructure"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Resource-efficient embedded speech emotion recognition"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "AIoT UAV and robotic systems for landmine detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Cloud-edge assisted visual SLAM for resource-limited robots"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "ESP32-class AIoT edge camera surveillance systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Edge AIoT computer-vision people and vehicle counting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "AIoT License Plate Recognition for Tolling and Enforcement"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Autonomous AIoT Air-Purification Devices"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "AIoT and UAV real-time disaster monitoring and response"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "ESP32-class AIoT edge camera surveillance systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Edge AIoT computer-vision people and vehicle counting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Resource-efficient embedded speech emotion recognition"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Intelligent connected cane for visually impaired mobility"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "AIoT-driven smart management of EV charging infrastructure"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Edge AIoT Real-time Landslide Monitoring and Early Warning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "ESP32-class AIoT edge camera surveillance systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Edge AIoT computer-vision people and vehicle counting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "Artificial Intelligence of Things",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "AIoT and UAV real-time disaster monitoring and response"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Lightweight multi-scale attention for CNN/YOLO backbones"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Self-attention enhanced CNN-RNN ECG arrhythmia classification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Attention-enhanced CNN and CNN-LSTM models for sEMG gesture decoding"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Attention-enhanced YOLO models for specialized detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Attention-guided CNN-RNN hybrids for stock time-series forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Attention-enhanced CNN with bidirectional RNN for weather and power forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Swin Attention-Enhanced YOLO Backbones for Detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Channel Attention-Enhanced YOLO Object Detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Convolutional-Transformer Attention Fusion for EMG Gesture Decoding"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Attention-augmented CNNs for Arabic sign language assistive AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "CBAM-augmented CNN detectors and backbones"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Attention-enhanced CNN with bidirectional RNN for weather and power forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Attention-enhanced convolutional models for EEG seizure analysis"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Attention-guided multimodal fusion for saliency detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Attention-augmented 1D CNNs for time-series forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Channel-wise adaptive recalibration attention in CNNs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Attention-enhanced CNN with bidirectional RNN for weather and power forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Attention-enhanced convolutional models for EEG seizure analysis"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Transformer Attention Integration for Multi-Scale CNN Features"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "attention mechanisms in CNN",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Attention-guided Multiple-Instance Learning for Medical Image Analysis"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "decentralized federated learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Decentralized federated deep learning for radio resource management"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "decentralized federated learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Byzantine-resilient aggregation and optimization for heterogeneous federated/decentralized systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "decentralized federated learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Adaptive participant selection, incentives, and fairness in federated learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "decentralized federated learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Byzantine-resilient aggregation and optimization for heterogeneous federated/decentralized systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Quantifying epistemic uncertainty in QSAR, potency, and kinetic models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "AI Epistemic Constraints on Creativity and Novel Research"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Spatially-resolved epistemic uncertainty quantification for downscaled climate projections"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Estimating Epistemic Model Uncertainty with MC Dropout"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Decolonial epistemic interventions in AI knowledge systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Probabilistic auditing of algorithmic fairness"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Uncertainty Estimation and Calibration for Reliable, Trustworthy AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Epistemic Effects of AI-Augmented Qualitative Analysis"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "AI Epistemic Constraints on Creativity and Novel Research"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Posterior uncertainty calibration and propagation for earthquake-source inversion"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Critical Epistemology of AI Knowledge and Intelligence Claims"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Decolonial epistemic interventions in AI knowledge systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Uncertainty Estimation and Calibration for Reliable, Trustworthy AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Spatially-resolved epistemic uncertainty quantification for downscaled climate projections"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "epistemic AI",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Epistemic-uncertainty-driven human-in-the-loop data acquisition"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Evolutionary design of compact, robust interpretable trees"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Genetic evolution of neural architectures and hyperparameters"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Reinforcement Learning-Guided QNN Architecture Design"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Evolutionary Neural Architecture Search for PV Power Forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Neural intrusion detectors evolved with genetic algorithms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Swarm-based optimization for ANN architecture and hyperparameter search"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Evolutionary design of compact, robust interpretable trees"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "evolutionary Neural Architecture Search",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Evolutionary design of compact, robust interpretable trees"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Interpretable and transparent AI systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Interpretable models for personalized nutrition and disease risk"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Boruta-driven feature importance for model interpretability"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Explainable credit-risk models for underserved microfinance clients"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "SHAP-driven interpretation of loneliness prediction models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Interpretable and transparent AI systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Interpretable, Trustworthy Deepfake Detection Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Interpretable models for personalized nutrition and disease risk"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Feature-driven interpretable prediction and subtyping of treatment response"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Interpretable and transparent AI systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Explainable ML for battery health, aging, and performance"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Feature-driven explainability for materials machine-learning models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Concrete mix variable importance for compressive strength"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Interpretable and transparent AI systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Interpretable Scientific Equation Discovery via Symbolic Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Boruta-driven feature importance for model interpretability"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "explainable AI",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "SHAP-driven explainability and feature selection for venture success"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated deep learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Federated DNNs for RSRP Estimation and Handover Optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated deep learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Decentralized federated deep learning for radio resource management"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Client-side gradient reconstruction threats in federated ML"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Cost-aware customized federated models for energy demand forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Federated DNNs for RSRP Estimation and Handover Optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Adaptive multi-capacity pruning for personalized federated models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Privacy-preserving federated SVM anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Byzantine-resilient aggregation and optimization for heterogeneous federated/decentralized systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Client-side gradient reconstruction threats in federated ML"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Membership privacy leakage in federated and transfer learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Privacy-preserving federated SVM anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Adaptive participant selection, incentives, and fairness in federated learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Byzantine-resilient aggregation and optimization for heterogeneous federated/decentralized systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "federated machine learning",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Membership privacy leakage in federated and transfer learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Prompt design and optimization for LLM-driven applications"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered robot-assisted assembly and disassembly line balancing and task allocation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Human-AI Interfaces and Collaborative Adoption in Logistics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Human-centered personalized skincare recommendation interfaces"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Mobile human-AI interface for remote aquarium monitoring and control"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Interactive AI-assisted consumer price-prediction web interface"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Identification of LLM-produced Academic and Scientific Writing"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Human-AI Interfaces and Collaborative Adoption in Logistics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Human teleoperation interface for dual-arm bimanual manipulation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Intelligent connected cane for visually impaired mobility"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Learning-based control and planning for human-robot handoffs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "AI-driven clinician interface for lung ultrasound decision support"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Real-time facial-emotion-aware music personalization interface"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Human-centered robot-assisted assembly and disassembly line balancing and task allocation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human AI interface",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "User-Centered Chatbot Usability and Experience Assessment"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-centered robot-assisted assembly and disassembly line balancing and task allocation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-AI Interfaces and Collaborative Adoption in Logistics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-centered personalized skincare recommendation interfaces"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "E-commerce Customer Experience Sentiment Modeling"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "User-centric hybrid recommenders combining collaborative and content models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-AI Interfaces and Collaborative Adoption in Logistics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Flexible multimodal perception for human-centric soft robots"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Human-Centered AI Effects on Religious and Cultural Morality"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-centered AI shaping consumer preferences and purchases"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Human-centered trustworthy gradient boosting for individualized obesity risk"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Real-time facial-emotion-aware music personalization interface"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Human-centered personalized diet and health recommender"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Assessing Readability and Accessibility of LLM-Authored Patient Materials"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-centered robot-assisted assembly and disassembly line balancing and task allocation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "human centric AI",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Prompt design and optimization for LLM-driven applications"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Ophthalmology-focused LLMs for Clinical Decision Support"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Benchmarking LLM healthcare chatbots for clinical advice and education"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Generative LLMs for synthetic and augmented text data"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "LLM-driven document summarization, evaluation, and derivative content generation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "LLMs for extracting, aligning, and enriching knowledge graphs and ontologies"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "LLM-extracted financial sentiment for market prediction and trading"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Generative LLMs for synthetic and augmented text data"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "LLM-driven Domain-Specific Structured Information Extraction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "LLM-driven document summarization, evaluation, and derivative content generation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Copyright, ownership, and training-data implications of LLMs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Assessing Readability and Accessibility of LLM-Authored Patient Materials"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Fine-tuned BERT-family masked models for downstream text tasks"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "large language models",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Fine-tuned transformer LMs for text-based depression detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked face recognition",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Haar-cascade based mask-wearing classifier"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "RoBERTa-based contextual feature extraction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Cloze-trained BERT models for Bangla text classification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "BERT-based Indonesian SMS spam detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Masked-LM initialized relation extraction, including biomedical n-ary events"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Contrastive Siamese fine-tuning of masked LMs for sentence vectors"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Cloze-trained BERT models for Bangla text classification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "RoBERTa masked-language models for multilingual clinical EHR NLP"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Masked-transformer sentiment modeling across languages and domains"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Fine-tuned transformer LMs for text-based depression detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "RoBERTa masked-language models for multilingual clinical EHR NLP"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Cloze-trained BERT models for Bangla text classification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Fine-tuned transformer LMs for text-based depression detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Cloze-trained BERT models for Bangla text classification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Fine-tuned BERT-family masked models for downstream text tasks"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "masked language model",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Fine-tuned transformer LMs for text-based depression detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Cross-modal phishing site detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal AI sensing for food freshness, quality, contamination"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal AI Deepfakes and Synthetic Media for Political Manipulation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Cross-modal phishing site detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal abuse and hate detection across media and networks"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Fine-tuning and comparison of text-to-image diffusion and GAN models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Chest X-ray and clinical-data multimodal diagnosis for TB and pneumonia"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal representation learning for predicting drug interactions"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "LLM-driven Domain-Specific Structured Information Extraction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Cross-modal phishing site detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Efficient foundational multimodal models for perception, planning, and control"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal AI Deepfakes and Synthetic Media for Political Manipulation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Real-time facial-emotion-aware music personalization interface"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal Visual-Language Controllers for Embodied Robotics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Cross-modal phishing site detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Multimodal cardiac deep learning from ECG, imaging, and clinical data"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal AI",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal hate speech detection",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Multimodal abuse and hate detection across media and networks"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "multimodal hate speech detection",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Multimodal abuse and hate detection across media and networks"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "MPC-secured Transformer Inference, including Time-Series"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Privacy-preserving AI-driven reversible image embedding for IoT"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Privacy in physiological and vocal emotion-recognition ML"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Privacy-aware autoencoder embeddings for secure data sharing"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Adversarial-robust ML for detecting malicious DoH tunnels"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "On-device and Federated Private Recommendation Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Privacy-preserving synthetic clinical imaging for training and datasets"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Privacy-enhanced biometric authentication, template protection, and decentralized verification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Differential privacy for commercial analytics and fraud detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Membership privacy leakage in federated and transfer learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Privacy-enhanced biometric authentication, template protection, and decentralized verification"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Differential privacy for commercial analytics and fraud detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Privacy-preserving federated SVM anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Membership privacy leakage in federated and transfer learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "On-device and Federated Private Recommendation Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Privacy-preserving synthetic clinical imaging for training and datasets"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Differential privacy for commercial analytics and fraud detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "privacy-preserving machine learning",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Privacy-aware federated forecasting of cross-silo traffic and load"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "ML prediction of mechanical properties for concrete and cementitious materials"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "AI-enhanced data assimilation for numerical weather prediction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Data-driven prediction, reranking, and refinement of crystal structures"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "ML-driven biomarker discovery for periodontitis and linked pathways"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Scientific ML optimization of 3D printing processes and materials"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "AI-enhanced data assimilation for numerical weather prediction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Physics-guided data-driven prediction and optimization of tribological performance"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Multimodal representation learning for predicting drug interactions"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Scientific ML for biomarker and gene-signature discovery in IPF"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Physics-constrained neural solvers for scientific and engineering PDEs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Scientific ML for biomarker and gene-signature discovery in IPF"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Neural network-based forward and inverse kinematics for robot arms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Machine learning quantification of fibrosis in SHG/TPEF histopathology"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "ML prediction of mechanical properties for concrete and cementitious materials"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "ML biomarker and prognostic-signature discovery in IBD and GI cancers"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Physics-constrained neural solvers for scientific and engineering PDEs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Interpretable Scientific Equation Discovery via Symbolic Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "scientific machine learning",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Multimodal reinforcement learning for human-centered portfolio optimization"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Self-supervised CNNs for visual traversability prediction and mapping"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Self-supervision for few-shot image adaptation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Wav2Vec 2.0-based self-supervised speech embeddings"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Foundation-model-driven few-shot segmentation for robot grasping"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Self-supervised convolutional autoencoder feature learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Contrastive self-supervised representations for time-series anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Self-supervised CNNs for visual traversability prediction and mapping"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "No-reference image quality evaluation using self-supervised CNNs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Attention-augmented convolutional autoencoder for acoustic anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "No-reference image quality evaluation using self-supervised CNNs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Self-supervision for few-shot image adaptation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Contrastive self-supervised pretraining for ECG CNNs"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Self-supervised convolutional models for on-device visual anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Contrastive self-supervised representations for time-series anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Self-supervision for few-shot image adaptation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "self supervised learning CNN",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Attention-augmented convolutional autoencoder for acoustic anomaly detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Resource-efficient embedded speech emotion recognition"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "TinyML visual surface-defect inspection on constrained devices"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Tiny-YOLO lightweight UAV vehicle and obstacle detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Distilling Large Vision Models into Compact 2D/3D Architectures"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Memristor neuromorphic hardware for low-power embedded AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "TinyML decision-tree models for embedded real-time bearing diagnostics"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Training and Compression Efficiency for Transformer Language Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Tiny CNNs for on-device EEG medical event detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Resource-efficient embedded speech emotion recognition"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Real-time edge YOLO-based pothole detection and segmentation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Compact on-device deep model for COVID-19 chest X-ray screening"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Compact low-precision Vision Transformers for on-device vision"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Lightweight YOLO-based underwater detection for robotic platforms"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Quantum reservoir computing for efficient spatiotemporal forecasting"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "tiny machine learning",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "On-device TinyML for Closed-loop Implant Neural Modulation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Ethical Trust and Transparency Standards for AI Virtual Influencers"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Fair, Reliable AI for Real Estate Valuations and Transactions"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Safeguards Against AI-Enabled Cheating in Education"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Interpretable, Trustworthy Deepfake Detection Models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Trustworthiness and safety evaluation for mission-critical AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-Centered AI Effects on Religious and Cultural Morality"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "AI Influence on Clinician-Patient Trust and Empathy"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "LLM Safety, Reliability, and Ethics Evaluation in High-Risk Sectors"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Demographic Bias in Medical AI Diagnostics and Generated Images"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Human-Centered AI Effects on Religious and Cultural Morality"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Human-AI collaborative summarization for scientific and clinical texts"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Evaluating reliability and trust in AI translation systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Trustworthiness and safety evaluation for mission-critical AI"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy AI",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Stakeholder trust and adoption of ML clinical decision-support"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2023-2024",
+    "signal_index": 0,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2023-2024",
+    "signal_index": 1,
+    "weak_signal": "Robust Trustworthy Ensemble Methods for Transactional Fraud Detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2023-2024",
+    "signal_index": 2,
+    "weak_signal": "Ensemble multimodal machine learning for phishing detection"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2023-2024",
+    "signal_index": 3,
+    "weak_signal": "Trustworthy stacked-ensemble models for landslide susceptibility mapping"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2023-2024",
+    "signal_index": 4,
+    "weak_signal": "Reliable, generalizable ML for student academic outcome prediction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2022-2024",
+    "signal_index": 0,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2022-2024",
+    "signal_index": 1,
+    "weak_signal": "Robust, Reliable ML Evaluation for Financial Forecasting and Credit Risk"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2022-2024",
+    "signal_index": 2,
+    "weak_signal": "Debiased two-stage ML methods for robust causal estimation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2022-2024",
+    "signal_index": 3,
+    "weak_signal": "Trustworthy stacked-ensemble models for landslide susceptibility mapping"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2022-2024",
+    "signal_index": 4,
+    "weak_signal": "Machine-learning biomarker discovery for bone and joint disorders"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2021-2024",
+    "signal_index": 0,
+    "weak_signal": "Calibrated, distribution-free conformal methods for predictive uncertainty"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2021-2024",
+    "signal_index": 1,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2021-2024",
+    "signal_index": 2,
+    "weak_signal": "Human-centered trustworthy gradient boosting for individualized obesity risk"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2021-2024",
+    "signal_index": 3,
+    "weak_signal": "Isolation Forest anomaly detection for operational system monitoring"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2021-2024",
+    "signal_index": 4,
+    "weak_signal": "Reliable, generalizable ML for student academic outcome prediction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2020-2024",
+    "signal_index": 0,
+    "weak_signal": "Byzantine-resilient aggregation and optimization for heterogeneous federated/decentralized systems"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2020-2024",
+    "signal_index": 1,
+    "weak_signal": "Debiased two-stage ML methods for robust causal estimation"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2020-2024",
+    "signal_index": 2,
+    "weak_signal": "External validation for generalizable clinical risk ML models"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2020-2024",
+    "signal_index": 3,
+    "weak_signal": "Trustworthy ML ensembles for power-grid stability prediction"
+  },
+  {
+    "signal_type": "application-focused",
+    "topic": "trustworthy machine learning",
+    "year": "2020-2024",
+    "signal_index": 4,
+    "weak_signal": "Robust synthetic-image detection for trustworthy machine learning"
+  }
+]

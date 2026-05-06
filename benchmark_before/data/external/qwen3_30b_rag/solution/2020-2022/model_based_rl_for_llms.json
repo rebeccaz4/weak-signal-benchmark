@@ -1,0 +1,4 @@
+[
+  "Use of reinforcement learning (RL) to optimize sequential decision-making in natural language generation (NLG) via policy gradient methods, where the reward function is derived from external evaluators (e.g., BLEU, human judgment) rather than supervised labels.",
+  "Training language models with simulated environments using self-generated or synthetic data to guide policy learning via reinforcement learning, where the model itself acts as a world model to generate training trajectories."
+]
