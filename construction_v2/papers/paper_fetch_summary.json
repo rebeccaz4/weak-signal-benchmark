@@ -1,0 +1,1284 @@
+{
+  "config": {
+    "api_base_url": "https://api.semanticscholar.org/graph/v1",
+    "search_endpoint": "https://api.semanticscholar.org/graph/v1/paper/search/bulk",
+    "topics_json": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/topics.json",
+    "output_dir": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers",
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "topic": null,
+    "language": "English",
+    "per_page": 100,
+    "fields": [
+      "paperId",
+      "title",
+      "abstract",
+      "year",
+      "publicationDate",
+      "venue",
+      "authors",
+      "citationCount",
+      "url"
+    ],
+    "force": false,
+    "raw_payloads": true
+  },
+  "topics": {
+    "Artificial Intelligence of Things": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2019.parquet",
+        "final_unique_papers": 2309,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2020.parquet",
+        "final_unique_papers": 3076,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2021.parquet",
+        "final_unique_papers": 3571,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2022.parquet",
+        "final_unique_papers": 4573,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2023.parquet",
+        "final_unique_papers": 5601,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/artificial-intelligence-of-things/papers_artificial-intelligence-of-things_2024.parquet",
+        "final_unique_papers": 7851,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "asynchronous federated learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2019.parquet",
+        "final_unique_papers": 320,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2020.parquet",
+        "final_unique_papers": 434,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2021.parquet",
+        "final_unique_papers": 488,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2022.parquet",
+        "final_unique_papers": 520,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2023.parquet",
+        "final_unique_papers": 572,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/asynchronous-federated-learning/papers_asynchronous-federated-learning_2024.parquet",
+        "final_unique_papers": 663,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "attention mechanisms in CNN": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2019.parquet",
+        "final_unique_papers": 1260,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2020.parquet",
+        "final_unique_papers": 1810,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2021.parquet",
+        "final_unique_papers": 2523,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2022.parquet",
+        "final_unique_papers": 3042,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2023.parquet",
+        "final_unique_papers": 3726,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/attention-mechanisms-in-cnn/papers_attention-mechanisms-in-cnn_2024.parquet",
+        "final_unique_papers": 5769,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "decentralized federated learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2019.parquet",
+        "final_unique_papers": 157,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2020.parquet",
+        "final_unique_papers": 389,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2021.parquet",
+        "final_unique_papers": 632,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2022.parquet",
+        "final_unique_papers": 856,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2023.parquet",
+        "final_unique_papers": 1483,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/decentralized-federated-learning/papers_decentralized-federated-learning_2024.parquet",
+        "final_unique_papers": 2133,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "epistemic AI": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2019.parquet",
+        "final_unique_papers": 16,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2020.parquet",
+        "final_unique_papers": 34,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2021.parquet",
+        "final_unique_papers": 29,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2022.parquet",
+        "final_unique_papers": 73,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2023.parquet",
+        "final_unique_papers": 92,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2024.parquet",
+        "final_unique_papers": 205,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "evolutionary Neural Architecture Search": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2019.parquet",
+        "final_unique_papers": 201,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2020.parquet",
+        "final_unique_papers": 277,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2021.parquet",
+        "final_unique_papers": 265,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2022.parquet",
+        "final_unique_papers": 222,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2023.parquet",
+        "final_unique_papers": 269,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/evolutionary-neural-architecture-search/papers_evolutionary-neural-architecture-search_2024.parquet",
+        "final_unique_papers": 297,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "explainable AI": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2019.parquet",
+        "final_unique_papers": 824,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2020.parquet",
+        "final_unique_papers": 1433,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2021.parquet",
+        "final_unique_papers": 2385,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2022.parquet",
+        "final_unique_papers": 2448,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2023.parquet",
+        "final_unique_papers": 4406,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/explainable-ai/papers_explainable-ai_2024.parquet",
+        "final_unique_papers": 7348,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "federated deep learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2019.parquet",
+        "final_unique_papers": 54,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2020.parquet",
+        "final_unique_papers": 232,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2021.parquet",
+        "final_unique_papers": 464,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2022.parquet",
+        "final_unique_papers": 737,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2023.parquet",
+        "final_unique_papers": 1076,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-deep-learning/papers_federated-deep-learning_2024.parquet",
+        "final_unique_papers": 1471,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "federated machine learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2019.parquet",
+        "final_unique_papers": 274,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2020.parquet",
+        "final_unique_papers": 586,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2021.parquet",
+        "final_unique_papers": 1041,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2022.parquet",
+        "final_unique_papers": 1377,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2023.parquet",
+        "final_unique_papers": 2193,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-machine-learning/papers_federated-machine-learning_2024.parquet",
+        "final_unique_papers": 1373,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "federated reinforcement learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2019.parquet",
+        "final_unique_papers": 68,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2020.parquet",
+        "final_unique_papers": 110,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2021.parquet",
+        "final_unique_papers": 230,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2022.parquet",
+        "final_unique_papers": 289,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2023.parquet",
+        "final_unique_papers": 377,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/federated-reinforcement-learning/papers_federated-reinforcement-learning_2024.parquet",
+        "final_unique_papers": 538,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "human AI interface": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2019.parquet",
+        "final_unique_papers": 1630,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2020.parquet",
+        "final_unique_papers": 2371,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2021.parquet",
+        "final_unique_papers": 1686,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2022.parquet",
+        "final_unique_papers": 2794,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2023.parquet",
+        "final_unique_papers": 4541,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-ai-interface/papers_human-ai-interface_2024.parquet",
+        "final_unique_papers": 7188,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "human centric AI": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2019.parquet",
+        "final_unique_papers": 490,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2020.parquet",
+        "final_unique_papers": 782,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2021.parquet",
+        "final_unique_papers": 1208,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2022.parquet",
+        "final_unique_papers": 1491,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2023.parquet",
+        "final_unique_papers": 2755,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/human-centric-ai/papers_human-centric-ai_2024.parquet",
+        "final_unique_papers": 5460,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "large language models": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2019.parquet",
+        "final_unique_papers": 2567,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2020.parquet",
+        "final_unique_papers": 3075,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2021.parquet",
+        "final_unique_papers": 1736,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2022.parquet",
+        "final_unique_papers": 970,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2023.parquet",
+        "final_unique_papers": 1687,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/large-language-models/papers_large-language-models_2024.parquet",
+        "final_unique_papers": 12759,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "machine unlearning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2019.parquet",
+        "final_unique_papers": 145,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2020.parquet",
+        "final_unique_papers": 144,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2021.parquet",
+        "final_unique_papers": 225,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2022.parquet",
+        "final_unique_papers": 269,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2023.parquet",
+        "final_unique_papers": 372,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/machine-unlearning/papers_machine-unlearning_2024.parquet",
+        "final_unique_papers": 765,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "masked face recognition": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2019.parquet",
+        "final_unique_papers": 83,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2020.parquet",
+        "final_unique_papers": 150,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2021.parquet",
+        "final_unique_papers": 408,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2022.parquet",
+        "final_unique_papers": 482,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2023.parquet",
+        "final_unique_papers": 389,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-face-recognition/papers_masked-face-recognition_2024.parquet",
+        "final_unique_papers": 302,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "masked language model": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2019.parquet",
+        "final_unique_papers": 285,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2020.parquet",
+        "final_unique_papers": 489,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2021.parquet",
+        "final_unique_papers": 628,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2022.parquet",
+        "final_unique_papers": 642,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2023.parquet",
+        "final_unique_papers": 764,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/masked-language-model/papers_masked-language-model_2024.parquet",
+        "final_unique_papers": 950,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "multimodal AI": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2019.parquet",
+        "final_unique_papers": 201,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2020.parquet",
+        "final_unique_papers": 245,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2021.parquet",
+        "final_unique_papers": 421,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2022.parquet",
+        "final_unique_papers": 515,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2023.parquet",
+        "final_unique_papers": 1072,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-ai/papers_multimodal-ai_2024.parquet",
+        "final_unique_papers": 1994,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "multimodal hate speech detection": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2019.parquet",
+        "final_unique_papers": 2,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2020.parquet",
+        "final_unique_papers": 9,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2021.parquet",
+        "final_unique_papers": 12,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2022.parquet",
+        "final_unique_papers": 11,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2023.parquet",
+        "final_unique_papers": 22,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/multimodal-hate-speech-detection/papers_multimodal-hate-speech-detection_2024.parquet",
+        "final_unique_papers": 56,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "privacy-preserving machine learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2019.parquet",
+        "final_unique_papers": 244,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2020.parquet",
+        "final_unique_papers": 505,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2021.parquet",
+        "final_unique_papers": 611,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2022.parquet",
+        "final_unique_papers": 740,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2023.parquet",
+        "final_unique_papers": 1045,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/privacy-preserving-machine-learning/papers_privacy-preserving-machine-learning_2024.parquet",
+        "final_unique_papers": 1502,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "scientific machine learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2019.parquet",
+        "final_unique_papers": 2286,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2020.parquet",
+        "final_unique_papers": 1942,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2021.parquet",
+        "final_unique_papers": 3871,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2022.parquet",
+        "final_unique_papers": 2986,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2023.parquet",
+        "final_unique_papers": 3067,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/scientific-machine-learning/papers_scientific-machine-learning_2024.parquet",
+        "final_unique_papers": 9296,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "self-supervised learning CNN": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2019.parquet",
+        "final_unique_papers": 128,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2020.parquet",
+        "final_unique_papers": 231,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2021.parquet",
+        "final_unique_papers": 328,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2022.parquet",
+        "final_unique_papers": 390,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2023.parquet",
+        "final_unique_papers": 466,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/self-supervised-learning-cnn/papers_self-supervised-learning-cnn_2024.parquet",
+        "final_unique_papers": 499,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "tiny machine learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2019.parquet",
+        "final_unique_papers": 57,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2020.parquet",
+        "final_unique_papers": 137,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2021.parquet",
+        "final_unique_papers": 205,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2022.parquet",
+        "final_unique_papers": 378,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2023.parquet",
+        "final_unique_papers": 476,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/tiny-machine-learning/papers_tiny-machine-learning_2024.parquet",
+        "final_unique_papers": 670,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "trustworthy AI": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2019.parquet",
+        "final_unique_papers": 263,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2020.parquet",
+        "final_unique_papers": 683,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2021.parquet",
+        "final_unique_papers": 1023,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2022.parquet",
+        "final_unique_papers": 1067,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2023.parquet",
+        "final_unique_papers": 1627,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-ai/papers_trustworthy-ai_2024.parquet",
+        "final_unique_papers": 5151,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "trustworthy machine learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2019.parquet",
+        "final_unique_papers": 478,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2020.parquet",
+        "final_unique_papers": 828,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2021.parquet",
+        "final_unique_papers": 1090,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2022.parquet",
+        "final_unique_papers": 1298,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2023.parquet",
+        "final_unique_papers": 1447,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/trustworthy-machine-learning/papers_trustworthy-machine-learning_2024.parquet",
+        "final_unique_papers": 2868,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    },
+    "vertical federated learning": {
+      "2019": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2019.parquet",
+        "final_unique_papers": 22,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2020": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2020.parquet",
+        "final_unique_papers": 56,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2021": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2021.parquet",
+        "final_unique_papers": 95,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2022": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2022.parquet",
+        "final_unique_papers": 156,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2023": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2023.parquet",
+        "final_unique_papers": 151,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      },
+      "2024": {
+        "status": "skipped_existing",
+        "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/vertical-federated-learning/papers_vertical-federated-learning_2024.parquet",
+        "final_unique_papers": 248,
+        "queries": [],
+        "year_mismatch_count": 0,
+        "year_mismatch_examples": []
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "Artificial Intelligence of Things": {
+    "paraphrase": [
+      "AIoT",
+      "AI-enabled IoT",
+      "AI-powered IoT",
+      "Intelligent IoT"
+    ]
+  },
+  "asynchronous federated learning": {
+    "paraphrase": [
+      "Async Federated Learning",
+      "AFL",
+      "Federated Learning with Asynchronous Updates",
+      "Asynchronous Federated Optimization",
+      "Asynchronous FL"
+    ]
+  },
+  "attention mechanisms in CNN": {
+    "paraphrase": [
+      "Attention Mechanisms in CNN",
+      "Attention-based CNN",
+      "CNN with Attention",
+      "Attention-Enhanced CNN",
+      "Attention-Augmented CNN",
+      "Attention-Driven CNN",
+      "CNN Attention Models"
+    ]
+  },
+  "decentralized federated learning": {
+    "paraphrase": [
+      "DFL",
+      "Fully Decentralised Federated Learning",
+      "Decentralized FL",
+      "Serverless Federated Learning",
+      "Federated Learning without Server",
+      "Peer-to-Peer Federated Learning"
+    ]
+  },
+  "epistemic AI": {
+    "paraphrase": []
+  },
+  "evolutionary Neural Architecture Search": {
+    "paraphrase": [
+      "Evolution-Based NAS",
+      "Evolutionary Architecture Optimization",
+      "Evolutionary NAS",
+      "Evolutionary Network Architecture Search"
+    ]
+  },
+  "explainable AI": {
+    "paraphrase": [
+      "XAI",
+      "Explainable Artificial Intelligence"
+    ]
+  },
+  "federated deep learning": {
+    "paraphrase": [
+      "Deep Federated Learning"
+    ]
+  },
+  "federated machine learning": {
+    "paraphrase": [
+      "FML",
+      "Federated ML"
+    ]
+  },
+  "federated reinforcement learning": {
+    "paraphrase": [
+      "FRL",
+      "FedRL",
+      "Federated Learning-Based Reinforcement Learning"
+    ]
+  },
+  "human AI interface": {
+    "paraphrase": [
+      "Human-AI Interaction",
+      "HAI"
+    ]
+  },
+  "human centric AI": {
+    "paraphrase": [
+      "Human-Centered AI",
+      "User-Centric AI",
+      "Human-Focused AI",
+      "Human-Oriented AI"
+    ]
+  },
+  "large language models": {
+    "paraphrase": [
+      "LLM"
+    ]
+  },
+  "machine unlearning": {
+    "paraphrase": [
+      "ML Unlearning",
+      "Model Unlearning",
+      "Forgetting in Machine Learning"
+    ],
+    "subtopic": [
+      "data unlearning",
+      "knowledge unlearning",
+      "llm unlearning"
+    ]
+  },
+  "masked face recognition": {
+    "paraphrase": [
+      "Face Recognition with Masks",
+      "Face Recognition under Mask Occlusion",
+      "Face Recognition with Facial Masks",
+      "Mask-Aware Face Recognition"
+    ]
+  },
+  "masked language model": {
+    "paraphrase": [
+      "MLM",
+      "Masked Language Modeling"
+    ]
+  },
+  "multimodal AI": {
+    "paraphrase": [
+      "Multimodal Artificial Intelligence",
+      "Multimodal Intelligence"
+    ]
+  },
+  "multimodal hate speech detection": {
+    "paraphrase": [
+      "Multimodal Hateful Content Detection",
+      "Multimodal Hate Detection",
+      "MHSD"
+    ]
+  },
+  "privacy-preserving machine learning": {
+    "paraphrase": [
+      "PPML"
+    ]
+  },
+  "scientific machine learning": {
+    "paraphrase": [
+      "SciML",
+      "Scientific ML",
+      "AI for Science"
+    ]
+  },
+  "self-supervised learning CNN": {
+    "paraphrase": [
+      "Self-Supervised Convolutional Neural Network",
+      "Self-Supervised Learning using CNNs",
+      "Self-Supervised CNN"
+    ]
+  },
+  "tiny machine learning": {
+    "paraphrase": [
+      "TinyML",
+      "Tiny AI"
+    ]
+  },
+  "trustworthy AI": {
+    "paraphrase": [
+      "Trusted AI",
+      "Trustworthy Artificial Intelligence"
+    ]
+  },
+  "trustworthy machine learning": {
+    "paraphrase": [
+      "Trustworthy ML",
+      "Trusted Machine Learning"
+    ]
+  },
+  "vertical federated learning": {
+    "paraphrase": [
+      "VFL",
+      "Vertically Partitioned Federated Learning",
+      "Federated Learning on Vertically Partitioned Data",
+      "Federated Learning over Vertically Partitioned Data"
+    ]
+  }
+}
