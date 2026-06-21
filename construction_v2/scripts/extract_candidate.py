@@ -7,6 +7,8 @@ Run examples:
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "trustworthy AI" --year 2023
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "trustworthy AI" --year 2023 --max-papers 3
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "trustworthy AI" --year 2023 --force
+  conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --papers-suffix _with_reference --output-suffix _with_reference
+  conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --provider openai
 """
 from __future__ import annotations
 
@@ -135,7 +137,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--topics-json", type=Path, default=DEFAULT_TOPICS_JSON)
     parser.add_argument("--papers-dir", type=Path, default=DEFAULT_PAPERS_DIR)
+    parser.add_argument("--papers-suffix", default="")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--output-suffix", default="")
     parser.add_argument("--topic", help="Process only one topic from topics.json.")
     parser.add_argument(
         "--years",
@@ -158,16 +162,28 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--model", default=os.getenv("BWD_WEAK_SIGNAL_MODEL", "gpt-5.4"))
     parser.add_argument(
+        "--provider",
+        choices=["ikuncode", "openai"],
+        default=os.getenv("BWD_MODEL_PROVIDER", "ikuncode"),
+        help="Model provider to use. No automatic provider fallback is performed.",
+    )
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=3,
+        help="Maximum attempts for the selected provider. Default: 3.",
+    )
+    parser.add_argument(
         "--ikuncode-retries",
         type=int,
-        default=0,
-        help="Retries for the ikuncode provider before falling back. Default: 1.",
+        default=None,
+        help=argparse.SUPPRESS,
     )
     parser.add_argument(
         "--openai-retries",
         type=int,
-        default=2,
-        help="Retries for the official OpenAI provider. Default: 4.",
+        default=None,
+        help=argparse.SUPPRESS,
     )
     parser.add_argument("--retry-sleep", type=float, default=5.0)
     parser.add_argument("--force", action="store_true")
@@ -219,14 +235,14 @@ def safe_json_loads(text: str) -> dict[str, Any]:
             return {"topics": []}
 
 
-def papers_path(papers_dir: Path, topic: str, year: int) -> Path:
+def papers_path(papers_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
     topic_slug = slugify(topic)
-    return papers_dir / topic_slug / f"papers_{topic_slug}_{year}.parquet"
+    return papers_dir / topic_slug / f"papers_{topic_slug}_{year}{suffix}.parquet"
 
 
-def output_path(output_dir: Path, topic: str, year: int) -> Path:
+def output_path(output_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
     topic_slug = slugify(topic)
-    return output_dir / topic_slug / f"candidate_topics_{topic_slug}_{year}.jsonl"
+    return output_dir / topic_slug / f"candidate_topics_{topic_slug}_{year}{suffix}.jsonl"
 
 
 def backup_file(path: Path) -> None:
@@ -292,82 +308,75 @@ def make_client(api_key: str, base_url: str | None) -> OpenAI:
     return OpenAI(api_key=api_key, timeout=120.0)
 
 
-def model_providers() -> list[dict[str, str | None]]:
-    providers: list[dict[str, str | None]] = []
+def model_provider(provider_name: str) -> dict[str, str | None]:
     ikuncode_key = os.getenv("IKUNCODE_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     ikuncode_base_url = os.getenv("OPENAI_BASE_URL")
 
-    if ikuncode_key:
-        providers.append(
-            {
-                "name": "ikuncode",
-                "api_key": ikuncode_key,
-                "base_url": ikuncode_base_url,
-            }
-        )
-    if openai_key:
-        providers.append(
-            {
-                "name": "openai",
-                "api_key": openai_key,
-                "base_url": OFFICIAL_OPENAI_BASE_URL,
-            }
-        )
-    return providers
+    if provider_name == "ikuncode":
+        if not ikuncode_key:
+            raise RuntimeError("Set IKUNCODE_API_KEY to use --provider ikuncode.")
+        return {
+            "name": "ikuncode",
+            "api_key": ikuncode_key,
+            "base_url": ikuncode_base_url,
+        }
+    if provider_name == "openai":
+        if not openai_key:
+            raise RuntimeError("Set OPENAI_API_KEY to use --provider openai.")
+        return {
+            "name": "openai",
+            "api_key": openai_key,
+            "base_url": OFFICIAL_OPENAI_BASE_URL,
+        }
+    raise ValueError(f"Unsupported provider: {provider_name}")
 
 
 def call_model(
-    providers: list[dict[str, str | None]],
+    provider: dict[str, str | None],
     model: str,
     messages: list[dict[str, str]],
     paper_id: str,
-    ikuncode_retries: int,
-    openai_retries: int,
+    max_retries: int,
     retry_sleep: float,
 ) -> tuple[dict[str, Any], str]:
-    if not providers:
-        raise RuntimeError("Set IKUNCODE_API_KEY or OPENAI_API_KEY.")
-
     last_exc: Exception | None = None
-    for provider in providers:
-        provider_name = provider["name"] or "unknown"
-        api_key = provider["api_key"]
-        base_url = provider["base_url"]
-        if not api_key:
-            continue
-        max_retries = ikuncode_retries if provider_name == "ikuncode" else openai_retries
+    provider_name = provider["name"] or "unknown"
+    api_key = provider["api_key"]
+    base_url = provider["base_url"]
+    if not api_key:
+        raise RuntimeError(f"Missing API key for provider: {provider_name}")
 
-        for attempt in range(1, max_retries + 1):
-            started = time.time()
-            try:
-                client = make_client(api_key, base_url)
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=messages,
-                    response_format={"type": "json_object"},
-                    max_completion_tokens=1600,
-                )
-                print(
-                    f"{paper_id}: {provider_name} response in "
-                    f"{time.time() - started:.1f}s on attempt {attempt}",
-                    flush=True,
-                )
-                return safe_json_loads(response.choices[0].message.content or ""), provider_name
-            except Exception as exc:
-                last_exc = exc
-                print(
-                    f"{paper_id}: {provider_name} model call failed on attempt {attempt} "
-                    f"after {time.time() - started:.1f}s: {type(exc).__name__}: {exc}",
-                    flush=True,
-                )
-                if attempt < max_retries:
-                    sleep(min(retry_sleep * attempt, 20))
-
-        print(f"{paper_id}: falling back after {provider_name} failures.", flush=True)
+    for attempt in range(1, max_retries + 1):
+        started = time.time()
+        try:
+            client = make_client(api_key, base_url)
+            response = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                response_format={"type": "json_object"},
+                max_completion_tokens=1600,
+            )
+            print(
+                f"{paper_id}: {provider_name} response in "
+                f"{time.time() - started:.1f}s on attempt {attempt}",
+                flush=True,
+            )
+            return safe_json_loads(response.choices[0].message.content or ""), provider_name
+        except Exception as exc:
+            last_exc = exc
+            print(
+                f"{paper_id}: {provider_name} model call failed on attempt {attempt} "
+                f"after {time.time() - started:.1f}s: {type(exc).__name__}: {exc}",
+                flush=True,
+            )
+            if attempt < max_retries:
+                sleep(min(retry_sleep * attempt, 20))
 
     if last_exc is not None:
-        raise RuntimeError(f"Model call failed for all providers: {last_exc}") from last_exc
+        raise RuntimeError(
+            f"Model call failed for provider {provider_name} after {max_retries} attempts: {last_exc}"
+        ) from last_exc
     return {"topics": []}, "none"
 
 
@@ -455,10 +464,10 @@ def process_topic_year(
     topic: str,
     year: int,
     args: argparse.Namespace,
-    providers: list[dict[str, str | None]],
+    provider: dict[str, str | None],
 ) -> dict[str, Any]:
-    in_path = papers_path(args.papers_dir, topic, year)
-    out_path = output_path(args.output_dir, topic, year)
+    in_path = papers_path(args.papers_dir, topic, year, args.papers_suffix)
+    out_path = output_path(args.output_dir, topic, year, args.output_suffix)
     if args.force:
         backup_file(out_path)
 
@@ -483,12 +492,11 @@ def process_topic_year(
     ):
         paper_id = clean(row.get("paperId"))
         raw_response, provider_used = call_model(
-            providers=providers,
+            provider=provider,
             model=args.model,
             messages=build_messages(row, topic),
             paper_id=paper_id,
-            ikuncode_retries=args.ikuncode_retries,
-            openai_retries=args.openai_retries,
+            max_retries=args.max_retries,
             retry_sleep=args.retry_sleep,
         )
         result = {
@@ -520,15 +528,14 @@ def main() -> None:
     args = parse_args()
     years = sorted(set(args.year or args.years))
     topics = load_topics(args.topics_json, args.topic)
-    providers = model_providers()
-    if not providers:
-        raise RuntimeError("Set OPENAI_API_KEY or IKUNCODE_API_KEY.")
+    provider = model_provider(args.provider)
 
     print(f"Topics: {len(topics)}")
     print(f"Years: {years}")
     print(f"Model: {args.model}")
+    print(f"Model provider: {provider['name']}")
+    print(f"Max retries: {args.max_retries}")
     print(f"Max papers per topic-year: {args.max_papers if args.max_papers is not None else 'all'}")
-    print("Model provider order: " + " -> ".join(str(provider["name"]) for provider in providers))
 
     summaries = []
     for topic in topics:
@@ -538,7 +545,7 @@ def main() -> None:
                     topic=topic,
                     year=year,
                     args=args,
-                    providers=providers,
+                    provider=provider,
                 )
             )
 

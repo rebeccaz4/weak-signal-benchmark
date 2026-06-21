@@ -4,7 +4,15 @@
     "search_endpoint": "https://api.semanticscholar.org/graph/v1/paper/search/bulk",
     "topics_json": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/topics.json",
     "output_dir": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers",
-    "years": [
+    "requested_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "fetch_years": [
       2019,
       2020,
       2021,
@@ -27,7 +35,21 @@
       "url"
     ],
     "force": false,
-    "raw_payloads": true
+    "raw_payloads": true,
+    "include_references": false,
+    "reference_source_years": [
+      2024
+    ],
+    "reference_target_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "reference_source_suffix": "",
+    "reference_output_suffix": "_with_reference"
   },
   "topics": {
     "Artificial Intelligence of Things": {
@@ -234,7 +256,7 @@
       "2019": {
         "status": "skipped_existing",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2019.parquet",
-        "final_unique_papers": 16,
+        "final_unique_papers": 22,
         "queries": [],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
@@ -242,7 +264,7 @@
       "2020": {
         "status": "skipped_existing",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2020.parquet",
-        "final_unique_papers": 34,
+        "final_unique_papers": 51,
         "queries": [],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
@@ -250,7 +272,7 @@
       "2021": {
         "status": "skipped_existing",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2021.parquet",
-        "final_unique_papers": 29,
+        "final_unique_papers": 62,
         "queries": [],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
@@ -258,7 +280,7 @@
       "2022": {
         "status": "skipped_existing",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2022.parquet",
-        "final_unique_papers": 73,
+        "final_unique_papers": 98,
         "queries": [],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
@@ -266,16 +288,77 @@
       "2023": {
         "status": "skipped_existing",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2023.parquet",
-        "final_unique_papers": 92,
+        "final_unique_papers": 142,
         "queries": [],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
       },
       "2024": {
-        "status": "skipped_existing",
+        "status": "fetched",
         "output_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/papers_epistemic-ai_2024.parquet",
-        "final_unique_papers": 205,
-        "queries": [],
+        "final_unique_papers": 260,
+        "queries": [
+          {
+            "query_text": "epistemic AI",
+            "query_type": "topic",
+            "api_returned": 237,
+            "new_unique_papers": 205,
+            "missing_abstract_papers": 32,
+            "duplicate_or_existing_papers": 0,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_epistemic-ai.jsonl"
+          },
+          {
+            "query_text": "epistemic artificial intelligence",
+            "query_type": "paraphrase",
+            "api_returned": 156,
+            "new_unique_papers": 48,
+            "missing_abstract_papers": 21,
+            "duplicate_or_existing_papers": 87,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_epistemic-artificial-intelligence.jsonl"
+          },
+          {
+            "query_text": "epistemology-aware AI",
+            "query_type": "paraphrase",
+            "api_returned": 5,
+            "new_unique_papers": 5,
+            "missing_abstract_papers": 0,
+            "duplicate_or_existing_papers": 0,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_epistemology-aware-ai.jsonl"
+          },
+          {
+            "query_text": "epistemology-informed AI",
+            "query_type": "paraphrase",
+            "api_returned": 2,
+            "new_unique_papers": 2,
+            "missing_abstract_papers": 0,
+            "duplicate_or_existing_papers": 0,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_epistemology-informed-ai.jsonl"
+          },
+          {
+            "query_text": "epistemically grounded AI",
+            "query_type": "paraphrase",
+            "api_returned": 13,
+            "new_unique_papers": 0,
+            "missing_abstract_papers": 0,
+            "duplicate_or_existing_papers": 13,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_epistemically-grounded-ai.jsonl"
+          },
+          {
+            "query_text": "AI with epistemic capabilities",
+            "query_type": "paraphrase",
+            "api_returned": 11,
+            "new_unique_papers": 0,
+            "missing_abstract_papers": 0,
+            "duplicate_or_existing_papers": 11,
+            "pages": 1,
+            "raw_path": "/Users/xiaozhou/Desktop/weak-signal-benchmark/construction_v2/papers/epistemic-ai/raw/semantic_scholar_epistemic-ai_2024_ai-with-epistemic-capabilities.jsonl"
+          }
+        ],
         "year_mismatch_count": 0,
         "year_mismatch_examples": []
       }

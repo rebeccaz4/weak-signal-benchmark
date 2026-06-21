@@ -12,11 +12,18 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
+import time
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 import pandas as pd
+from dotenv import load_dotenv
+from openai import OpenAI
+from sklearn.neighbors import NearestNeighbors
+from tqdm.auto import tqdm
 
 
 DEFAULT_CONSTRUCTION_DIR = Path(__file__).resolve().parents[1]
@@ -24,6 +31,7 @@ DEFAULT_TOPICS_JSON = DEFAULT_CONSTRUCTION_DIR / "topics.json"
 DEFAULT_CANDIDATE_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_topics"
 DEFAULT_OUTPUT_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_dedup"
 DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
+OFFICIAL_OPENAI_BASE_URL = "https://api.openai.com/v1"
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,12 +44,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--topic", help="Process only one topic from topics.json.")
     parser.add_argument("--years", type=int, nargs="+", default=DEFAULT_YEARS)
     parser.add_argument("--candidate-text", choices=["topic", "topic-evidence"], default="topic")
+    parser.add_argument("--input-suffix", default="")
     parser.add_argument("--output-suffix", default="")
     parser.add_argument("--write-parquet", action="store_true")
     parser.add_argument("--use-clustering", action="store_true")
-    parser.add_argument("--cluster-threshold", type=float, default=0.9)
+    parser.add_argument("--cluster-threshold", type=float, default=0.85)
+    parser.add_argument("--cluster-neighbors", type=int, default=50)
+    parser.add_argument("--cluster-provider", choices=["local", "openai"], default="local")
     parser.add_argument("--cluster-embed-model", default="BAAI/bge-large-en-v1.5")
     parser.add_argument("--cluster-batch-size", type=int, default=128)
+    parser.add_argument("--openai-cluster-base-url", default=OFFICIAL_OPENAI_BASE_URL)
+    parser.add_argument("--openai-cluster-timeout", type=float, default=60)
+    parser.add_argument("--openai-cluster-retries", type=int, default=4)
+    parser.add_argument("--prefix-absorb", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--prefix-min-tokens", type=int, default=2)
     parser.add_argument("--cluster-summary", action="store_true")
     return parser.parse_args()
 
@@ -81,9 +97,9 @@ def load_topics(path: Path, selected_topic: str | None = None) -> dict[str, dict
     return topics
 
 
-def candidate_jsonl_path(candidate_dir: Path, topic: str, year: int) -> Path:
+def candidate_jsonl_path(candidate_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
     topic_slug = slugify(topic)
-    return candidate_dir / topic_slug / f"candidate_topics_{topic_slug}_{year}.jsonl"
+    return candidate_dir / topic_slug / f"candidate_topics_{topic_slug}_{year}{suffix}.jsonl"
 
 
 def read_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -107,13 +123,14 @@ def load_candidate_index(
     topics: dict[str, dict[str, Any]],
     years: list[int],
     candidate_text_mode: str,
+    input_suffix: str = "",
 ) -> pd.DataFrame:
     by_id: dict[str, dict[str, Any]] = {}
     raw_mentions = 0
     for target_topic in topics:
         target_slug = slugify(target_topic)
         for year in years:
-            for record in read_jsonl(candidate_jsonl_path(candidate_dir, target_topic, year)):
+            for record in read_jsonl(candidate_jsonl_path(candidate_dir, target_topic, year, input_suffix)):
                 source_paper = record.get("paper") or {}
                 source_paper_id = str(source_paper.get("paperId") or "")
                 for item in record.get("candidate_topics") or []:
@@ -281,90 +298,306 @@ def summarize_cluster(member_topics: list[str], canonical_topic: str, enabled: b
     return f"{canonical_topic}. Related extracted phrasings: {preview}"
 
 
-def semantic_cluster_candidates(
-    candidates: pd.DataFrame,
-    threshold: float,
-    embed_model_name: str,
-    batch_size: int,
-    include_summary: bool,
-) -> pd.DataFrame:
-    from sentence_transformers import SentenceTransformer
+def cluster_embedding_cache_path(output_dir: Path, topic_slug: str, provider: str, model: str, suffix: str) -> Path:
+    safe_suffix = slugify(suffix) if suffix else "default"
+    return (
+        output_dir
+        / topic_slug
+        / "cluster_embedding_cache"
+        / f"candidates_{topic_slug}_{safe_suffix}_{provider}_{slugify(model)}.parquet"
+    )
 
+
+def openai_embed_batch(client: OpenAI, model: str, texts: list[str], retries: int) -> list[list[float]]:
+    kwargs: dict[str, Any] = {"model": model, "input": texts}
+    for attempt in range(1, retries + 1):
+        try:
+            response = client.embeddings.create(**kwargs)
+            ordered = sorted(response.data, key=lambda item: item.index)
+            return [item.embedding for item in ordered]
+        except Exception as exc:
+            if attempt >= retries:
+                raise
+            sleep_seconds = min(2 ** (attempt - 1), 20)
+            print(
+                f"OpenAI cluster embedding failed on attempt {attempt}/{retries}: "
+                f"{type(exc).__name__}: {str(exc)[:200]}; retrying in {sleep_seconds}s"
+            )
+            time.sleep(sleep_seconds)
+    raise RuntimeError("unreachable")
+
+
+def embed_cluster_texts(args: argparse.Namespace, topic_slug: str, texts: list[str]) -> np.ndarray:
+    path = cluster_embedding_cache_path(
+        args.output_dir,
+        topic_slug,
+        args.cluster_provider,
+        args.cluster_embed_model,
+        args.output_suffix,
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        cache_df = pd.read_parquet(path)
+    else:
+        cache_df = pd.DataFrame(columns=["text", "embedding"])
+
+    text_to_idx = {text: idx for idx, text in enumerate(cache_df["text"].tolist())}
+    missing = [text for text in texts if text not in text_to_idx]
+    if missing:
+        new_rows = []
+        if args.cluster_provider == "openai":
+            api_key = os.getenv("OPENAI_API_KEY")
+            if not api_key:
+                raise RuntimeError("Set OPENAI_API_KEY to use --cluster-provider openai.")
+            client = OpenAI(
+                api_key=api_key,
+                base_url=args.openai_cluster_base_url,
+                timeout=args.openai_cluster_timeout,
+            )
+            for start in tqdm(range(0, len(missing), args.cluster_batch_size), desc="Embedding cluster texts", unit="batch"):
+                batch = missing[start:start + args.cluster_batch_size]
+                embeddings = openai_embed_batch(client, args.cluster_embed_model, batch, args.openai_cluster_retries)
+                for text, emb in zip(batch, embeddings):
+                    new_rows.append({"text": text, "embedding": np.asarray(emb, dtype=np.float32).tolist()})
+        else:
+            from sentence_transformers import SentenceTransformer
+
+            model = SentenceTransformer(args.cluster_embed_model)
+            for start in tqdm(range(0, len(missing), args.cluster_batch_size), desc="Embedding cluster texts", unit="batch"):
+                batch = missing[start:start + args.cluster_batch_size]
+                embeddings = model.encode(batch, batch_size=args.cluster_batch_size, show_progress_bar=False)
+                for text, emb in zip(batch, embeddings):
+                    new_rows.append({"text": text, "embedding": np.asarray(emb, dtype=np.float32).tolist()})
+        cache_df = pd.concat([cache_df, pd.DataFrame(new_rows)], ignore_index=True)
+        cache_df.drop_duplicates(subset="text", keep="last", inplace=True)
+        cache_df.reset_index(drop=True, inplace=True)
+        cache_df.to_parquet(path, index=False)
+        text_to_idx = {text: idx for idx, text in enumerate(cache_df["text"].tolist())}
+        print(f"Saved cluster embedding cache: {path}")
+    else:
+        print(f"All cluster embeddings cached: {path}")
+
+    embeddings = cache_df["embedding"].values
+    return np.stack([np.asarray(embeddings[text_to_idx[text]], dtype=np.float32) for text in texts])
+
+
+def normalize_matrix(matrix: np.ndarray) -> np.ndarray:
+    norms = np.linalg.norm(matrix, axis=1, keepdims=True)
+    norms[norms == 0] = 1.0
+    return matrix / norms
+
+
+def normalize_topic_text(text: str) -> str:
+    return " ".join(str(text).lower().strip().split())
+
+
+def is_prefix_extension(short_topic: str, long_topic: str, min_tokens: int) -> bool:
+    short_norm = normalize_topic_text(short_topic)
+    long_norm = normalize_topic_text(long_topic)
+    if short_norm == long_norm:
+        return False
+    if len(short_norm.split()) < min_tokens:
+        return False
+    if not long_norm.startswith(short_norm + " "):
+        return False
+    remainder = long_norm[len(short_norm):].strip()
+    if not remainder:
+        return False
+    if remainder.startswith(("and ", "or ")):
+        return False
+    return True
+
+
+def cluster_from_members(members: pd.DataFrame, include_summary: bool) -> dict[str, Any]:
+    member_ids = members["candidate_id"].astype(str).tolist()
+    canonical_topic = choose_canonical_topic(members)
+    member_topics = members["candidate_topic"].astype(str).tolist()
+    source_paper_ids = sorted(
+        {
+            str(paper_id)
+            for paper_ids in members["source_paper_ids"]
+            for paper_id in (paper_ids or [])
+        }
+    )
+    source_years = sorted(
+        {
+            int(year)
+            for years in members["source_years"]
+            for year in (years or [])
+        }
+    )
+    return {
+        "cluster_id": cluster_id(
+            str(members.iloc[0]["target_topic_slug"]),
+            str(members.iloc[0]["candidate_topic_type"]),
+            member_ids,
+        ),
+        "target_topic": members.iloc[0]["target_topic"],
+        "target_topic_slug": members.iloc[0]["target_topic_slug"],
+        "candidate_topic_type": members.iloc[0]["candidate_topic_type"],
+        "canonical_topic": canonical_topic,
+        "summary": summarize_cluster(member_topics, canonical_topic, include_summary),
+        "member_count": len(members),
+        "source_paper_count": len(source_paper_ids),
+        "member_candidate_ids": member_ids,
+        "member_topics": member_topics,
+        "source_paper_ids": source_paper_ids,
+        "source_years": source_years,
+    }
+
+
+def knn_union_find_clusters(
+    group: pd.DataFrame,
+    embeddings: np.ndarray,
+    threshold: float,
+    neighbors: int,
+    include_summary: bool,
+) -> list[dict[str, Any]]:
+    if group.empty:
+        return []
+    n_neighbors = min(max(neighbors + 1, 2), len(group))
+    nn = NearestNeighbors(n_neighbors=n_neighbors, metric="cosine")
+    nn.fit(embeddings)
+    distances, indexes = nn.kneighbors(embeddings)
+
+    parent = list(range(len(group)))
+
+    def find(idx: int) -> int:
+        while parent[idx] != idx:
+            parent[idx] = parent[parent[idx]]
+            idx = parent[idx]
+        return idx
+
+    def union(left: int, right: int) -> None:
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    edge_count = 0
+    for row_idx, (row_distances, row_indexes) in enumerate(zip(distances, indexes)):
+        for dist, neighbor_idx in zip(row_distances, row_indexes):
+            if row_idx == neighbor_idx:
+                continue
+            if 1.0 - float(dist) >= threshold:
+                union(row_idx, int(neighbor_idx))
+                edge_count += 1
+
+    components: dict[int, list[int]] = {}
+    for idx in range(len(group)):
+        components.setdefault(find(idx), []).append(idx)
+
+    clusters = [cluster_from_members(group.iloc[indexes].copy(), include_summary) for indexes in components.values()]
+    print(
+        f"{group.iloc[0]['target_topic_slug']} / {group.iloc[0]['candidate_topic_type']}: "
+        f"candidates={len(group):,}, knn_edges={edge_count:,}, clusters={len(clusters):,}"
+    )
+    return clusters
+
+
+def clusters_to_member_frame(clusters: list[dict[str, Any]]) -> pd.DataFrame:
+    rows = []
+    for cluster in clusters:
+        for cid, topic in zip(cluster["member_candidate_ids"], cluster["member_topics"]):
+            rows.append(
+                {
+                    "candidate_id": cid,
+                    "target_topic": cluster["target_topic"],
+                    "target_topic_slug": cluster["target_topic_slug"],
+                    "candidate_topic": topic,
+                    "candidate_topic_norm": normalize_topic_text(topic),
+                    "candidate_topic_type": cluster["candidate_topic_type"],
+                    "source_paper_ids": cluster["source_paper_ids"],
+                    "source_years": cluster["source_years"],
+                    "source_count": cluster["source_paper_count"],
+                    "raw_mentions": 0,
+                }
+            )
+    return pd.DataFrame(rows)
+
+
+def apply_prefix_absorb_to_group(clusters: list[dict[str, Any]], min_tokens: int, include_summary: bool) -> tuple[list[dict[str, Any]], int]:
+    if not clusters:
+        return clusters, 0
+
+    parent = list(range(len(clusters)))
+
+    def find(idx: int) -> int:
+        while parent[idx] != idx:
+            parent[idx] = parent[parent[idx]]
+            idx = parent[idx]
+        return idx
+
+    def union(absorber: int, absorbed: int) -> None:
+        absorber_root = find(absorber)
+        absorbed_root = find(absorbed)
+        if absorber_root != absorbed_root:
+            parent[absorbed_root] = absorber_root
+
+    canonical_topics = [str(cluster["canonical_topic"]) for cluster in clusters]
+    merge_count = 0
+    for short_idx, short_topic in enumerate(canonical_topics):
+        for long_idx, long_topic in enumerate(canonical_topics):
+            if short_idx == long_idx:
+                continue
+            if is_prefix_extension(short_topic, long_topic, min_tokens):
+                union(short_idx, long_idx)
+                merge_count += 1
+
+    components: dict[int, list[int]] = {}
+    for idx in range(len(clusters)):
+        components.setdefault(find(idx), []).append(idx)
+
+    absorbed = []
+    for indexes in components.values():
+        if len(indexes) == 1:
+            absorbed.append(clusters[indexes[0]])
+            continue
+        member_frame = clusters_to_member_frame([clusters[idx] for idx in indexes])
+        member_frame.drop_duplicates(subset=["candidate_id"], keep="first", inplace=True)
+        absorbed.append(cluster_from_members(member_frame.reset_index(drop=True), include_summary))
+    return absorbed, merge_count
+
+
+def apply_prefix_absorb(clusters: pd.DataFrame, min_tokens: int, include_summary: bool) -> pd.DataFrame:
+    if clusters.empty:
+        return clusters
+    absorbed_all: list[dict[str, Any]] = []
+    total_merges = 0
+    for (target_slug, topic_type), group in clusters.groupby(["target_topic_slug", "candidate_topic_type"], sort=True):
+        records = group.to_dict(orient="records")
+        absorbed, merges = apply_prefix_absorb_to_group(records, min_tokens, include_summary)
+        total_merges += merges
+        absorbed_all.extend(absorbed)
+        print(f"{target_slug} / {topic_type}: prefix_edges={merges:,}, clusters_after_prefix={len(absorbed):,}")
+    print(f"Prefix absorb edges total: {total_merges:,}")
+    return pd.DataFrame(absorbed_all)
+
+
+def semantic_cluster_candidates(candidates: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
     if candidates.empty:
         return candidates
 
-    model = SentenceTransformer(embed_model_name)
     cluster_rows: list[dict[str, Any]] = []
-    for (target_slug, topic_type), group in candidates.groupby(
-        ["target_topic_slug", "candidate_topic_type"], sort=True
-    ):
-        group = group.reset_index(drop=True)
-        texts = group["match_text"].fillna(group["candidate_topic"]).astype(str).tolist()
-        embeddings = model.encode(texts, batch_size=batch_size, show_progress_bar=True)
-        norms = (embeddings ** 2).sum(axis=1, keepdims=True) ** 0.5
-        norms[norms == 0] = 1.0
-        sims = (embeddings / norms) @ (embeddings / norms).T
-
-        parent = list(range(len(group)))
-
-        def find(idx: int) -> int:
-            while parent[idx] != idx:
-                parent[idx] = parent[parent[idx]]
-                idx = parent[idx]
-            return idx
-
-        def union(left: int, right: int) -> None:
-            left_root = find(left)
-            right_root = find(right)
-            if left_root != right_root:
-                parent[right_root] = left_root
-
-        for i in range(len(group)):
-            for j in range(i + 1, len(group)):
-                if sims[i, j] >= threshold:
-                    union(i, j)
-
-        components: dict[int, list[int]] = {}
-        for idx in range(len(group)):
-            components.setdefault(find(idx), []).append(idx)
-
-        for member_indexes in components.values():
-            members = group.iloc[member_indexes].copy()
-            member_ids = members["candidate_id"].astype(str).tolist()
-            canonical_topic = choose_canonical_topic(members)
-            member_topics = members["candidate_topic"].astype(str).tolist()
-            source_paper_ids = sorted(
-                {
-                    str(paper_id)
-                    for paper_ids in members["source_paper_ids"]
-                    for paper_id in (paper_ids or [])
-                }
-            )
-            source_years = sorted(
-                {
-                    int(year)
-                    for years in members["source_years"]
-                    for year in (years or [])
-                }
-            )
-            cluster_rows.append(
-                {
-                    "cluster_id": cluster_id(str(target_slug), str(topic_type), member_ids),
-                    "target_topic": members.iloc[0]["target_topic"],
-                    "target_topic_slug": target_slug,
-                    "candidate_topic_type": topic_type,
-                    "canonical_topic": canonical_topic,
-                    "summary": summarize_cluster(member_topics, canonical_topic, include_summary),
-                    "member_count": len(members),
-                    "source_paper_count": len(source_paper_ids),
-                    "member_candidate_ids": member_ids,
-                    "member_topics": member_topics,
-                    "source_paper_ids": source_paper_ids,
-                    "source_years": source_years,
-                }
+    for target_slug, topic_candidates in candidates.groupby("target_topic_slug", sort=True):
+        topic_candidates = topic_candidates.reset_index(drop=True)
+        texts = topic_candidates["match_text"].fillna(topic_candidates["candidate_topic"]).astype(str).tolist()
+        embeddings = normalize_matrix(embed_cluster_texts(args, str(target_slug), texts))
+        for (_, _), group in topic_candidates.groupby(["target_topic_slug", "candidate_topic_type"], sort=True):
+            group_indexes = group.index.to_numpy()
+            cluster_rows.extend(
+                knn_union_find_clusters(
+                    group.reset_index(drop=True),
+                    embeddings[group_indexes],
+                    threshold=args.cluster_threshold,
+                    neighbors=args.cluster_neighbors,
+                    include_summary=args.cluster_summary,
+                )
             )
 
     clusters = pd.DataFrame(cluster_rows)
+    if args.prefix_absorb:
+        clusters = apply_prefix_absorb(clusters, args.prefix_min_tokens, args.cluster_summary)
     clusters.sort_values(["target_topic_slug", "candidate_topic_type", "canonical_topic"], inplace=True)
     clusters.reset_index(drop=True, inplace=True)
     print(f"Semantic clusters: {len(clusters):,}")
@@ -372,10 +605,18 @@ def semantic_cluster_candidates(
 
 
 def main() -> None:
+    load_dotenv(DEFAULT_CONSTRUCTION_DIR / ".env")
+    load_dotenv()
     args = parse_args()
     topics = load_topics(args.topics_json, args.topic)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    candidates = load_candidate_index(args.candidate_dir, topics, args.years, args.candidate_text)
+    candidates = load_candidate_index(
+        args.candidate_dir,
+        topics,
+        args.years,
+        args.candidate_text,
+        args.input_suffix,
+    )
     if candidates.empty:
         raise RuntimeError("No candidate topics found. Run extract_candidate.py first.")
     write_topic_candidate_outputs(
@@ -385,13 +626,7 @@ def main() -> None:
         write_parquet=args.write_parquet,
     )
     if args.use_clustering:
-        clusters = semantic_cluster_candidates(
-            candidates,
-            threshold=args.cluster_threshold,
-            embed_model_name=args.cluster_embed_model,
-            batch_size=args.cluster_batch_size,
-            include_summary=args.cluster_summary,
-        )
+        clusters = semantic_cluster_candidates(candidates, args)
         for target_topic, cluster_df in clusters.groupby("target_topic", sort=True):
             cluster_path = topic_candidate_path(
                 args.output_dir,
@@ -411,6 +646,27 @@ def main() -> None:
                 )
                 cluster_df.reset_index(drop=True).to_parquet(cluster_parquet_path, index=False)
                 print(f"Saved topic cluster parquet: {cluster_parquet_path}")
+            for topic_type, type_df in cluster_df.groupby("candidate_topic_type", sort=True):
+                type_cluster_path = topic_candidate_path(
+                    args.output_dir,
+                    str(target_topic),
+                    args.output_suffix,
+                    candidate_topic_type=str(topic_type),
+                    stem="candidate_clusters",
+                )
+                write_candidate_json(type_df.reset_index(drop=True), type_cluster_path)
+                print(f"Saved {topic_type} cluster JSON: {type_cluster_path}")
+                if args.write_parquet:
+                    type_cluster_parquet_path = topic_candidate_path(
+                        args.output_dir,
+                        str(target_topic),
+                        args.output_suffix,
+                        candidate_topic_type=str(topic_type),
+                        stem="candidate_clusters",
+                        extension="parquet",
+                    )
+                    type_df.reset_index(drop=True).to_parquet(type_cluster_parquet_path, index=False)
+                    print(f"Saved {topic_type} cluster parquet: {type_cluster_parquet_path}")
 
 
 if __name__ == "__main__":

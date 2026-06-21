@@ -33,6 +33,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from dedupe_candidates import (  # noqa: E402
     load_topics,
+    normalize_candidate_topic,
     read_candidate_json,
     topic_candidate_path,
 )
@@ -43,6 +44,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--topics-json", type=Path, default=DEFAULT_TOPICS_JSON)
     parser.add_argument("--dedup-dir", type=Path, default=DEFAULT_DEDUP_DIR)
     parser.add_argument("--papers-dir", type=Path, default=DEFAULT_PAPERS_DIR)
+    parser.add_argument("--papers-suffix", default="")
     parser.add_argument("--matching-dir", type=Path, default=DEFAULT_MATCHING_DIR)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--topic", help="Process only one topic from topics.json.")
@@ -54,10 +56,37 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--early-years", type=int, nargs="+", default=DEFAULT_EARLY_YEARS)
     parser.add_argument("--later-year", type=int, default=DEFAULT_LATER_YEAR)
     parser.add_argument("--f-early-max", type=float, default=0.1)
+    parser.add_argument(
+        "--exclude-target-named-candidates",
+        action="store_true",
+        help="Exclude candidates that directly use the target/mainframe topic name from weak-signal output.",
+    )
+    parser.add_argument(
+        "--exclude-late-target-era-candidates",
+        action="store_true",
+        help="Exclude candidates with late target-era terms such as jailbreak/hallucination for LLM.",
+    )
+    parser.add_argument(
+        "--exclude-over-specific-candidates",
+        action="store_true",
+        help="Exclude long/prepositional candidates that look like application or subfield phrases.",
+    )
+    parser.add_argument(
+        "--min-early-papers",
+        type=int,
+        default=1,
+        help="Minimum early-stage matched papers required to call a candidate a weak signal.",
+    )
     parser.add_argument("--impact-epsilon", type=float, default=1e-6)
     parser.add_argument("--input-suffix", default="")
     parser.add_argument("--dedup-suffix", default="")
     parser.add_argument("--output-suffix", default="")
+    parser.add_argument(
+        "--candidate-source",
+        choices=["index", "cluster"],
+        default="index",
+        help="Use exact-deduped candidate_index files or clustered candidate_clusters files.",
+    )
     return parser.parse_args()
 
 
@@ -66,12 +95,54 @@ def slugify(text: str) -> str:
     return slug or "item"
 
 
-def papers_path(papers_dir: Path, topic_slug: str, year: int) -> Path:
-    return papers_dir / topic_slug / f"papers_{topic_slug}_{year}.parquet"
+def word_count(text: str) -> int:
+    return len(re.findall(r"[A-Za-z0-9]+", str(text)))
 
 
-def count_total_papers(papers_dir: Path, topic_slug: str, year: int) -> int:
-    path = papers_path(papers_dir, topic_slug, year)
+def is_target_named_candidate(candidate_topic: str, target_topic: str, target_topic_slug: str) -> bool:
+    text = str(candidate_topic).lower()
+    target = str(target_topic).lower()
+    target_words = [word for word in re.findall(r"[a-z0-9]+", target) if len(word) > 2]
+    if target and target in text:
+        return True
+    if target_words and all(re.search(rf"\b{re.escape(word)}s?\b", text) for word in target_words):
+        return True
+    if target_topic_slug == "large-language-models":
+        return bool(
+            re.search(
+                r"\b(large language models?|llms?|chatgpt|gpt-?\d*|foundation models?)\b",
+                text,
+                flags=re.IGNORECASE,
+            )
+        )
+    return False
+
+
+def is_late_target_era_candidate(candidate_topic: str, target_topic_slug: str) -> bool:
+    text = str(candidate_topic).lower()
+    if target_topic_slug == "large-language-models":
+        return bool(re.search(r"\b(jailbreak\w*|prompt injection|red teaming)\b", text))
+    return False
+
+
+def is_over_specific_candidate(candidate_topic: str) -> bool:
+    text = str(candidate_topic).lower()
+    wc = word_count(text)
+    if wc > 8:
+        return True
+    if wc > 6 and re.search(r"\b(for|in|with|from|via|using|on|under|during)\b", text):
+        return True
+    if re.search(r"\b(medical|clinical|finance|financial|education|software engineering|cybersecurity)\b", text) and wc > 5:
+        return True
+    return False
+
+
+def papers_path(papers_dir: Path, topic_slug: str, year: int, suffix: str = "") -> Path:
+    return papers_dir / topic_slug / f"papers_{topic_slug}_{year}{suffix}.parquet"
+
+
+def count_total_papers(papers_dir: Path, topic_slug: str, year: int, suffix: str = "") -> int:
+    path = papers_path(papers_dir, topic_slug, year, suffix)
     if not path.exists():
         return 0
     df = pd.read_parquet(path, columns=["paperId"])
@@ -126,6 +197,32 @@ def fallback_candidates_from_matches(matches: pd.DataFrame) -> pd.DataFrame:
     return candidates.reset_index(drop=True)
 
 
+def clusters_to_frequency_candidates(clusters: pd.DataFrame) -> pd.DataFrame:
+    if clusters.empty:
+        return clusters
+    rows = []
+    for record in clusters.to_dict(orient="records"):
+        candidate_topic = str(record.get("canonical_topic") or "").strip()
+        rows.append(
+            {
+                "candidate_id": str(record.get("cluster_id") or ""),
+                "target_topic": record.get("target_topic"),
+                "target_topic_slug": record.get("target_topic_slug"),
+                "candidate_topic": candidate_topic,
+                "candidate_topic_norm": normalize_candidate_topic(candidate_topic),
+                "candidate_topic_type": record.get("candidate_topic_type"),
+                "source_count": record.get("source_paper_count"),
+                "member_count": record.get("member_count"),
+                "source_paper_count": record.get("source_paper_count"),
+                "member_candidate_ids": record.get("member_candidate_ids"),
+                "member_topics": record.get("member_topics"),
+                "source_paper_ids": record.get("source_paper_ids"),
+                "source_years": record.get("source_years"),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
 def load_candidate_indexes(args: argparse.Namespace, matches: pd.DataFrame) -> pd.DataFrame:
     if args.topic:
         topics = load_topics(args.topics_json, args.topic)
@@ -135,17 +232,22 @@ def load_candidate_indexes(args: argparse.Namespace, matches: pd.DataFrame) -> p
         topics = load_topics(args.topics_json)
 
     frames = []
+    stem = "candidate_clusters" if args.candidate_source == "cluster" else "candidate_index"
     for topic in topics:
         path = topic_candidate_path(
             args.dedup_dir,
             topic,
             args.dedup_suffix,
             candidate_topic_type=args.candidate_topic_type,
+            stem=stem,
         )
         if path.exists():
-            frames.append(read_candidate_json(path))
+            frame = read_candidate_json(path)
+            if args.candidate_source == "cluster":
+                frame = clusters_to_frequency_candidates(frame)
+            frames.append(frame)
         elif args.topic:
-            raise FileNotFoundError(f"Candidate index not found: {path}")
+            raise FileNotFoundError(f"Candidate {args.candidate_source} file not found: {path}")
 
     if frames:
         candidates = pd.concat(frames, ignore_index=True)
@@ -183,12 +285,33 @@ def compute_metrics(args: argparse.Namespace) -> pd.DataFrame:
             "candidate_topic": cand.get("candidate_topic"),
             "candidate_topic_norm": cand.get("candidate_topic_norm"),
             "candidate_topic_type": cand.get("candidate_topic_type"),
+            "candidate_source": args.candidate_source,
             "source_count": cand.get("source_count", 0),
+            "member_count": cand.get("member_count"),
+            "source_paper_count": cand.get("source_paper_count"),
+            "member_candidate_ids": cand.get("member_candidate_ids"),
+            "member_topics": cand.get("member_topics"),
+            "source_paper_ids": cand.get("source_paper_ids"),
+            "source_years": cand.get("source_years"),
         }
+        candidate_topic = str(row.get("candidate_topic") or "")
+        target_topic = str(row.get("target_topic") or "")
+        target_named = is_target_named_candidate(candidate_topic, target_topic, topic_slug)
+        late_target_era = is_late_target_era_candidate(candidate_topic, topic_slug)
+        over_specific = is_over_specific_candidate(candidate_topic)
+        row.update(
+            {
+                "candidate_word_count": word_count(candidate_topic),
+                "is_target_named_candidate": target_named,
+                "is_late_target_era_candidate": late_target_era,
+                "is_over_specific_candidate": over_specific,
+                "is_precursor_style_candidate": not (target_named or late_target_era or over_specific),
+            }
+        )
         for year in years:
             n_vals = counts[(counts["candidate_id"] == candidate_id) & (counts["year"] == year)]["n_year"]
             n_year = int(n_vals.iloc[0]) if not n_vals.empty else 0
-            N_year = count_total_papers(args.papers_dir, topic_slug, year)
+            N_year = count_total_papers(args.papers_dir, topic_slug, year, args.papers_suffix)
             f_year = n_year / N_year if N_year else float("nan")
             row[f"n_{year}"] = n_year
             row[f"N_{year}"] = N_year
@@ -217,9 +340,19 @@ def compute_metrics(args: argparse.Namespace) -> pd.DataFrame:
                 "impact": impact,
                 "is_rare_early": bool(pd.notna(f_early) and f_early < args.f_early_max),
                 "is_growing": bool(pd.notna(growth) and growth > 0),
+                "has_early_support": bool(n_early >= args.min_early_papers),
+                "min_early_papers": args.min_early_papers,
             }
         )
-        row["is_candidate_weak_signal"] = row["is_rare_early"] and row["is_growing"]
+        row["is_candidate_weak_signal"] = (
+            row["has_early_support"] and row["is_rare_early"] and row["is_growing"]
+        )
+        if args.exclude_target_named_candidates and row["is_target_named_candidate"]:
+            row["is_candidate_weak_signal"] = False
+        if args.exclude_late_target_era_candidates and row["is_late_target_era_candidate"]:
+            row["is_candidate_weak_signal"] = False
+        if args.exclude_over_specific_candidates and row["is_over_specific_candidate"]:
+            row["is_candidate_weak_signal"] = False
         rows.append(row)
 
     metrics = pd.DataFrame(rows)

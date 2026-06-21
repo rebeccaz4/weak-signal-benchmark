@@ -116,6 +116,37 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Do not write raw Semantic Scholar payload JSONL files.",
     )
+    parser.add_argument(
+        "--include-references",
+        action="store_true",
+        help="Also add references from source-year target papers into separate deduped outputs.",
+    )
+    parser.add_argument(
+        "--reference-source-years",
+        type=int,
+        nargs="+",
+        default=[2024],
+        help="Source paper years whose references are used. Default: 2024.",
+    )
+    parser.add_argument(
+        "--reference-target-years",
+        type=int,
+        nargs="+",
+        help=(
+            "Reference years to add into _with_reference outputs. "
+            "Default: the years requested by --years/--year."
+        ),
+    )
+    parser.add_argument(
+        "--reference-source-suffix",
+        default="",
+        help="Suffix for source paper files used to read target papers for references.",
+    )
+    parser.add_argument(
+        "--reference-output-suffix",
+        default="_with_reference",
+        help="Suffix for merged keyword+reference paper outputs.",
+    )
     return parser.parse_args()
 
 
@@ -152,9 +183,9 @@ def topic_queries(topic: str, payload: dict[str, Any]) -> list[dict[str, str]]:
     return queries
 
 
-def output_path(output_dir: Path, topic: str, year: int) -> Path:
+def output_path(output_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
     topic_slug = slugify(topic)
-    return output_dir / topic_slug / f"papers_{topic_slug}_{year}.parquet"
+    return output_dir / topic_slug / f"papers_{topic_slug}_{year}{suffix}.parquet"
 
 
 def raw_path(output_dir: Path, topic: str, year: int, query_text: str) -> Path:
@@ -178,6 +209,10 @@ def summary_path(output_dir: Path) -> Path:
 
 def search_endpoint(api_base_url: str) -> str:
     return f"{api_base_url.rstrip('/')}/paper/search/bulk"
+
+
+def paper_endpoint(api_base_url: str, paper_id: str) -> str:
+    return f"{api_base_url.rstrip('/')}/paper/{paper_id}"
 
 
 def backup_file(path: Path) -> None:
@@ -450,6 +485,164 @@ def year_mismatch_summary(df: pd.DataFrame, query_year: int) -> dict[str, Any]:
     }
 
 
+def reference_fields(fields: list[str]) -> list[str]:
+    nested = [f"references.{field}" for field in fields if field != "matched_queries"]
+    return ["references"] + nested
+
+
+def fetch_paper_references(
+    *,
+    session: requests.Session,
+    api_base_url: str,
+    paper_id: str,
+    fields: list[str],
+    args: argparse.Namespace,
+) -> list[dict[str, Any]]:
+    payload = request_with_retry(
+        session,
+        paper_endpoint(api_base_url, paper_id),
+        {"fields": ",".join(reference_fields(fields))},
+        timeout=args.request_timeout,
+        max_retries=args.max_retries,
+        retry_backoff=args.retry_backoff,
+        retry_backoff_max=args.retry_backoff_max,
+        throttle_seconds=args.throttle_seconds,
+    )
+    references = payload.get("references") or []
+    return [ref for ref in references if isinstance(ref, dict)]
+
+
+def add_reference_record(
+    *,
+    records: dict[str, dict[str, Any]],
+    ref: dict[str, Any],
+    topic: str,
+    year: int,
+    query_text: str,
+    args: argparse.Namespace,
+) -> bool:
+    paper_id = ref.get("paperId")
+    if not paper_id:
+        return False
+    paper_id = str(paper_id)
+    if not has_nonempty_abstract(ref.get("abstract")):
+        return False
+    if paper_id not in records:
+        record = {field: ref.get(field) for field in args.fields}
+        record["paperId"] = paper_id
+        record["authors"] = json_cell(record.get("authors"))
+        record["topic"] = topic
+        record["query_text"] = query_text
+        record["query_type"] = "reference"
+        record["query_year"] = year
+        record["matched_queries"] = "[]"
+        add_match(record, query_text, "reference")
+        records[paper_id] = record
+        return True
+    add_match(records[paper_id], query_text, "reference")
+    return False
+
+
+def fetch_reference_papers_for_topic(
+    *,
+    session: requests.Session,
+    output_dir: Path,
+    topic: str,
+    years: list[int],
+    args: argparse.Namespace,
+) -> dict[str, Any]:
+    records_by_year: dict[int, dict[str, dict[str, Any]]] = {}
+    for year in years:
+        records = read_existing_records(output_path(output_dir, topic, year))
+        existing_reference_path = output_path(output_dir, topic, year, args.reference_output_suffix)
+        records.update(read_existing_records(existing_reference_path))
+        records_by_year[year] = records
+
+    source_paths = [
+        output_path(output_dir, topic, source_year, args.reference_source_suffix)
+        for source_year in args.reference_source_years
+    ]
+    missing_sources = [str(path) for path in source_paths if not path.exists()]
+    if missing_sources:
+        raise FileNotFoundError(
+            "Reference source paper files are missing. Fetch source years first: "
+            + "; ".join(missing_sources)
+        )
+
+    source_frames = [pd.read_parquet(path) for path in source_paths]
+    source_df = pd.concat(source_frames, ignore_index=True) if source_frames else pd.DataFrame()
+    source_ids = sorted(source_df["paperId"].dropna().astype(str).unique()) if "paperId" in source_df else []
+    target_years = set(years)
+    added_by_year = {year: 0 for year in years}
+    seen_reference_ids = {year: set(records_by_year[year]) for year in years}
+    query_text = "references_from_" + "_".join(map(str, args.reference_source_years))
+
+    progress = tqdm(source_ids, desc=f"{topic} | references", unit="paper", dynamic_ncols=True)
+    failed = 0
+    api_references = 0
+    eligible_references = 0
+    for source_id in progress:
+        try:
+            refs = fetch_paper_references(
+                session=session,
+                api_base_url=args.api_base_url,
+                paper_id=source_id,
+                fields=args.fields,
+                args=args,
+            )
+        except Exception as exc:
+            failed += 1
+            print(f"{source_id}: reference fetch failed: {type(exc).__name__}: {str(exc)[:200]}")
+            continue
+        api_references += len(refs)
+        for ref in refs:
+            ref_year = ref.get("year")
+            try:
+                ref_year = int(ref_year)
+            except (TypeError, ValueError):
+                continue
+            if ref_year not in target_years:
+                continue
+            eligible_references += 1
+            paper_id = str(ref.get("paperId") or "")
+            was_new = paper_id not in seen_reference_ids[ref_year]
+            added = add_reference_record(
+                records=records_by_year[ref_year],
+                ref=ref,
+                topic=topic,
+                year=ref_year,
+                query_text=query_text,
+                args=args,
+            )
+            if added or was_new:
+                seen_reference_ids[ref_year].add(paper_id)
+            if added:
+                added_by_year[ref_year] += 1
+
+    outputs = {}
+    for year, records in records_by_year.items():
+        out_file = output_path(output_dir, topic, year, args.reference_output_suffix)
+        final_df = records_to_frame(records)
+        write_parquet(final_df, out_file)
+        check = year_mismatch_summary(final_df, year)
+        outputs[str(year)] = {
+            "output_path": str(out_file),
+            "final_unique_papers": int(final_df["paperId"].nunique()) if not final_df.empty else 0,
+            "new_reference_papers": added_by_year[year],
+            **check,
+        }
+
+    return {
+        "status": "references_fetched",
+        "source_years": args.reference_source_years,
+        "source_papers": len(source_ids),
+        "api_references": api_references,
+        "eligible_references": eligible_references,
+        "failed_source_papers": failed,
+        "outputs": outputs,
+    }
+
+
 def fetch_query(
     *,
     session: requests.Session,
@@ -634,9 +827,14 @@ def write_summary(output_dir: Path, summary: dict[str, Any]) -> None:
 
 
 def main() -> None:
+    load_dotenv(DEFAULT_CONSTRUCTION_DIR / ".env")
     load_dotenv()
     args = parse_args()
-    years = sorted(set(args.year or args.years))
+    requested_years = sorted(set(args.year or args.years))
+    reference_target_years = sorted(set(args.reference_target_years or requested_years))
+    years = requested_years
+    if args.include_references:
+        years = sorted(set(requested_years + args.reference_source_years))
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     topics = load_topics(args.topics_json, args.topic)
@@ -653,13 +851,19 @@ def main() -> None:
             "search_endpoint": search_endpoint(args.api_base_url),
             "topics_json": str(args.topics_json),
             "output_dir": str(args.output_dir),
-            "years": years,
+            "requested_years": requested_years,
+            "fetch_years": years,
             "topic": args.topic,
             "language": args.language,
             "per_page": args.per_page,
             "fields": args.fields,
             "force": args.force,
             "raw_payloads": not args.no_raw,
+            "include_references": args.include_references,
+            "reference_source_years": args.reference_source_years,
+            "reference_target_years": reference_target_years,
+            "reference_source_suffix": args.reference_source_suffix,
+            "reference_output_suffix": args.reference_output_suffix,
         },
         "topics": {},
     }
@@ -684,6 +888,27 @@ def main() -> None:
                 f"unique={result['final_unique_papers']} | "
                 f"year_mismatches={result['year_mismatch_count']}"
             )
+
+    if args.include_references:
+        summary["reference_topics"] = {}
+        for topic in topics:
+            print("=" * 90)
+            print(f"Fetching reference papers for topic={topic!r}")
+            result = fetch_reference_papers_for_topic(
+                session=session,
+                output_dir=args.output_dir,
+                topic=topic,
+                years=reference_target_years,
+                args=args,
+            )
+            summary["reference_topics"][topic] = result
+            write_summary(args.output_dir, summary)
+            for year, year_result in result["outputs"].items():
+                print(
+                    f"{topic} | {year} | references: unique={year_result['final_unique_papers']} | "
+                    f"new_reference={year_result['new_reference_papers']} | "
+                    f"year_mismatches={year_result['year_mismatch_count']}"
+                )
 
     write_summary(args.output_dir, summary)
     print(f"Summary written to {summary_path(args.output_dir)}")
