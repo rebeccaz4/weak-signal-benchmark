@@ -9,6 +9,7 @@ Run examples:
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "trustworthy AI" --year 2023 --force
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --papers-suffix _with_reference --output-suffix _with_reference
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --provider openai
+  conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --provider kongbeiqie
 """
 from __future__ import annotations
 
@@ -34,6 +35,7 @@ DEFAULT_PAPERS_DIR = DEFAULT_CONSTRUCTION_DIR / "papers"
 DEFAULT_OUTPUT_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_topics"
 DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
 OFFICIAL_OPENAI_BASE_URL = "https://api.openai.com/v1"
+KONGBEIQIE_BASE_URL = "https://xn--vduyey89e.com/v1"
 
 
 SYSTEM_PROMPT = """You are an expert research topic extractor.
@@ -163,7 +165,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", default=os.getenv("BWD_WEAK_SIGNAL_MODEL", "gpt-5.4"))
     parser.add_argument(
         "--provider",
-        choices=["ikuncode", "openai"],
+        choices=["ikuncode", "openai", "kongbeiqie"],
         default=os.getenv("BWD_MODEL_PROVIDER", "ikuncode"),
         help="Model provider to use. No automatic provider fallback is performed.",
     )
@@ -308,10 +310,27 @@ def make_client(api_key: str, base_url: str | None) -> OpenAI:
     return OpenAI(api_key=api_key, timeout=120.0)
 
 
+def normalize_openai_base_url(base_url: str) -> str:
+    base_url = base_url.rstrip("/")
+    if base_url.endswith("/v1"):
+        return base_url
+    return f"{base_url}/v1"
+
+
 def model_provider(provider_name: str) -> dict[str, str | None]:
+    provider_name = provider_name.lower()
     ikuncode_key = os.getenv("IKUNCODE_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     ikuncode_base_url = os.getenv("OPENAI_BASE_URL")
+    kongbeiqie_key = (
+        os.getenv("KONGBEIQIE_API_KEY")
+        or os.getenv("NEWAPI_API_KEY")
+    )
+    kongbeiqie_base_url = (
+        os.getenv("KONGBEIQIE_BASE_URL")
+        or os.getenv("NEWAPI_BASE_URL")
+        or KONGBEIQIE_BASE_URL
+    )
 
     if provider_name == "ikuncode":
         if not ikuncode_key:
@@ -328,6 +347,17 @@ def model_provider(provider_name: str) -> dict[str, str | None]:
             "name": "openai",
             "api_key": openai_key,
             "base_url": OFFICIAL_OPENAI_BASE_URL,
+        }
+    if provider_name == "kongbeiqie":
+        if not kongbeiqie_key:
+            raise RuntimeError(
+                "Set KONGBEIQIE_API_KEY to use --provider kongbeiqie. "
+                "Optional: set KONGBEIQIE_BASE_URL to override the endpoint."
+            )
+        return {
+            "name": "kongbeiqie",
+            "api_key": kongbeiqie_key,
+            "base_url": normalize_openai_base_url(kongbeiqie_base_url),
         }
     raise ValueError(f"Unsupported provider: {provider_name}")
 
