@@ -8,7 +8,7 @@ Usage:
     python evaluation/run_all.py --settings 1 3             # BERTScore only (no API needed)
     python evaluation/run_all.py --settings 2 4             # LLM only
     python evaluation/run_all.py --settings 1 2 3 4         # all settings
-    python evaluation/run_all.py --models qwen3.5_397b gpt_5_3_chat --settings 1 3
+    python evaluation/run_all.py --models qwen3.5_397b gpt_5_4_chat --settings 1 3
 """
 from __future__ import annotations
 

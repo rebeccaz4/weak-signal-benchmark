@@ -78,7 +78,7 @@ python evaluation/run_all.py --settings 1 2 3 4 --domains aerospace mobility
 
 ### Specific models only
 ```bash
-python evaluation/run_all.py --settings 1 3 --models qwen3.5_397b gpt_5_3_chat
+python evaluation/run_all.py --settings 1 3 --models qwen3.5_397b gpt_5_4_chat
 ```
 
 ### Specific domains only
@@ -158,7 +158,7 @@ A summary table (mean P/R/F1 per model × setting) is printed to the terminal at
 Available prediction models:
 - `deepseek_r1_0528`
 - `dr_tulu`
-- `gpt_5_3_chat`
+- `gpt_5_4_chat`
 - `qwen3_30b_awq_rag`
 - `qwen3.5_397b`
 - `qwen3_8b_rag`

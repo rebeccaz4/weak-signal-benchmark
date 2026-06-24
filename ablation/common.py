@@ -26,7 +26,7 @@ SRC_ROOT = REPO_ROOT / "src"
 DEFAULT_MODELS = [
     "deepseek_r1_0528",
     "dr_tulu",
-    "gpt_5_3_chat",
+    "gpt_5_4_chat",
     "qwen3.5_397b",
     "qwen3_30b_awq_rag",
     "qwen3_8b_rag",
