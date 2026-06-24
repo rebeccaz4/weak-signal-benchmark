@@ -19,7 +19,7 @@ identical instructions across models.
 | `qwen3_8B_rag.py` | Qwen3-8B + LlamaIndex RAG | Yes |
 | `qwen3_30B_rag.py` | Qwen3-30B-A3B AWQ 4-bit + LlamaIndex RAG | Yes |
 | `gemini_3_flash.py` | Gemini 3 Flash (API) | No |
-| `gpt_5_3_chat.py` | GPT-5.3-chat (Azure OpenAI API) | No |
+| `gpt_5_4_chat.py` | GPT-5.4-chat (Azure OpenAI API) | No |
 | `deepseek_r1_0528.py` | DeepSeek-R1-0528 (DeepSeek API) | No |
 | `qwen3_5_397b.py` | Qwen3.5-397B-A17B (DashScope API) | No |
 
@@ -137,7 +137,7 @@ pip install python-dotenv requests
 Install only what you need:
 
 ```bash
-# GPT-5.3-chat / evaluation scripts / StepB series (require openai)
+# GPT-5.4-chat / evaluation scripts / StepB series (require openai)
 pip install openai
 
 # Gemini 3 Flash
@@ -190,7 +190,7 @@ SEMANTIC_SCHOLAR_API_KEY=your_s2_key
 # Gemini
 GEMINI_API_KEY=your_gemini_key
 
-# Azure OpenAI / GPT-5.3-chat
+# Azure OpenAI / GPT-5.4-chat
 OPENAI_API_KEY=your_azure_openai_key
 
 # DeepSeek
@@ -201,7 +201,7 @@ DASHSCOPE_API_KEY=your_dashscope_key
 EOF
 ```
 
-> `gpt_5_3_chat.py` targets Azure OpenAI, so `OPENAI_API_KEY` must hold an
+> `gpt_5_4_chat.py` targets Azure OpenAI, so `OPENAI_API_KEY` must hold an
 > Azure key. If a standard OpenAI key is present in `.env`, authentication can
 > fail — override with `--openai-api-key` on the command line when needed.
 
@@ -239,7 +239,7 @@ except ImportError: print('MISSING: data stack')
 | `qwen3_8B_rag.py` | `openai`, `llama-index`, `llama-index-embeddings-huggingface` |
 | `qwen3_30B_rag.py` | Same as `qwen3_8B_rag.py` |
 | `gemini_3_flash.py` | `google-genai` |
-| `gpt_5_3_chat.py` | `openai` |
+| `gpt_5_4_chat.py` | `openai` |
 | `deepseek_r1_0528.py` | `openai` |
 | `qwen3_5_397b.py` | `openai` |
 | `evaluate_signals.py` | `openai`, `pandas` |
@@ -627,9 +627,9 @@ python3 gemini_3_flash.py \
 
 ---
 
-### 6. `gpt_5_3_chat.py`
+### 6. `gpt_5_4_chat.py`
 
-Azure OpenAI call to GPT-5.3-chat. No local GPU required.
+Azure OpenAI call to GPT-5.4-chat. No local GPU required.
 
 **Install:**
 
@@ -641,25 +641,25 @@ pip install openai
 
 ```bash
 # All 13 domains
-python3 gpt_5_3_chat.py --output-dir ./outputs
+python3 gpt_5_4_chat.py --output-dir ./outputs
 
 # Single domain
-python3 gpt_5_3_chat.py \
+python3 gpt_5_4_chat.py \
     --domain "Digital twins" \
     --output-dir ./outputs
 
 # Problem space only
-python3 gpt_5_3_chat.py \
+python3 gpt_5_4_chat.py \
     --domain "Digital twins" \
     --spaces problem \
     --output-dir ./outputs
 ```
 
-**GPT-5.3-chat-specific arguments:**
+**GPT-5.4-chat-specific arguments:**
 
 | Argument | Default | Description |
 |---|---|---|
-| `--openai-model` | `gpt-5.3-chat` | Azure deployment name |
+| `--openai-model` | `gpt-5.4-chat` | Azure deployment name |
 | `--openai-api-key` | Azure key | Azure OpenAI API key |
 | `--azure-endpoint` | Azure endpoint | Azure endpoint URL |
 | `--api-version` | `2025-04-01-preview` | Azure API version |
@@ -766,7 +766,7 @@ python3 qwen3_5_397b.py \
 
 ```bash
 # All domains × problem + solution (~254 topics × 2 spaces = 508 runs)
-python3 gpt_5_3_chat.py --output-dir ./outputs
+python3 gpt_5_4_chat.py --output-dir ./outputs
 
 # All domains, problem space only
 python3 gemini_3_flash.py --spaces problem --output-dir ./outputs
@@ -775,7 +775,7 @@ python3 gemini_3_flash.py --spaces problem --output-dir ./outputs
 **Multiple named domains:**
 
 ```bash
-python3 gpt_5_3_chat.py \
+python3 gpt_5_4_chat.py \
     --domain "Aerospace" "Energy" "Digital twins" \
     --output-dir ./outputs
 ```

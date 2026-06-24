@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-GPT-5.3-chat – weak-signal prediction (prediction only, no evaluation).
+GPT-5.4-chat – weak-signal prediction (prediction only, no evaluation).
 
 Usage example:
-    python gpt_5_3_chat.py \
+    python gpt_5_4_chat.py \
         --domain "Natural Language Processing" \
         --spaces problem solution \
         --output-dir ./outputs
@@ -88,7 +88,7 @@ def save_results(
     from mainframe_topics import make_domain_slug
     domain_slug = make_domain_slug(domain)
     topic_slug = make_topic_slug(topic)
-    result_dir = output_dir / "gpt_5_3_chat" / domain_slug / topic_slug / space / YEAR_SLUG
+    result_dir = output_dir / "gpt_5_4_chat" / domain_slug / topic_slug / space / YEAR_SLUG
     result_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -123,7 +123,7 @@ def save_results(
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="GPT-5.3 Chat via OpenRouter weak-signal prediction (no evaluation)."
+        description="GPT-5.4 Chat via OpenRouter weak-signal prediction (no evaluation)."
     )
     p.add_argument(
         "--domain", nargs="+", default=None,
@@ -137,8 +137,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output-dir", required=True, type=Path)
     p.add_argument(
         "--model", "--openai-model", dest="model",
-        default=os.getenv("OPENROUTER_MODEL", "openai/gpt-5.3-chat"),
-        help="OpenRouter model id (default: $OPENROUTER_MODEL or openai/gpt-5.3-chat).",
+        default=os.getenv("OPENROUTER_MODEL", "openai/gpt-5.4-chat"),
+        help="OpenRouter model id (default: $OPENROUTER_MODEL or openai/gpt-5.4-chat).",
     )
     p.add_argument(
         "--api-key", "--openai-api-key", dest="api_key",
@@ -162,7 +162,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument("--temperature", type=float, default=1.0)
     p.add_argument("--max-tokens", type=int, default=32768,
-                   help="Maximum output tokens. OpenRouter GPT-5.3 Chat requires >= 16.")
+                   help="Maximum output tokens. OpenRouter GPT-5.4 Chat requires >= 16.")
     p.add_argument("--max-retries", type=int, default=4)
     p.add_argument("--retry-backoff", type=float, default=2.0)
     p.add_argument("--seed", type=int, default=42)
@@ -184,7 +184,7 @@ def main() -> None:
             "Missing OpenRouter API key. Set OPENROUTER_API_KEY or use --api-key."
         )
     if args.max_tokens < 16:
-        raise RuntimeError("Invalid --max-tokens: OpenRouter GPT-5.3 Chat requires a value >= 16.")
+        raise RuntimeError("Invalid --max-tokens: OpenRouter GPT-5.4 Chat requires a value >= 16.")
 
     from openai import OpenAI
 
@@ -223,7 +223,7 @@ def main() -> None:
                 print(f"{'─' * 60}")
 
                 topic_slug = make_topic_slug(topic)
-                result_dir = args.output_dir / "gpt_5_3_chat" / domain_slug / topic_slug / space / YEAR_SLUG
+                result_dir = args.output_dir / "gpt_5_4_chat" / domain_slug / topic_slug / space / YEAR_SLUG
                 if result_dir.exists():
                     print(f"[skip] Already exists: {result_dir}")
                     continue
