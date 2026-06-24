@@ -48,7 +48,7 @@ construction  →  verification  →  prediction  →  evaluation
    [`verification/README.md`](verification/README.md) for the full formula.
 3. **Prediction** (`prediction/python/`) — run eight models / methods
    (DR-Tulu agent, Tongyi DeepResearch, Qwen3 RAG (8B / 30B), Gemini 3 Flash,
-   GPT-5.3-chat, DeepSeek-R1, Qwen3.5-397B) in parallel on the verified topics
+   GPT-5.4, DeepSeek-R1, Qwen3.5-397B) in parallel on the verified topics
    for the 2023–2024 window. See
    [`prediction/python/prediction_guide.md`](prediction/python/prediction_guide.md).
 4. **Evaluation** (`evaluation/`) — score every model prediction against the
@@ -184,7 +184,7 @@ for per-model setup (vLLM placement, GPU isolation, API keys). Example:
 
 ```bash
 cd prediction/python/
-python3 gpt_5_3_chat.py --output-dir ./outputs
+python3 gpt_5_4_chat.py --output-dir ./outputs
 python3 qwen3_8B_rag.py --domain "Aerospace" --output-dir ./outputs
 ```
 
@@ -267,7 +267,7 @@ lives in `verification/export_signal_results.py`.
 - Every stage is a self-contained Python entry point — no notebook state.
 - Network access is required for Semantic Scholar and LLM API calls.
 - API snapshots and model versions drift over time; record the exact model
-  identifiers (`GPT-5.3-chat`, `DeepSeek-R1-0528`, etc.) when reporting results.
+  identifiers (`GPT-5.4`, `DeepSeek-R1-0528`, etc.) when reporting results.
 - The verified signals released on Hugging Face are frozen to the version used
   in the paper.
 

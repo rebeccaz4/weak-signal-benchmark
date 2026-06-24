@@ -19,7 +19,7 @@ identical instructions across models.
 | `qwen3_8B_rag.py` | Qwen3-8B + LlamaIndex RAG | Yes |
 | `qwen3_30B_rag.py` | Qwen3-30B-A3B AWQ 4-bit + LlamaIndex RAG | Yes |
 | `gemini_3_flash.py` | Gemini 3 Flash (API) | No |
-| `gpt_5_4_chat.py` | GPT-5.4-chat (Azure OpenAI API) | No |
+| `gpt_5_4_chat.py` | GPT-5.4 (Azure OpenAI API) | No |
 | `deepseek_r1_0528.py` | DeepSeek-R1-0528 (DeepSeek API) | No |
 | `qwen3_5_397b.py` | Qwen3.5-397B-A17B (DashScope API) | No |
 
@@ -137,7 +137,7 @@ pip install python-dotenv requests
 Install only what you need:
 
 ```bash
-# GPT-5.4-chat / evaluation scripts / StepB series (require openai)
+# GPT-5.4 / evaluation scripts / StepB series (require openai)
 pip install openai
 
 # Gemini 3 Flash
@@ -190,7 +190,7 @@ SEMANTIC_SCHOLAR_API_KEY=your_s2_key
 # Gemini
 GEMINI_API_KEY=your_gemini_key
 
-# Azure OpenAI / GPT-5.4-chat
+# Azure OpenAI / GPT-5.4
 OPENAI_API_KEY=your_azure_openai_key
 
 # DeepSeek
@@ -629,7 +629,7 @@ python3 gemini_3_flash.py \
 
 ### 6. `gpt_5_4_chat.py`
 
-Azure OpenAI call to GPT-5.4-chat. No local GPU required.
+Azure OpenAI call to GPT-5.4. No local GPU required.
 
 **Install:**
 
@@ -655,11 +655,11 @@ python3 gpt_5_4_chat.py \
     --output-dir ./outputs
 ```
 
-**GPT-5.4-chat-specific arguments:**
+**GPT-5.4-specific arguments:**
 
 | Argument | Default | Description |
 |---|---|---|
-| `--openai-model` | `gpt-5.4-chat` | Azure deployment name |
+| `--openai-model` | `gpt-5.4` | Azure deployment name |
 | `--openai-api-key` | Azure key | Azure OpenAI API key |
 | `--azure-endpoint` | Azure endpoint | Azure endpoint URL |
 | `--api-version` | `2025-04-01-preview` | Azure API version |
