@@ -10,6 +10,8 @@ Run examples:
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --papers-suffix _with_reference --output-suffix _with_reference
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --provider openai
   conda run -n osworld python construction_v2/scripts/extract_candidate.py --topic "large language models" --provider kongbeiqie
+  conda run -n osworld python construction_v2/scripts/extract_candidate.py --subtopic
+  conda run -n osworld python construction_v2/scripts/extract_candidate.py --subtopic --topic "LLM reasoning"
 """
 from __future__ import annotations
 
@@ -31,6 +33,9 @@ from tqdm.auto import tqdm
 
 DEFAULT_CONSTRUCTION_DIR = Path(__file__).resolve().parents[1]
 DEFAULT_TOPICS_JSON = DEFAULT_CONSTRUCTION_DIR / "topics.json"
+DEFAULT_SUBTOPICS_JSON = (
+    DEFAULT_CONSTRUCTION_DIR / "papers" / "subtopics" / "_stats" / "subtopics.json"
+)
 DEFAULT_PAPERS_DIR = DEFAULT_CONSTRUCTION_DIR / "papers"
 DEFAULT_OUTPUT_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_topics"
 DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
@@ -138,11 +143,27 @@ def parse_args() -> argparse.Namespace:
         description="Extract candidate problem/solution topics from fetched topic papers."
     )
     parser.add_argument("--topics-json", type=Path, default=DEFAULT_TOPICS_JSON)
+    parser.add_argument("--subtopics-json", type=Path, default=DEFAULT_SUBTOPICS_JSON)
+    parser.add_argument(
+        "--subtopic",
+        action="store_true",
+        help=(
+            "Process fine-grained subtopics from --subtopics-json. "
+            "Inputs are read from papers/subtopics/<subtopic-slug>/ and outputs "
+            "are written under candidate_topics/subtopics/<subtopic-slug>/."
+        ),
+    )
     parser.add_argument("--papers-dir", type=Path, default=DEFAULT_PAPERS_DIR)
     parser.add_argument("--papers-suffix", default="")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--output-suffix", default="")
-    parser.add_argument("--topic", help="Process only one topic from topics.json.")
+    parser.add_argument(
+        "--topic",
+        help=(
+            "Process only one topic. With --subtopic, this selects one subtopic "
+            "from --subtopics-json."
+        ),
+    )
     parser.add_argument(
         "--years",
         type=int,
@@ -214,6 +235,52 @@ def load_topics(path: Path, selected_topic: str | None = None) -> dict[str, dict
     return topics
 
 
+def load_subtopics(path: Path, selected_topic: str | None = None) -> dict[str, dict[str, Any]]:
+    with path.open("r", encoding="utf-8") as fp:
+        payload = json.load(fp)
+
+    items = payload.get("subtopics")
+    if not isinstance(items, list):
+        raise SystemExit(f"Invalid subtopics file: expected top-level 'subtopics' list in {path}")
+
+    subtopics: dict[str, dict[str, Any]] = {}
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        name = item.get("name")
+        if not isinstance(name, str) or not name.strip():
+            continue
+        name = name.strip()
+        paraphrases = item.get("paraphrases") or []
+        if not isinstance(paraphrases, list):
+            paraphrases = []
+        subtopics[name] = {
+            "paraphrase": [
+                paraphrase.strip()
+                for paraphrase in paraphrases
+                if isinstance(paraphrase, str) and paraphrase.strip()
+            ],
+            "parent_topic": item.get("parent_topic", ""),
+            "slug": item.get("slug") or slugify(name),
+        }
+
+    if selected_topic:
+        if selected_topic in subtopics:
+            return {selected_topic: subtopics[selected_topic]}
+
+        selected_slug = slugify(selected_topic)
+        for name, payload in subtopics.items():
+            if payload.get("slug") == selected_slug:
+                return {name: payload}
+
+        if selected_topic not in subtopics:
+            available = ", ".join(sorted(subtopics))
+            raise SystemExit(
+                f"Subtopic not found in {path}: {selected_topic}\nAvailable subtopics: {available}"
+            )
+    return subtopics
+
+
 def clean(value: object, fallback: str = "") -> str:
     try:
         if pd.isna(value):
@@ -237,13 +304,41 @@ def safe_json_loads(text: str) -> dict[str, Any]:
             return {"topics": []}
 
 
-def papers_path(papers_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
+def papers_path(
+    papers_dir: Path,
+    topic: str,
+    year: int,
+    suffix: str = "",
+    *,
+    subtopic: bool = False,
+) -> Path:
     topic_slug = slugify(topic)
+    if subtopic:
+        return (
+            papers_dir
+            / "subtopics"
+            / topic_slug
+            / f"papers_{topic_slug}_{year}{suffix}.parquet"
+        )
     return papers_dir / topic_slug / f"papers_{topic_slug}_{year}{suffix}.parquet"
 
 
-def output_path(output_dir: Path, topic: str, year: int, suffix: str = "") -> Path:
+def output_path(
+    output_dir: Path,
+    topic: str,
+    year: int,
+    suffix: str = "",
+    *,
+    subtopic: bool = False,
+) -> Path:
     topic_slug = slugify(topic)
+    if subtopic:
+        return (
+            output_dir
+            / "subtopics"
+            / topic_slug
+            / f"candidate_topics_{topic_slug}_{year}{suffix}.jsonl"
+        )
     return output_dir / topic_slug / f"candidate_topics_{topic_slug}_{year}{suffix}.jsonl"
 
 
@@ -496,8 +591,20 @@ def process_topic_year(
     args: argparse.Namespace,
     provider: dict[str, str | None],
 ) -> dict[str, Any]:
-    in_path = papers_path(args.papers_dir, topic, year, args.papers_suffix)
-    out_path = output_path(args.output_dir, topic, year, args.output_suffix)
+    in_path = papers_path(
+        args.papers_dir,
+        topic,
+        year,
+        args.papers_suffix,
+        subtopic=args.subtopic,
+    )
+    out_path = output_path(
+        args.output_dir,
+        topic,
+        year,
+        args.output_suffix,
+        subtopic=args.subtopic,
+    )
     if args.force:
         backup_file(out_path)
 
@@ -557,9 +664,14 @@ def main() -> None:
     load_dotenv()
     args = parse_args()
     years = sorted(set(args.year or args.years))
-    topics = load_topics(args.topics_json, args.topic)
+    topics = (
+        load_subtopics(args.subtopics_json, args.topic)
+        if args.subtopic
+        else load_topics(args.topics_json, args.topic)
+    )
     provider = model_provider(args.provider)
 
+    print(f"Mode: {'subtopic' if args.subtopic else 'topic'}")
     print(f"Topics: {len(topics)}")
     print(f"Years: {years}")
     print(f"Model: {args.model}")

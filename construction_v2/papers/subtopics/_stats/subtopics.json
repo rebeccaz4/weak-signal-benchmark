@@ -1,0 +1,154 @@
+{
+  "subtopics": [
+    {
+      "slug": "aiot-sensing",
+      "name": "AIoT sensing",
+      "parent_topic": "Artificial Intelligence of Things",
+      "paraphrases": [
+        "artificial intelligence of things sensing",
+        "AIoT-enabled sensing",
+        "intelligent sensing in AIoT"
+      ]
+    },
+    {
+      "slug": "aiot-computing",
+      "name": "AIoT computing",
+      "parent_topic": "Artificial Intelligence of Things",
+      "paraphrases": [
+        "artificial intelligence of things computing",
+        "computing in AIoT",
+        "AIoT computation",
+        "AIoT intelligence computing"
+      ]
+    },
+    {
+      "slug": "aiot-networking-and-communication",
+      "name": "AIoT networking and communication",
+      "parent_topic": "Artificial Intelligence of Things",
+      "paraphrases": [
+        "AIoT networking",
+        "AIoT communications",
+        "communication and networking in AIoT"
+      ]
+    },
+    {
+      "slug": "llm-pretraining-and-scaling",
+      "name": "LLM pretraining and scaling",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "large language model pretraining",
+        "pretraining large language models",
+        "scaling laws for large language models",
+        "LLM scaling and pretraining"
+      ]
+    },
+    {
+      "slug": "instruction-tuning",
+      "name": "instruction tuning",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "instruction tuning for large language models",
+        "instruction-tuned language models"
+      ]
+    },
+    {
+      "slug": "llm-alignment-and-preference-optimization",
+      "name": "LLM alignment and preference optimization",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "large language model alignment",
+        "preference optimization for LLMs",
+        "LLM preference alignment",
+        "human preference alignment for large language models"
+      ]
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "name": "parameter-efficient fine-tuning",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "PEFT"
+      ]
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "name": "retrieval-augmented generation",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "RAG"
+      ]
+    },
+    {
+      "slug": "long-context-llms",
+      "name": "long-context LLMs",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "long context large language models",
+        "context length extension for LLMs",
+        "extended-context large language models"
+      ]
+    },
+    {
+      "slug": "llm-agents-and-tool-use",
+      "name": "LLM agents and tool use",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "large language model agents",
+        "LLM-based agents",
+        "tool learning with large language models",
+        "tool-using LLM agents"
+      ]
+    },
+    {
+      "slug": "llm-reasoning",
+      "name": "LLM reasoning",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "large language model reasoning",
+        "reasoning with large language models",
+        "reasoning in LLMs",
+        "LLM-based reasoning"
+      ]
+    },
+    {
+      "slug": "efficient-llm-inference",
+      "name": "efficient LLM inference",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "efficient inference for large language models",
+        "LLM inference acceleration",
+        "efficient large language model inference"
+      ]
+    },
+    {
+      "slug": "hallucination-mitigation",
+      "name": "hallucination mitigation",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "hallucination mitigation in LLMs",
+        "mitigating hallucinations in large language models",
+        "LLM hallucination reduction"
+      ]
+    },
+    {
+      "slug": "llm-security-and-privacy",
+      "name": "LLM security and privacy",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "large language model security and privacy",
+        "security and privacy of LLMs"
+      ]
+    },
+    {
+      "slug": "fairness-and-bias-in-llms",
+      "name": "fairness and bias in LLMs",
+      "parent_topic": "Large Language Models",
+      "paraphrases": [
+        "fairness in large language models",
+        "bias in large language models",
+        "LLM fairness and bias",
+        "bias and fairness in LLMs"
+      ]
+    }
+  ]
+}

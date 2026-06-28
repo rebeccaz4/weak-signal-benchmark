@@ -1,0 +1,91 @@
+subtopic_slug,subtopic,parent_topic,year,paper_count_unique_with_abstract
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2019,78
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2020,124
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2021,178
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2022,171
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2023,215
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,2024,253
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2019,246
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2020,422
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2021,595
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2022,672
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2023,682
+aiot-computing,AIoT computing,Artificial Intelligence of Things,2024,939
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2019,8
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2020,24
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2021,74
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2022,83
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2023,80
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,2024,137
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2019,104
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2020,204
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2021,372
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2022,538
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2023,1109
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,2024,1851
+instruction-tuning,instruction tuning,Large Language Models,2019,80
+instruction-tuning,instruction tuning,Large Language Models,2020,72
+instruction-tuning,instruction tuning,Large Language Models,2021,77
+instruction-tuning,instruction tuning,Large Language Models,2022,152
+instruction-tuning,instruction tuning,Large Language Models,2023,885
+instruction-tuning,instruction tuning,Large Language Models,2024,1994
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2019,46
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2020,66
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2021,77
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2022,156
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2023,703
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,2024,2519
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2019,109
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2020,159
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2021,199
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2022,309
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2023,707
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,2024,1733
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2019,326
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2020,384
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2021,350
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2022,338
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2023,515
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,2024,2821
+long-context-llms,long-context LLMs,Large Language Models,2019,66
+long-context-llms,long-context LLMs,Large Language Models,2020,78
+long-context-llms,long-context LLMs,Large Language Models,2021,93
+long-context-llms,long-context LLMs,Large Language Models,2022,85
+long-context-llms,long-context LLMs,Large Language Models,2023,412
+long-context-llms,long-context LLMs,Large Language Models,2024,1263
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2019,159
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2020,173
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2021,221
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2022,346
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2023,1390
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,2024,4659
+llm-reasoning,LLM reasoning,Large Language Models,2019,87
+llm-reasoning,LLM reasoning,Large Language Models,2020,103
+llm-reasoning,LLM reasoning,Large Language Models,2021,128
+llm-reasoning,LLM reasoning,Large Language Models,2022,256
+llm-reasoning,LLM reasoning,Large Language Models,2023,1699
+llm-reasoning,LLM reasoning,Large Language Models,2024,5020
+efficient-llm-inference,efficient LLM inference,Large Language Models,2019,28
+efficient-llm-inference,efficient LLM inference,Large Language Models,2020,29
+efficient-llm-inference,efficient LLM inference,Large Language Models,2021,66
+efficient-llm-inference,efficient LLM inference,Large Language Models,2022,74
+efficient-llm-inference,efficient LLM inference,Large Language Models,2023,285
+efficient-llm-inference,efficient LLM inference,Large Language Models,2024,1067
+hallucination-mitigation,hallucination mitigation,Large Language Models,2019,6
+hallucination-mitigation,hallucination mitigation,Large Language Models,2020,11
+hallucination-mitigation,hallucination mitigation,Large Language Models,2021,10
+hallucination-mitigation,hallucination mitigation,Large Language Models,2022,26
+hallucination-mitigation,hallucination mitigation,Large Language Models,2023,130
+hallucination-mitigation,hallucination mitigation,Large Language Models,2024,606
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2019,8
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2020,6
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2021,10
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2022,11
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2023,96
+llm-security-and-privacy,LLM security and privacy,Large Language Models,2024,340
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2019,114
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2020,128
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2021,232
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2022,301
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2023,1084
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,2024,2629

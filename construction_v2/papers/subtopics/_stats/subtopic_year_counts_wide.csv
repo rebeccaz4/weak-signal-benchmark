@@ -1,0 +1,16 @@
+subtopic_slug,subtopic,parent_topic,2019,2020,2021,2022,2023,2024,sum_yearly_counts
+aiot-sensing,AIoT sensing,Artificial Intelligence of Things,78,124,178,171,215,253,1019
+aiot-computing,AIoT computing,Artificial Intelligence of Things,246,422,595,672,682,939,3556
+aiot-networking-and-communication,AIoT networking and communication,Artificial Intelligence of Things,8,24,74,83,80,137,406
+llm-pretraining-and-scaling,LLM pretraining and scaling,Large Language Models,104,204,372,538,1109,1851,4178
+instruction-tuning,instruction tuning,Large Language Models,80,72,77,152,885,1994,3260
+llm-alignment-and-preference-optimization,LLM alignment and preference optimization,Large Language Models,46,66,77,156,703,2519,3567
+parameter-efficient-fine-tuning,parameter-efficient fine-tuning,Large Language Models,109,159,199,309,707,1733,3216
+retrieval-augmented-generation,retrieval-augmented generation,Large Language Models,326,384,350,338,515,2821,4734
+long-context-llms,long-context LLMs,Large Language Models,66,78,93,85,412,1263,1997
+llm-agents-and-tool-use,LLM agents and tool use,Large Language Models,159,173,221,346,1390,4659,6948
+llm-reasoning,LLM reasoning,Large Language Models,87,103,128,256,1699,5020,7293
+efficient-llm-inference,efficient LLM inference,Large Language Models,28,29,66,74,285,1067,1549
+hallucination-mitigation,hallucination mitigation,Large Language Models,6,11,10,26,130,606,789
+llm-security-and-privacy,LLM security and privacy,Large Language Models,8,6,10,11,96,340,471
+fairness-and-bias-in-llms,fairness and bias in LLMs,Large Language Models,114,128,232,301,1084,2629,4488
