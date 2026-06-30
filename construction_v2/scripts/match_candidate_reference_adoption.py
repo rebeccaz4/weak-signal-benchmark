@@ -10,7 +10,7 @@ Run example:
     --topic "large language models" \
     --candidate-source cluster \
     --dedup-suffix _cluster_t0.85 \
-    --output-suffix _cluster_t0.85_reference_adoption
+    --output-suffix _cluster_t0.85
 """
 from __future__ import annotations
 
@@ -67,8 +67,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--later-year", type=int, default=DEFAULT_LATER_YEAR)
     parser.add_argument("--candidate-source", choices=["index", "cluster"], default="cluster")
     parser.add_argument("--candidate-topic-type", choices=["all", "problem-space", "solution-space"], default="all")
-    parser.add_argument("--dedup-suffix", default="")
-    parser.add_argument("--output-suffix", default="_reference_adoption")
+    parser.add_argument("--dedup-suffix", default="_cluster_t0.85")
+    parser.add_argument("--output-suffix", default="_cluster_t0.85")
     parser.add_argument("--batch-size", type=int, default=500)
     parser.add_argument("--request-timeout", type=float, default=60.0)
     parser.add_argument("--max-retries", type=int, default=5)
@@ -96,7 +96,7 @@ def load_papers(path: Path) -> pd.DataFrame:
 
 def output_path(output_dir: Path, topic: str, suffix: str, extension: str) -> Path:
     topic_slug = slugify(topic)
-    return output_dir / topic_slug / f"matched_papers_{topic_slug}{suffix}.{extension}"
+    return output_dir / topic_slug / f"reference_match_{topic_slug}{suffix}.{extension}"
 
 
 def reference_cache_path(output_dir: Path, topic: str, later_year: int, suffix: str) -> Path:

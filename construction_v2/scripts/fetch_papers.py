@@ -3,6 +3,8 @@
 
 Default input:
   ../topics.json, relative to this script's construction_v2 directory.
+  Use --subtopic to fetch fine-grained topics from
+  ../topic_fine_grained_topics_2024_surveys.json instead.
 
 Default output:
   ../papers/, relative to this script's construction_v2 directory.
@@ -35,8 +37,9 @@ from tqdm.auto import tqdm
 
 DEFAULT_CONSTRUCTION_DIR = Path(__file__).resolve().parents[1]
 DEFAULT_TOPICS_JSON = DEFAULT_CONSTRUCTION_DIR / "topics.json"
+DEFAULT_SUBTOPICS_JSON = DEFAULT_CONSTRUCTION_DIR / "topic_fine_grained_topics_2024_surveys.json"
 DEFAULT_OUTPUT_DIR = DEFAULT_CONSTRUCTION_DIR / "papers"
-DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
+DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023, 2024]
 DEFAULT_API_BASE_URL = "https://api.semanticscholar.org/graph/v1"
 RETRYABLE_STATUS = {408, 409, 425, 429, 500, 502, 503, 504}
 
@@ -74,6 +77,15 @@ def parse_args() -> argparse.Namespace:
         description="Fetch Semantic Scholar papers for topics and paraphrases."
     )
     parser.add_argument("--topics-json", type=Path, default=DEFAULT_TOPICS_JSON)
+    parser.add_argument("--subtopics-json", type=Path, default=DEFAULT_SUBTOPICS_JSON)
+    parser.add_argument(
+        "--subtopic",
+        action="store_true",
+        help=(
+            "Fetch fine-grained subtopics from --subtopics-json instead of topics.json. "
+            "When enabled, --topic is ignored."
+        ),
+    )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--api-base-url", default=DEFAULT_API_BASE_URL)
     parser.add_argument(
@@ -85,7 +97,7 @@ def parse_args() -> argparse.Namespace:
         type=int,
         nargs="+",
         default=DEFAULT_YEARS,
-        help="Years to fetch. Default: 2019 2020 2021 2022 2023.",
+        help="Years to fetch. Default: 2019 2020 2021 2022 2023 2024.",
     )
     parser.add_argument(
         "--year",
@@ -166,6 +178,56 @@ def load_topics(path: Path, selected_topic: str | None = None) -> dict[str, dict
             )
         return {selected_topic: topics[selected_topic]}
     return topics
+
+
+def load_subtopics(path: Path) -> dict[str, dict[str, Any]]:
+    with path.open("r", encoding="utf-8") as fp:
+        payload = json.load(fp)
+
+    topics = payload.get("topics")
+    if not isinstance(topics, list):
+        raise SystemExit(f"Invalid subtopics file: expected top-level 'topics' list in {path}")
+
+    subtopics: dict[str, dict[str, Any]] = {}
+    parent_by_subtopic: dict[str, list[str]] = {}
+    for topic_entry in topics:
+        if not isinstance(topic_entry, dict):
+            continue
+        parent_topic = topic_entry.get("topic")
+        fine_grained_topics = topic_entry.get("fine_grained_topics") or []
+        if not isinstance(fine_grained_topics, list):
+            continue
+        for item in fine_grained_topics:
+            paraphrases: list[str] = []
+            if isinstance(item, str):
+                subtopic = item.strip()
+            elif isinstance(item, dict):
+                name = item.get("name")
+                if not isinstance(name, str):
+                    continue
+                subtopic = name.strip()
+                raw_paraphrases = item.get("paraphrases") or []
+                if isinstance(raw_paraphrases, list):
+                    paraphrases = [p.strip() for p in raw_paraphrases if isinstance(p, str) and p.strip()]
+            else:
+                continue
+            if not subtopic:
+                continue
+            payload = subtopics.setdefault(subtopic, {"paraphrase": []})
+            for paraphrase in paraphrases:
+                if paraphrase.casefold() != subtopic.casefold() and paraphrase not in payload["paraphrase"]:
+                    payload["paraphrase"].append(paraphrase)
+            if parent_topic:
+                parent_by_subtopic.setdefault(subtopic, [])
+                if parent_topic not in parent_by_subtopic[subtopic]:
+                    parent_by_subtopic[subtopic].append(parent_topic)
+
+    for subtopic, parent_topics in parent_by_subtopic.items():
+        subtopics[subtopic]["parent_topics"] = parent_topics
+
+    if not subtopics:
+        raise SystemExit(f"No fine-grained topics found in {path}")
+    return subtopics
 
 
 def topic_queries(topic: str, payload: dict[str, Any]) -> list[dict[str, str]]:
@@ -837,7 +899,14 @@ def main() -> None:
         years = sorted(set(requested_years + args.reference_source_years))
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
-    topics = load_topics(args.topics_json, args.topic)
+    if args.subtopic:
+        if args.topic:
+            print("Warning: --subtopic is enabled; ignoring --topic.")
+        topics = load_subtopics(args.subtopics_json)
+        topic_source = "subtopics"
+    else:
+        topics = load_topics(args.topics_json, args.topic)
+        topic_source = "topics"
     api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY") or os.getenv("S2_API_KEY")
     session = requests.Session()
     if api_key:
@@ -850,6 +919,9 @@ def main() -> None:
             "api_base_url": args.api_base_url,
             "search_endpoint": search_endpoint(args.api_base_url),
             "topics_json": str(args.topics_json),
+            "subtopic": args.subtopic,
+            "subtopics_json": str(args.subtopics_json),
+            "topic_source": topic_source,
             "output_dir": str(args.output_dir),
             "requested_years": requested_years,
             "fetch_years": years,

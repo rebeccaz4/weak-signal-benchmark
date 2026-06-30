@@ -32,6 +32,7 @@ DEFAULT_CANDIDATE_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_topics"
 DEFAULT_OUTPUT_DIR = DEFAULT_CONSTRUCTION_DIR / "candidate_dedup"
 DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
 OFFICIAL_OPENAI_BASE_URL = "https://api.openai.com/v1"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
 def parse_args() -> argparse.Namespace:
@@ -43,17 +44,23 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--topic", help="Process only one topic from topics.json.")
     parser.add_argument("--years", type=int, nargs="+", default=DEFAULT_YEARS)
+    parser.add_argument(
+        "--candidate-topic-type",
+        choices=["all", "problem-space", "solution-space"],
+        default="all",
+    )
     parser.add_argument("--candidate-text", choices=["topic", "topic-evidence"], default="topic")
     parser.add_argument("--input-suffix", default="")
-    parser.add_argument("--output-suffix", default="")
+    parser.add_argument("--output-suffix", default="_cluster_t0.85")
     parser.add_argument("--write-parquet", action="store_true")
-    parser.add_argument("--use-clustering", action="store_true")
+    parser.add_argument("--use-clustering", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--cluster-threshold", type=float, default=0.85)
     parser.add_argument("--cluster-neighbors", type=int, default=50)
-    parser.add_argument("--cluster-provider", choices=["local", "openai"], default="local")
+    parser.add_argument("--cluster-provider", choices=["local", "openai", "openrouter"], default="local")
     parser.add_argument("--cluster-embed-model", default="BAAI/bge-large-en-v1.5")
     parser.add_argument("--cluster-batch-size", type=int, default=128)
     parser.add_argument("--openai-cluster-base-url", default=OFFICIAL_OPENAI_BASE_URL)
+    parser.add_argument("--openrouter-cluster-base-url", default=OPENROUTER_BASE_URL)
     parser.add_argument("--openai-cluster-timeout", type=float, default=60)
     parser.add_argument("--openai-cluster-retries", type=int, default=4)
     parser.add_argument("--prefix-absorb", action=argparse.BooleanOptionalAction, default=True)
@@ -308,7 +315,13 @@ def cluster_embedding_cache_path(output_dir: Path, topic_slug: str, provider: st
     )
 
 
-def openai_embed_batch(client: OpenAI, model: str, texts: list[str], retries: int) -> list[list[float]]:
+def openai_embed_batch(
+    client: OpenAI,
+    model: str,
+    texts: list[str],
+    retries: int,
+    provider_label: str,
+) -> list[list[float]]:
     kwargs: dict[str, Any] = {"model": model, "input": texts}
     for attempt in range(1, retries + 1):
         try:
@@ -320,11 +333,25 @@ def openai_embed_batch(client: OpenAI, model: str, texts: list[str], retries: in
                 raise
             sleep_seconds = min(2 ** (attempt - 1), 20)
             print(
-                f"OpenAI cluster embedding failed on attempt {attempt}/{retries}: "
+                f"{provider_label} cluster embedding failed on attempt {attempt}/{retries}: "
                 f"{type(exc).__name__}: {str(exc)[:200]}; retrying in {sleep_seconds}s"
             )
             time.sleep(sleep_seconds)
     raise RuntimeError("unreachable")
+
+
+def cluster_api_config(args: argparse.Namespace) -> tuple[str, str, str]:
+    if args.cluster_provider == "openai":
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise RuntimeError("Set OPENAI_API_KEY to use --cluster-provider openai.")
+        return api_key, args.openai_cluster_base_url, "OpenAI"
+    if args.cluster_provider == "openrouter":
+        api_key = os.getenv("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("Set OPENROUTER_API_KEY to use --cluster-provider openrouter.")
+        return api_key, args.openrouter_cluster_base_url, "OpenRouter"
+    raise ValueError(f"Unsupported API cluster provider: {args.cluster_provider}")
 
 
 def embed_cluster_texts(args: argparse.Namespace, topic_slug: str, texts: list[str]) -> np.ndarray:
@@ -343,20 +370,29 @@ def embed_cluster_texts(args: argparse.Namespace, topic_slug: str, texts: list[s
 
     text_to_idx = {text: idx for idx, text in enumerate(cache_df["text"].tolist())}
     missing = [text for text in texts if text not in text_to_idx]
+    cached_count = len(texts) - len(missing)
+    print(
+        f"[embedding] topic={topic_slug} cached={cached_count:,} "
+        f"missing={len(missing):,} batch_size={args.cluster_batch_size:,}"
+    )
     if missing:
         new_rows = []
-        if args.cluster_provider == "openai":
-            api_key = os.getenv("OPENAI_API_KEY")
-            if not api_key:
-                raise RuntimeError("Set OPENAI_API_KEY to use --cluster-provider openai.")
+        if args.cluster_provider in {"openai", "openrouter"}:
+            api_key, base_url, provider_label = cluster_api_config(args)
             client = OpenAI(
                 api_key=api_key,
-                base_url=args.openai_cluster_base_url,
+                base_url=base_url,
                 timeout=args.openai_cluster_timeout,
             )
             for start in tqdm(range(0, len(missing), args.cluster_batch_size), desc="Embedding cluster texts", unit="batch"):
                 batch = missing[start:start + args.cluster_batch_size]
-                embeddings = openai_embed_batch(client, args.cluster_embed_model, batch, args.openai_cluster_retries)
+                embeddings = openai_embed_batch(
+                    client,
+                    args.cluster_embed_model,
+                    batch,
+                    args.openai_cluster_retries,
+                    provider_label,
+                )
                 for text, emb in zip(batch, embeddings):
                     new_rows.append({"text": text, "embedding": np.asarray(emb, dtype=np.float32).tolist()})
         else:
@@ -457,6 +493,10 @@ def knn_union_find_clusters(
         return []
     n_neighbors = min(max(neighbors + 1, 2), len(group))
     nn = NearestNeighbors(n_neighbors=n_neighbors, metric="cosine")
+    print(
+        f"{group.iloc[0]['target_topic_slug']} / {group.iloc[0]['candidate_topic_type']}: "
+        "fitting nearest neighbors..."
+    )
     nn.fit(embeddings)
     distances, indexes = nn.kneighbors(embeddings)
 
@@ -475,7 +515,13 @@ def knn_union_find_clusters(
             parent[right_root] = left_root
 
     edge_count = 0
-    for row_idx, (row_distances, row_indexes) in enumerate(zip(distances, indexes)):
+    iterator = tqdm(
+        enumerate(zip(distances, indexes)),
+        total=len(group),
+        desc=f"Union-find {group.iloc[0]['target_topic_slug']}/{group.iloc[0]['candidate_topic_type']}",
+        unit="row",
+    )
+    for row_idx, (row_distances, row_indexes) in iterator:
         for dist, neighbor_idx in zip(row_distances, row_indexes):
             if row_idx == neighbor_idx:
                 continue
@@ -564,7 +610,8 @@ def apply_prefix_absorb(clusters: pd.DataFrame, min_tokens: int, include_summary
         return clusters
     absorbed_all: list[dict[str, Any]] = []
     total_merges = 0
-    for (target_slug, topic_type), group in clusters.groupby(["target_topic_slug", "candidate_topic_type"], sort=True):
+    grouped = list(clusters.groupby(["target_topic_slug", "candidate_topic_type"], sort=True))
+    for (target_slug, topic_type), group in tqdm(grouped, desc="Prefix absorb groups", unit="group"):
         records = group.to_dict(orient="records")
         absorbed, merges = apply_prefix_absorb_to_group(records, min_tokens, include_summary)
         total_merges += merges
@@ -581,6 +628,10 @@ def semantic_cluster_candidates(candidates: pd.DataFrame, args: argparse.Namespa
     cluster_rows: list[dict[str, Any]] = []
     for target_slug, topic_candidates in candidates.groupby("target_topic_slug", sort=True):
         topic_candidates = topic_candidates.reset_index(drop=True)
+        print(
+            f"[cluster] topic={target_slug} candidates={len(topic_candidates):,} "
+            f"provider={args.cluster_provider} model={args.cluster_embed_model}"
+        )
         texts = topic_candidates["match_text"].fillna(topic_candidates["candidate_topic"]).astype(str).tolist()
         embeddings = normalize_matrix(embed_cluster_texts(args, str(target_slug), texts))
         for (_, _), group in topic_candidates.groupby(["target_topic_slug", "candidate_topic_type"], sort=True):
@@ -617,6 +668,9 @@ def main() -> None:
         args.candidate_text,
         args.input_suffix,
     )
+    if args.candidate_topic_type != "all" and not candidates.empty:
+        candidates = candidates[candidates["candidate_topic_type"] == args.candidate_topic_type].reset_index(drop=True)
+    print(f"Candidate rows selected after read/dedup: {len(candidates):,}")
     if candidates.empty:
         raise RuntimeError("No candidate topics found. Run extract_candidate.py first.")
     write_topic_candidate_outputs(
