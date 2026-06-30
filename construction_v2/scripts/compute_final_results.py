@@ -79,6 +79,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--pre-peak-tolerance", type=float, default=0.6)
     parser.add_argument("--validation-lift-threshold", type=float, default=1.5)
+    parser.add_argument(
+        "--late-gate1-min-ref-n",
+        type=int,
+        default=3,
+        help=(
+            "Minimum 2024 reference-adoption count for the late-emergence Gate 1 path. "
+            "This path still requires 2023 topic presence and the standard Gate 2 validation."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -458,9 +467,28 @@ def add_scores_and_gates(
         cols = [f"topic_f_{year}" for year in args.early_years if year >= onset]
         onset_peak.append(float(row[cols].max()) if cols else 0.0)
     scored["onset_to_2023_peak"] = onset_peak
-    scored["gate1_score_positive"] = scored["score"] > 0.0
     scored["gate2_2024_validation_peak"] = (
         scored["ref_f_2024"] + EPSILON >= args.validation_lift_threshold * scored["early_topic_peak"]
+    )
+    scored["gate1_score_positive"] = scored["score"] > 0.0
+    scored["gate1_late_2023_validated"] = (
+        (scored["topic_n_2023"].astype(int) > 0)
+        & (scored["ref_n_2024"].astype(int) >= args.late_gate1_min_ref_n)
+        & scored["gate2_2024_validation_peak"]
+    )
+    scored["gate1_signal_presence"] = scored["gate1_score_positive"] | scored["gate1_late_2023_validated"]
+    scored["gate1_path"] = np.select(
+        [
+            scored["gate1_score_positive"] & scored["gate1_late_2023_validated"],
+            scored["gate1_score_positive"],
+            scored["gate1_late_2023_validated"],
+        ],
+        [
+            "strict_and_late",
+            "strict_trajectory",
+            "late_2023_validated",
+        ],
+        default="failed",
     )
     if space == "solution":
         gate3 = []
@@ -530,7 +558,7 @@ def add_scores_and_gates(
 
 def gate_columns(space: str) -> list[str]:
     cols = [
-        "gate1_score_positive",
+        "gate1_signal_presence",
         "gate2_2024_validation_peak",
     ]
     if space == "solution":
@@ -543,7 +571,7 @@ def gate_columns(space: str) -> list[str]:
 
 def gate_labels(space: str) -> dict[str, str]:
     labels = {
-        "gate1_score_positive": "gate1_score_positive",
+        "gate1_signal_presence": "gate1_signal_presence",
         "gate2_2024_validation_peak": "gate2_2024_validation_peak",
     }
     if space == "solution":
@@ -568,14 +596,14 @@ def write_markdown(df: pd.DataFrame, path: Path, space: str) -> None:
     lines = [
         f"# Final {space.title()} Weak Signals",
         "",
-        "| rank | candidate_topic | score | onset | ref_f_2024 | topic_f_2023 | passed_all_gates |",
-        "| ---: | --- | ---: | ---: | ---: | ---: | --- |",
+        "| rank | candidate_topic | score | gate1_path | onset | ref_f_2024 | topic_f_2023 | passed_all_gates |",
+        "| ---: | --- | ---: | --- | ---: | ---: | ---: | --- |",
     ]
     prefix = "solution" if space == "solution" else "problem"
     for rank, (_, row) in enumerate(df.iterrows(), start=1):
         lines.append(
             f"| {rank} | {row['candidate_topic']} | {float(row['score']):.6g} | "
-            f"{int(row[f'{prefix}_onset'])} | {float(row['ref_f_2024']):.6g} | "
+            f"{row.get('gate1_path', '')} | {int(row[f'{prefix}_onset'])} | {float(row['ref_f_2024']):.6g} | "
             f"{float(row['topic_f_2023']):.6g} | {bool(row['passed_all_gates'])} |"
         )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
