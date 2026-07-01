@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weak Signal Annotation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Weak Signal Annotation</h1>
+          <p id="progressText">Loading...</p>
+        </div>
+        <div class="actions">
+          <button id="exportBtn" type="button">Export CSV</button>
+          <button id="resetBtn" type="button" class="secondary">Reset</button>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <aside class="meta-panel" aria-label="Signal metadata">
+          <div class="field">
+            <span>Annotation ID</span>
+            <strong id="annotationId"></strong>
+          </div>
+          <div class="field">
+            <span>Weak Signal</span>
+            <strong id="candidateTopic"></strong>
+          </div>
+          <div class="field">
+            <span>Mature Topic</span>
+            <strong id="matureTopic"></strong>
+          </div>
+          <div class="field">
+            <span>Space</span>
+            <strong id="space"></strong>
+          </div>
+          <div class="field">
+            <span>Rank</span>
+            <strong id="rank"></strong>
+          </div>
+          <div class="field compact">
+            <span>Frequency</span>
+            <strong id="frequencyLine"></strong>
+          </div>
+        </aside>
+
+        <section class="image-panel" aria-label="Frequency plot">
+          <img id="plotImage" alt="Weak signal frequency plot">
+        </section>
+      </section>
+
+      <footer class="decision-bar">
+        <button id="prevBtn" type="button" class="secondary">Previous</button>
+        <div class="decision-group" aria-label="Decision">
+          <button id="yesBtn" type="button" class="yes">Yes</button>
+          <button id="noBtn" type="button" class="no">No</button>
+        </div>
+        <button id="nextBtn" type="button" class="secondary">Next</button>
+      </footer>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
