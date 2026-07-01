@@ -81,7 +81,26 @@ p {
   gap: 18px;
   grid-template-columns: 360px minmax(0, 1fr);
   min-height: 0;
-  padding: 18px;
+  padding: 0 18px 18px;
+}
+
+.instruction {
+  background: #fff8e6;
+  border-bottom: 1px solid #ead8a2;
+  color: #3f3420;
+  display: grid;
+  gap: 5px;
+  padding: 12px 28px;
+}
+
+.instruction p {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.instruction strong {
+  font-weight: 800;
 }
 
 .meta-panel,
@@ -205,7 +224,12 @@ button.selected.no {
 
   .workspace {
     grid-template-columns: 1fr;
-    padding: 12px;
+    padding: 0 12px 12px;
+  }
+
+  .instruction {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .decision-bar {
