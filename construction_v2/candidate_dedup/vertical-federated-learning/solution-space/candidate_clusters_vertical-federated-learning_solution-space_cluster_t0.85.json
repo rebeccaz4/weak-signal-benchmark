@@ -1,0 +1,5099 @@
+[
+  {
+    "cluster_id": "2ada0979a0155ab133e5b563b51811c0",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "ADMM-based optimization in vertical federated learning",
+    "summary": "ADMM-based optimization in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f57dd94085741a6624c3a1411983008f"
+    ],
+    "member_topics": [
+      "ADMM-based optimization in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "935be7620a5b2a3ae4986a19d17a134deb65811a"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "42310af99f2ff895b319e4b3137a2fe2",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Asymmetric private set intersection",
+    "summary": "Asymmetric private set intersection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3de400624f7a9b2ee4f50adda7f3a64f"
+    ],
+    "member_topics": [
+      "Asymmetric private set intersection"
+    ],
+    "source_paper_ids": [
+      "4676d19e9c3dba577c605c2900a9b341b4a1005b"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "25c7a546b5f1a2fdff4d60a9cb9ca395",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Bayesian network learning on vertically partitioned data",
+    "summary": "Bayesian network learning on vertically partitioned data",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "a7fd5b3d029efbf3fcf36012b7610378"
+    ],
+    "member_topics": [
+      "Bayesian network learning on vertically partitioned data"
+    ],
+    "source_paper_ids": [
+      "4bf46b28f4d97e60a19bd86d601eb19045e8b2e2"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "f976a486cc1415fd1e17418a53df0904",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Byzantine-resilient dual subgradient methods",
+    "summary": "Byzantine-resilient dual subgradient methods",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "29f0dbc8bfb6f06d12f83dc67542e4fb"
+    ],
+    "member_topics": [
+      "Byzantine-resilient dual subgradient methods"
+    ],
+    "source_paper_ids": [
+      "7316c3d376ac08ee35dcf195677f498835398f8a"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "4ef7f17e8aa120b550e33b15ac68d690",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Clean-label backdoor attacks in vertical federated learning",
+    "summary": "Clean-label backdoor attacks in vertical federated learning",
+    "member_count": 3,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "eaf3a93d10cf10513ae72557e77e0148",
+      "827a6db6379c3bc5cb91ea0462b5f160",
+      "038c38a8d71c3d4b898b7545324e468c"
+    ],
+    "member_topics": [
+      "Clean-label backdoor attacks in vertical federated learning",
+      "label-free backdoor attacks in vertical federated learning",
+      "universal adversarial backdoor attacks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "3e816299fc0c3a6fc689a2b40c5221f129210303",
+      "430449b3a50873b465659a0efe3256dea79021ba",
+      "cfeb797d8ae643bf38b5ad4a99fb1def9c43c53a",
+      "d1ae1830f19be09423528b90052bf2a5a3f52554"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b15f4e759232ddad765845ee3703cc5b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Dropout-tolerant vertical federated learning protocols",
+    "summary": "Dropout-tolerant vertical federated learning protocols",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "8f6019116afe86c638b9abd3b41df460"
+    ],
+    "member_topics": [
+      "Dropout-tolerant vertical federated learning protocols"
+    ],
+    "source_paper_ids": [
+      "4ca40d6c35d89b21f71b2fb7c95e5291e15fe353"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "071c07242c4dcf54d9452b508582fe86",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Energy and carbon footprint assessment in federated learning",
+    "summary": "Energy and carbon footprint assessment in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "05ffe8cef3cfcbd1dd408799d07a3761"
+    ],
+    "member_topics": [
+      "Energy and carbon footprint assessment in federated learning"
+    ],
+    "source_paper_ids": [
+      "cab8467cb43fba404286d2a03449ef08f18fbc6b"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "7e836a6ea9218607f92c9c355891de1c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Federated expectation-maximization",
+    "summary": "Federated expectation-maximization",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0e8dce5529f6232f88175ce7b7e52558"
+    ],
+    "member_topics": [
+      "Federated expectation-maximization"
+    ],
+    "source_paper_ids": [
+      "7ea5aecf61960b36fd7eb2df37779560098598d9"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "6bb53eb29f379fdedb2b68e4a543cf3f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Federated representation learning",
+    "summary": "Federated representation learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3e56a4f07edfa47d3e87862c60115c66"
+    ],
+    "member_topics": [
+      "Federated representation learning"
+    ],
+    "source_paper_ids": [
+      "ce291e320db2668ffc127e7872424a6eb2efa57e"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "ba944abe92e1b6a9063cabc61514bd0e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "GAN-based overlap data augmentation in vertical federated learning",
+    "summary": "GAN-based overlap data augmentation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7c9db8914118217008d2e43bad1649e1"
+    ],
+    "member_topics": [
+      "GAN-based overlap data augmentation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "49a790bca138be8ec93a38deda6a7fa1f195d29a"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "bb214b2d2bcca1950a2f0ab72051ccd2",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "GAN-based split learning",
+    "summary": "GAN-based split learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "efdb3bb1870efc8330ebab8e37e07f8d"
+    ],
+    "member_topics": [
+      "GAN-based split learning"
+    ],
+    "source_paper_ids": [
+      "7d1850d8d80b55282531b4632451db7ffde91a1d"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "8464d930d87729206be7091e52f73bcf",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Intermediate representation aggregation in vertically partitioned learning",
+    "summary": "Intermediate representation aggregation in vertically partitioned learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "879d32a08d775ad7b830a609121f59c8"
+    ],
+    "member_topics": [
+      "Intermediate representation aggregation in vertically partitioned learning"
+    ],
+    "source_paper_ids": [
+      "80d9e0559535e40a1e3fd93935bce67dd1c0ccf9"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "ccfaad3987da8e2e1fd5e60646771cc6",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Model hijacking attacks in vertical federated learning",
+    "summary": "Model hijacking attacks in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "9a1e39e151e7cc1a5ec2dc0643f93b48"
+    ],
+    "member_topics": [
+      "Model hijacking attacks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "52050fc14b3c3257690b3d1ee1284c91068c6d24"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "90bc55823fbabe305adabed6f75d2c8e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Privacy-preserving multi-party data integration",
+    "summary": "Privacy-preserving multi-party data integration",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "767c7c6f1889e472126c6615ea2bc183"
+    ],
+    "member_topics": [
+      "Privacy-preserving multi-party data integration"
+    ],
+    "source_paper_ids": [
+      "11da099ae18922c8e8c80c9af9d2bd55c76396af"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "5170744ffc31a193a4c2688f1b13385f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "RDMA-based communication in federated learning systems",
+    "summary": "RDMA-based communication in federated learning systems",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5b7bd0abbe78eb8c6ebb52ba47ff0a54"
+    ],
+    "member_topics": [
+      "RDMA-based communication in federated learning systems"
+    ],
+    "source_paper_ids": [
+      "733da52b0580f5e357a8107a02ed5cb6b673a351"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "368442bf76aa641f5e69bcff43a4d852",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "SLA-aware federated learning orchestration",
+    "summary": "SLA-aware federated learning orchestration",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "551cd226c180700bee56c20a01d4d0cd"
+    ],
+    "member_topics": [
+      "SLA-aware federated learning orchestration"
+    ],
+    "source_paper_ids": [
+      "72d8981420d2d8554f1007360f6b1fadca1bb121"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "d3bad41bd3228ddb01eca9646351afae",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Shapley value-based contribution valuation in vertical federated learning",
+    "summary": "Shapley value-based contribution valuation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bb6affc4fd7e364836ea65ee8bfa4633"
+    ],
+    "member_topics": [
+      "Shapley value-based contribution valuation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "2f11e998e9ac38eca2a55a6e9b2dfa74e35a551e"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "fbae2fc73f304e2eb6e4f09dcb72a1d2",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Shapley value-based participant contribution valuation",
+    "summary": "Shapley value-based participant contribution valuation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7d9ffaaf8ef796c4587c434750cdeea5"
+    ],
+    "member_topics": [
+      "Shapley value-based participant contribution valuation"
+    ],
+    "source_paper_ids": [
+      "3f8fa7bf0856ef2efb82533d11af1735bc948e85"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "12e72ae00edcb508271851e41eac6bef",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Stackelberg-game incentive mechanisms in vertical federated learning",
+    "summary": "Stackelberg-game incentive mechanisms in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1f27181e57d5d1e1a8a3cade59ad4089"
+    ],
+    "member_topics": [
+      "Stackelberg-game incentive mechanisms in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "09cac2bc437806ba346535005f2b2709570b42a0"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a50e4e147dadbc47c2eb9264e37855ff",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "Truthful incentive mechanisms in vertical federated learning",
+    "summary": "Truthful incentive mechanisms in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "58653fe286098cd11ac59d43c435a4d4"
+    ],
+    "member_topics": [
+      "Truthful incentive mechanisms in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "00ce0c92cd779b6d4c97285edd80d9fb0db73bb2"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "fbf59e454ca18374dab439f9c5a1bd8e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adaptive federated optimization",
+    "summary": "adaptive federated optimization",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "6a09ca6df00d265651a5cdc724c9b977"
+    ],
+    "member_topics": [
+      "adaptive federated optimization"
+    ],
+    "source_paper_ids": [
+      "0e1449c6efd3f2d612469f7fa3afe690ee722b81"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "67464e70d0468c36269bb0742b75c4cb",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adaptive local training rounds in vertical federated learning",
+    "summary": "adaptive local training rounds in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e62eca6a755054f2a2ecfcd11f3e242c"
+    ],
+    "member_topics": [
+      "adaptive local training rounds in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "fc2a748eb279159f7a359acead5359b164703616"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "4f87e13b56dfbae39f84859571fa46d4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adaptive obfuscation in vertical federated learning",
+    "summary": "adaptive obfuscation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "4e6f8024a2acfe959e6a7f9f9f70783e"
+    ],
+    "member_topics": [
+      "adaptive obfuscation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "aaea45f651ee017cefefd58966e5f6350c136bd9"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "76823ccd7cc890100a93a2f35782f6e1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adversarial debiasing in vertical federated learning",
+    "summary": "adversarial debiasing in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1e4299301376f39071efd8ef66881084"
+    ],
+    "member_topics": [
+      "adversarial debiasing in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "d504693fe20a82f97389da1362d6950dd7a741eb"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "cd3ce209b994838e5d9b4d2990ca979d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adversarial example attacks on vertical federated models",
+    "summary": "adversarial example attacks on vertical federated models",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0b7cecb8c5fd5215148653863d883580"
+    ],
+    "member_topics": [
+      "adversarial example attacks on vertical federated models"
+    ],
+    "source_paper_ids": [
+      "2f6837ce7f4a0a5026011ab780f99846e8a272fe"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "0a74ffc95aa1a559c5d030003eb41edd",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adversarial perturbation of shared data representations",
+    "summary": "adversarial perturbation of shared data representations",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "abf18f90081fdea184cd72654c89dc32"
+    ],
+    "member_topics": [
+      "adversarial perturbation of shared data representations"
+    ],
+    "source_paper_ids": [
+      "fdd94c72ccf9b53c0704fb5a521a1581fd52aabd"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "9972b495c98d46779eecf6a66fd12f93",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "asynchronous federated learning",
+    "summary": "asynchronous federated learning",
+    "member_count": 10,
+    "source_paper_count": 19,
+    "member_candidate_ids": [
+      "7f66df0021e50c29c301b6a1601697c0",
+      "bf5a8e29f831be18d8c9d2c3685a6f52",
+      "92158d0bb1857d39849af635af035542",
+      "43adbe3983083553639db8ae781325b5",
+      "49d18da5f474cafc8e1dec51d5fe4c34",
+      "621cf1fe6a6ecbad392db8e626735cf3",
+      "592fff8fc2b0f82d09d81d5f3b17ee89",
+      "2f9ab49d60b6223b9999a2c682023404",
+      "7cce0232fb326ecc377ef8bd221b61c6",
+      "556663cbe586cf8ec6847f3763eaa9eb"
+    ],
+    "member_topics": [
+      "asymmetrical vertical federated learning",
+      "asynchronous federated learning",
+      "asynchronous optimization in vertical federated learning",
+      "asynchronous quasi-Newton optimization in vertical federated learning",
+      "asynchronous vertical federated learning",
+      "hybrid first-order and zeroth-order optimization in vertical federated learning",
+      "hybrid first-order/zeroth-order optimization in vertical federated learning",
+      "quasi-Newton optimization in vertical federated learning",
+      "second-order optimization in vertical federated learning",
+      "zeroth-order optimization in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "05f689772fb1ae5a47b5089b2c38f9b53156d285",
+      "166d0012a6711aab6be7ba957d0249f6260a0a4b",
+      "23383850e5a88d9b1df6224c9009ef302f299ecd",
+      "2a6afd5969d841dc52838a1d614c155c1476b837",
+      "306e6200c125e6795608a62bda21701773d25090",
+      "35ff9430be9c9bf6acbf7351ff16d7386c0e9ac4",
+      "4a456b2a89209e569fa19d38130cd22f5ccbb2bf",
+      "4e170279cc35a908d55dd10870cc312b1f65871d",
+      "520408a0635dcd63175b67bfcc31142bf2da053b",
+      "5ae21ddcb76cb3b1af9d42a02de1eb9daa607e53",
+      "76b0125f427a2744cc62da034a56c05dbc1567a3",
+      "9b9aebb157a33fda4c130efdc174953316eade6d",
+      "9d7fe30f6be9d9051d60fc7be71554671df599cb",
+      "a35848057c23b2418194177fb2cd701892472aca",
+      "aa68cddc057719950d27d0197750d9ab5168ae4a",
+      "ad35303cb0dcc64a26e59ec22ae9e5e377a40719",
+      "b61825da07a4692d64e6bdc4f947446ac0f54da6",
+      "deae075504410c3975d910176dc31e7cb917c247",
+      "ef4167e0513d5c1e4f1a39d126b1a64498dfb082"
+    ],
+    "source_years": [
+      2019,
+      2020,
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "33fa6ad837eadb59321309e4c0e3e5fb",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "attack and defense benchmarks in vertical federated learning",
+    "summary": "attack and defense benchmarks in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5ed4ef48d4b6748ca32a39cb36079e4d"
+    ],
+    "member_topics": [
+      "attack and defense benchmarks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "70afbf5476f79bc57710502364977fc8bd19d153"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "193b8dc06e05d9745896a03c595ceeee",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "bankruptcy games in vertical federated learning",
+    "summary": "bankruptcy games in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "dadd50fa9c9b069c9dc6daa58dcbc105"
+    ],
+    "member_topics": [
+      "bankruptcy games in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "ca9a0d24cc0deaed04c2e2b788fe28bd8ddbd7a5"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "bb03a6f40b4e35e157e1515acbd6a88e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "bias-based membership inference attacks in federated learning",
+    "summary": "bias-based membership inference attacks in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0c0848d4c9d17bcb0864f0bdb517b15a"
+    ],
+    "member_topics": [
+      "bias-based membership inference attacks in federated learning"
+    ],
+    "source_paper_ids": [
+      "0c16cfdd2859f64aa53e83e6e29c0173552f49ea"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "fe55499437a475a0a34dc6d17da2f3b6",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "block coordinate descent in vertical federated learning",
+    "summary": "block coordinate descent in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "96368869f5c3387b53eee6117bdb5fff"
+    ],
+    "member_topics": [
+      "block coordinate descent in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "57f9d6e40f8527f08b60b1e0f7d95d88f81d7fe7"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "1be05a3cc2a66eb0a53bebec40010613",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "blockchain-based federated learning",
+    "summary": "blockchain-based federated learning",
+    "member_count": 4,
+    "source_paper_count": 6,
+    "member_candidate_ids": [
+      "77d4f0175db326417677805203ddd898",
+      "dcfb4936d7cdf21516d1d3fc32992fb8",
+      "4ea214c4b73321ef7744de5f98aee10d",
+      "d6a57f018634c5e111cd972f8cb747d4"
+    ],
+    "member_topics": [
+      "blockchain-assisted vertical federated learning",
+      "blockchain-based federated learning",
+      "blockchain-enabled data sharing in vertical federated learning",
+      "blockchain-enabled federated learning"
+    ],
+    "source_paper_ids": [
+      "166d0012a6711aab6be7ba957d0249f6260a0a4b",
+      "1c7e468e222c6462a194a9cc8282230419812868",
+      "275373ae894fee183d1ea62cb919db91ec39ed72",
+      "39773b7b385de62c85dc4fd9c663b99a9a646fa2",
+      "7b1336ff99ed6a82360260a825a51c71862cd6d4",
+      "e42d5812e4a2a5d5b61b2d95b002bf1589a72ff4"
+    ],
+    "source_years": [
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "d672c8e1e4f44247a187295f3e127cbb",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "clustered federated learning",
+    "summary": "clustered federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "dad7321e016fd844366edde3998d919d"
+    ],
+    "member_topics": [
+      "clustered federated learning"
+    ],
+    "source_paper_ids": [
+      "a2371e056b944bedb391a2bce0c7f9ea87f19cb4"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "f4d0e59635641279b4d5b8675bd75f40",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "communication compression in split learning",
+    "summary": "communication compression in split learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7108700429723c623f24bd224f44e19d"
+    ],
+    "member_topics": [
+      "communication compression in split learning"
+    ],
+    "source_paper_ids": [
+      "9df4d9374ddf5b04523402d7a71b858d8fe55646"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c482a359fca7f8304b7d611ee381f839",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "communication-efficient federated aggregation",
+    "summary": "communication-efficient federated aggregation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bbe2030b974ec49db37da119fd887bae"
+    ],
+    "member_topics": [
+      "communication-efficient federated aggregation"
+    ],
+    "source_paper_ids": [
+      "3a177321eded8537709cdb8815c4eedb46b8a26b"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "bb0f3823148118f24c41157c0ca2d3f7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "communication-efficient secure inference in vertical federated learning",
+    "summary": "communication-efficient secure inference in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f763cd697b8d248b2f93dd78a151cd46"
+    ],
+    "member_topics": [
+      "communication-efficient secure inference in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "e14420aff66b19e7f168d628dd0a96792f832a5d"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "9922d09de4ed335446f569bb6a2ed856",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "communication-efficient vertical federated learning",
+    "summary": "communication-efficient vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "c078587d81a18fd8e8b90327205f12eb",
+      "a79139cdaf4ea549600f704339d702ae"
+    ],
+    "member_topics": [
+      "communication-efficient vertical federated learning",
+      "energy-efficient vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "3308709248acfc9725da739ebdacf8e4ee10a9f5",
+      "9ee80ef2ea5c1fc265fde92187cf13e55256df80",
+      "c0b442a5fad6738b87b0f8f37a24b87c673afaf1"
+    ],
+    "source_years": [
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "22a0ec2c23d0a9c7eb895a76cc6b65ed",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "coordinator-free vertical federated learning",
+    "summary": "coordinator-free vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e5930d68eff0963777ff13490b7ee896"
+    ],
+    "member_topics": [
+      "coordinator-free vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "42ad5478352477159afd57e7cf09d05c7ce60661"
+    ],
+    "source_years": [
+      2019
+    ]
+  },
+  {
+    "cluster_id": "177f5a18e3aba532703be7f8f4ed2b45",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-device federated learning",
+    "summary": "cross-device federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c55a2e2018a53d8a7f77cb8a53b8144b"
+    ],
+    "member_topics": [
+      "cross-device federated learning"
+    ],
+    "source_paper_ids": [
+      "388c936081483fcef30dbf0da338cf0439ae5e0e"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "1cfa2e0f60d8934a81a502d1db71ab8b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-framework federated learning benchmarking",
+    "summary": "cross-framework federated learning benchmarking",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7257f344c6fd63af0868511ecc708d56"
+    ],
+    "member_topics": [
+      "cross-framework federated learning benchmarking"
+    ],
+    "source_paper_ids": [
+      "e3e8cf1f8d5f7f4f9fd6a0409e2a6fe7f0e28778"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "8c2c64a3fa7cbab94320f2540f9b0518",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-organizational learning with split feature ownership",
+    "summary": "cross-organizational learning with split feature ownership",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "49dc1230cfe91cea46030db4811e2572"
+    ],
+    "member_topics": [
+      "cross-organizational learning with split feature ownership"
+    ],
+    "source_paper_ids": [
+      "0bf1e76b2d0a6461f1afc4cfd708d89bba471d79"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "1fc623aeeb1126afc2bb2f0bdc84e2a2",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-party feature fusion in federated learning",
+    "summary": "cross-party feature fusion in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "fac8c66c103fa86198f965e6a37b00fa"
+    ],
+    "member_topics": [
+      "cross-party feature fusion in federated learning"
+    ],
+    "source_paper_ids": [
+      "05bd84df83bcea06971e41ed231491cd71d486c6"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "b0ddf07dbfa91a794c2fb687e677e1e9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-party sample matching in vertical federated learning",
+    "summary": "cross-party sample matching in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "72f10842d7d20797ec07125510068b39"
+    ],
+    "member_topics": [
+      "cross-party sample matching in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "ae44b53d58ae6910ecfe4da70fb5e73e0c4c6d80"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "4badf2168e9385da54c33be543fd6cea",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-sector federated learning",
+    "summary": "cross-sector federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "a6b261124dd7c4058ebfa9fdfe71d1b0"
+    ],
+    "member_topics": [
+      "cross-sector federated learning"
+    ],
+    "source_paper_ids": [
+      "3b9bdfbf556488ff8946accbb6edeb0b97ae7c8d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "b02d23cda32f518d15817ae62a1e7350",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-silo vertical federated learning",
+    "summary": "cross-silo vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f7162ee349ebb5244e6ab5f49fb8f88b"
+    ],
+    "member_topics": [
+      "cross-silo vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "bd46d6278c347c6375173697ca2bc5e72122a197"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "adab7b405b7d3f36f69c0b6a801f5988",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "data compression in vertical federated learning",
+    "summary": "data compression in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "1ee1a32b66d19d2542285a31d4572b60",
+      "d8cbe93d9191e4a738ae17fa0287bd7f"
+    ],
+    "member_topics": [
+      "data compression in vertical federated learning",
+      "message compression in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "1980932550acb336dc322b6c86a635856d92175b",
+      "2d7a3eab145fbf0872f65cd1da7d3c52e8f321a5"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "0424e7dee514fdf293a3e46054df4500",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "decentralized vertical federated learning",
+    "summary": "decentralized vertical federated learning",
+    "member_count": 5,
+    "source_paper_count": 8,
+    "member_candidate_ids": [
+      "ac0871b704c645f5f205a9d0b6ea46d8",
+      "897e9cffaae01cae2669f1d34f19003c",
+      "3567fc9494de1e35f9127b606e334f90",
+      "15a8e7560c5300deb88c349ada0de50f",
+      "8a817e8c7ecc679a8c2b06eec83ecdc4"
+    ],
+    "member_topics": [
+      "decentralized vertical federated learning",
+      "decentralized vertical federated learning architectures",
+      "distributed vertical federated learning",
+      "semi-decentralized vertical federated learning",
+      "vertical semi-federated learning"
+    ],
+    "source_paper_ids": [
+      "102110c438caa1b9eb160469b2c90508aa2cbe7e",
+      "13d33bfe44a2850bfeab698d4eef4442f5dae718",
+      "3254e5936993e7446ac4d987ddb512991923b2fe",
+      "39773b7b385de62c85dc4fd9c663b99a9a646fa2",
+      "7874fb8fe592129fd2b5eacce90a704b237eac4e",
+      "99909ba1b23a4bf2484c3213b6fb481e61b97f23",
+      "9ee80ef2ea5c1fc265fde92187cf13e55256df80",
+      "fc6f53895bbffe46f6194afabca811c24312a687"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "ee105200bffe929ba14b75b9ed5ec94f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "decision-table-based vertical federated gradient boosting",
+    "summary": "decision-table-based vertical federated gradient boosting",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f39cccc10b4692fb9cc8b039a2dcdf3d"
+    ],
+    "member_topics": [
+      "decision-table-based vertical federated gradient boosting"
+    ],
+    "source_paper_ids": [
+      "def6fe6bcb31fb1cdc38d7c20b7eff590522b474"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "10e757dde24312b94e4bc8c64a161ec4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "deep neural network-based vertical federated learning",
+    "summary": "deep neural network-based vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "e5b345ca67d43cb4ccceb6049ecc7754"
+    ],
+    "member_topics": [
+      "deep neural network-based vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "00c3d2121a8f4411c789fa97235898b000215db4",
+      "b48bf9f4461f068801b931ae042f5fd8fa629dbf"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "7f78bbd71fd21554e7c7531cf9286817",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "differentially private AUC computation",
+    "summary": "differentially private AUC computation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "97d82b83caf3bd51e943402fa64dcaab"
+    ],
+    "member_topics": [
+      "differentially private AUC computation"
+    ],
+    "source_paper_ids": [
+      "57da4d9886b9c80d6910d7c4aba4b0bc251f2cc8"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "4133b9fa5e1853246ca6e8b73585325c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "differentially private set intersection",
+    "summary": "differentially private set intersection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "17038d6735b0645cd749303559cefbc5"
+    ],
+    "member_topics": [
+      "differentially private set intersection"
+    ],
+    "source_paper_ids": [
+      "dd16b54bf8ad7d96b4bde4b25523a9f7a833da52"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "9c279325b16aef047d1ea986d1adec5e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "differentially private vertical federated clustering",
+    "summary": "differentially private vertical federated clustering",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5cbb0cf2e582603dc106dc0f9a6ee2f8"
+    ],
+    "member_topics": [
+      "differentially private vertical federated clustering"
+    ],
+    "source_paper_ids": [
+      "297b836ac342a25e94d67f78926362bf475250d1"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "feb2e290b5f251b9345db16859499bdc",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "distributed coreset construction",
+    "summary": "distributed coreset construction",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "42af24aa37497fbc81e58e7e1bd391e9"
+    ],
+    "member_topics": [
+      "distributed coreset construction"
+    ],
+    "source_paper_ids": [
+      "857f628a32f9e8528778fa071f5cdde3c74c6218"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "8043f4b4da3ff4109079969e891f1351",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "distributed ledger-based data management in federated learning",
+    "summary": "distributed ledger-based data management in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "013409ac3efc2e373f95c4613fcf0533"
+    ],
+    "member_topics": [
+      "distributed ledger-based data management in federated learning"
+    ],
+    "source_paper_ids": [
+      "ac2b898687ccab4bcc9a90d47d4190364dc70088"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "af37e71e80ce64d3363d12e97186f984",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "distributed model interpretation in vertical federated learning",
+    "summary": "distributed model interpretation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "48527472fc7810a90836a41211996c96"
+    ],
+    "member_topics": [
+      "distributed model interpretation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "6504612b84ce0f618e990c0b897b2b5999fa68bd"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "518d8951e1e061976151d4c895baa8c6",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "dropout-resilient multi-party private set intersection protocols",
+    "summary": "dropout-resilient multi-party private set intersection protocols",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d2efd206dc17e0059f6f702a1b2fd511"
+    ],
+    "member_topics": [
+      "dropout-resilient multi-party private set intersection protocols"
+    ],
+    "source_paper_ids": [
+      "d6212a01ebf3db3b5a60db4313c481df01ecead4"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "af2526a84c4716f56352642032ed2371",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "dropout-tolerant secure aggregation",
+    "summary": "dropout-tolerant secure aggregation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "267b9bd681636e16dd5cc61361501905"
+    ],
+    "member_topics": [
+      "dropout-tolerant secure aggregation"
+    ],
+    "source_paper_ids": [
+      "32cb184f64d0c40db61dcd8a6499a4e2a6224366"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "eca8da5fe01dcde000d50b8f1dca6499",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "dynamic vertical federated learning",
+    "summary": "dynamic vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b31bc17aa8ff845bac265d5fbecc5909"
+    ],
+    "member_topics": [
+      "dynamic vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "124a3febabb64f70df5e3bfa389a2a69ba3f15d0"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "0333bee083d82d03236435205f054d0b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "edge federated learning",
+    "summary": "edge federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "6db978b452cf7965dfc683a840176a7f"
+    ],
+    "member_topics": [
+      "edge federated learning"
+    ],
+    "source_paper_ids": [
+      "ff2f6200ca215d37861a89370c70555d26b6059e"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "7df6d1698502c3abb597258eac873b64",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "edge-assisted coded distributed computing in vertical federated linear regression",
+    "summary": "edge-assisted coded distributed computing in vertical federated linear regression",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "50d866bff9bc60df11ad2d653aaebf69"
+    ],
+    "member_topics": [
+      "edge-assisted coded distributed computing in vertical federated linear regression"
+    ],
+    "source_paper_ids": [
+      "6a65e4a8db9e923202364d2127b5e3e8a67ee082"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "751653f89160af5550e884ad1d5204fd",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "elliptic-curve additively homomorphic encryption",
+    "summary": "elliptic-curve additively homomorphic encryption",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "a55077b82cf3b6967fe7f1a81dac9bbd"
+    ],
+    "member_topics": [
+      "elliptic-curve additively homomorphic encryption"
+    ],
+    "source_paper_ids": [
+      "1f6ca48ed864f2f0a2c084bccaa9723430530677"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "559265d37eaa5c559e9320ed28c14813",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "embedding aggregation in vertical federated learning",
+    "summary": "embedding aggregation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e46f6642bda27cb8cc9fbf696f146b80"
+    ],
+    "member_topics": [
+      "embedding aggregation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "3b507761606c33f9afafa399922930dd024f5dab"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "6ca98863699727520c32f995bc30aa24",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "embedding-label decorrelation defenses in vertical federated learning",
+    "summary": "embedding-label decorrelation defenses in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7fbdfed223420ce6cf9389a6d75882fa"
+    ],
+    "member_topics": [
+      "embedding-label decorrelation defenses in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "8432565839a9f754534d86ea3f43461a0f1182e3"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "a6822578f9fe95926fb7b90f0a3ba408",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "encryption protocols for vertical federated learning",
+    "summary": "encryption protocols for vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0cb4252cbfd3791c011f9b6dece9f745"
+    ],
+    "member_topics": [
+      "encryption protocols for vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "e2e476c68ec555be5fd2066cca28f4cd0740b210"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "90fd0b78870a6b9de8123635771be54c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "entity matching in vertical federated learning",
+    "summary": "entity matching in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "318ab732aee0672508d69421a35508c7"
+    ],
+    "member_topics": [
+      "entity matching in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "c8fb4254bceeb191b057da42e791172371f97f62"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "a06128c28f147923128b66ef1a292ead",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "explainable federated learning",
+    "summary": "explainable federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "2af11961471d21490d8cff0a24b08158"
+    ],
+    "member_topics": [
+      "explainable federated learning"
+    ],
+    "source_paper_ids": [
+      "69cf13c6427e46cbe5e516f4fa7c360b47b447e8"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "06ec25b638e43aaadf78c0286fa19771",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "fault-tolerant federated learning",
+    "summary": "fault-tolerant federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d5eb39139df72ba14c81d19def213348"
+    ],
+    "member_topics": [
+      "fault-tolerant federated learning"
+    ],
+    "source_paper_ids": [
+      "2535e6de2b61822d036559997a4f2770d840d35f"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "cf8188a86f504708119f75a940b41c20",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature aggregation in vertical federated learning",
+    "summary": "feature aggregation in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "a4cc374ea7be48f5d4d0ec19de884ae4",
+      "77bbc3dccdc07fc31318be0f9bce53a1"
+    ],
+    "member_topics": [
+      "architecture-aware aggregation in vertical federated learning",
+      "feature aggregation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "4b0aceb974df8865126cd998409373d50fe4af99",
+      "bc1465c4056fbafaaf7338ad5818ef5147d005b1"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "133611cd75da4c354d2d08296a185c10",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature disentanglement in cross-modal vertical federated learning",
+    "summary": "feature disentanglement in cross-modal vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c8943ae7bf3d30aada6f666ec4a74eee"
+    ],
+    "member_topics": [
+      "feature disentanglement in cross-modal vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "089519946b131b80be75c4666cd91d312b5d5754"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "9635de00ebb16801bbe9bd5915f6710c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature embedding adaptation in vertical federated learning",
+    "summary": "feature embedding adaptation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7c5597285a329fb6cb0c42213fe0225a"
+    ],
+    "member_topics": [
+      "feature embedding adaptation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "f51c09eb31887e6ca91976c079c715611e837d20"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "6e639ef2b154a2a15d6dd3daf2c9169a",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature importance explanation in vertical federated learning",
+    "summary": "feature importance explanation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3a4ac271e4bb0ba1d08092cf2bac6fd0"
+    ],
+    "member_topics": [
+      "feature importance explanation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "34aa8d1271e0ee3526b3ebd78def20d36390e0ef"
+    ],
+    "source_years": [
+      2019
+    ]
+  },
+  {
+    "cluster_id": "ba0225e6e6376c0bd9d1e634e8f94239",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature inference attacks in vertical federated learning",
+    "summary": "feature inference attacks in vertical federated learning",
+    "member_count": 6,
+    "source_paper_count": 6,
+    "member_candidate_ids": [
+      "6fb7ccaa1ed233610aef44e9caffcc41",
+      "7a1f2e429eb689b223433875dc5d2423",
+      "232115395aeb79c74fc8e4b8b1deb164",
+      "6e11033e0330c146b92d0c6561840380",
+      "55c69dd4cdbba37b4d1ab9de4f1cdc0d",
+      "128b3fda6f8303a8d9e73971d02a6fe9"
+    ],
+    "member_topics": [
+      "data reconstruction attacks in vertical federated learning",
+      "feature inference attacks in vertical federated learning",
+      "feature inference attacks on model predictions in vertical federated learning",
+      "feature reconstruction attacks in vertical federated learning",
+      "relation inference attacks in vertical federated learning",
+      "training data reconstruction attacks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "359f56a7fee457c2729f0a2d2ce27757c33da6c7",
+      "7da8959b251e340df687850145df9f865733897a",
+      "805d5a27602cf9122eb4f2047c3015ae9a681742",
+      "bf2148ff987d36d43ee140baaf13c9dc52242854",
+      "f883b770c55dc941887108231078254926526935",
+      "fdbfd401c7d4033664d77539870e65d258410eba"
+    ],
+    "source_years": [
+      2020,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "2e5658889e0639dbf3ed11fefe72c15f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature selection in vertical federated learning",
+    "summary": "feature selection in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1f1fc1432be3e76b4082f7e11d115c48"
+    ],
+    "member_topics": [
+      "feature selection in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "e35cf83842967eace32b902b6750f67f4786149b"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "aa5bde566ba31300984dd77dc4f9ed28",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature-group importance attribution in vertical federated learning",
+    "summary": "feature-group importance attribution in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d86571f08afd94acbf6b2bcc0cf876c4"
+    ],
+    "member_topics": [
+      "feature-group importance attribution in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "df41689c96643479fee8b7e6f46742507532ab4f"
+    ],
+    "source_years": [
+      2019
+    ]
+  },
+  {
+    "cluster_id": "16ae99a50388cdc9167e13b73fc1c1ae",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "feature-partitioning strategies for vertical federated learning benchmarks",
+    "summary": "feature-partitioning strategies for vertical federated learning benchmarks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "316f763f0b13c3ed5852ff9fff30a46a"
+    ],
+    "member_topics": [
+      "feature-partitioning strategies for vertical federated learning benchmarks"
+    ],
+    "source_paper_ids": [
+      "60a68540b62b46afabb592fa8e2d575897d73fdf"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d04415a3dda8949b17d0aa774beb6e2c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated block coordinate descent",
+    "summary": "federated block coordinate descent",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "42da6c946b7dfe948f53e48ceb30f482"
+    ],
+    "member_topics": [
+      "federated block coordinate descent"
+    ],
+    "source_paper_ids": [
+      "1addc1d380ed80ba1313203374a3ab0bf6724aa0"
+    ],
+    "source_years": [
+      2019
+    ]
+  },
+  {
+    "cluster_id": "62b3ad3637e91695b57bb3da46d71d7d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated collaborative authentication",
+    "summary": "federated collaborative authentication",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f01b9bca0a59962c7fb828a12a70fd85"
+    ],
+    "member_topics": [
+      "federated collaborative authentication"
+    ],
+    "source_paper_ids": [
+      "0c2977e0c6274962cfa66f271ae43b1e40c5e471"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "e4d9eb85d6af3f2cfb264b91f93b67ef",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated credit data sharing",
+    "summary": "federated credit data sharing",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7037cd5c57a5f4d53ba3ed52710ab893"
+    ],
+    "member_topics": [
+      "federated credit data sharing"
+    ],
+    "source_paper_ids": [
+      "ad6951573847b20de47ed08193a599bd56bc5c9a"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "5350bedb499ebd6451dcec6a656bbe91",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated deep reinforcement learning",
+    "summary": "federated deep reinforcement learning",
+    "member_count": 7,
+    "source_paper_count": 10,
+    "member_candidate_ids": [
+      "0cf78b3ff5a3d1ba308365042c26d70a",
+      "f49e7837a7f06172666d4f3d4b71710c",
+      "6ff65404581b122603611bfcef1c5237",
+      "4ba91eb5de64a68dc08c95642682cd47",
+      "cdc1bba24daf35e19a3d1bce1123b1c4",
+      "31ab3e1763e0814a0586ef52d1b25852",
+      "6c9970edf863be1796e7d1b358a9cc3e"
+    ],
+    "member_topics": [
+      "federated deep reinforcement learning",
+      "federated meta reinforcement learning",
+      "federated multi-agent reinforcement learning",
+      "federated reinforcement learning",
+      "multi-agent vertical federated reinforcement learning",
+      "vertical federated deep reinforcement learning",
+      "vertical federated reinforcement learning"
+    ],
+    "source_paper_ids": [
+      "027837300d895ab2f490482085109896b7d016f0",
+      "3f13eb5b60f7a93cc7e13e1c361315d773bb6b87",
+      "4f8c739a1e135602e96da7169737490c4eaf24a4",
+      "5d20d8d8a14c8875282258e9321bb84b3272f461",
+      "796e2d68dfbe3d70b397fecf2c0e6eaed98058a1",
+      "8d2cb886f74b165f5813995f8158cefa95725615",
+      "a5b5e982ace1cc6d1b52bd75b1b6950cb6fd83bf",
+      "b1700ac1b9edfe2666d3b542d36feb4fa9b2cc7b",
+      "f5b7af8e15113954c22d57da215335438f2c6f6b",
+      "f899ce2ff67a3f5911bb3e19b8aff26fa0bd0096"
+    ],
+    "source_years": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b4e82751e2d5ed838144d1c9ccc79068",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated knowledge graph embedding",
+    "summary": "federated knowledge graph embedding",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f1a0556528e5c30b553d5c3eac6688e5"
+    ],
+    "member_topics": [
+      "federated knowledge graph embedding"
+    ],
+    "source_paper_ids": [
+      "88e700e9fd6c14f3aa4502176a60512ca4020e35"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "21a3f30b1921ecbad592c03934692238",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated learning",
+    "summary": "federated learning",
+    "member_count": 9,
+    "source_paper_count": 10,
+    "member_candidate_ids": [
+      "5a5efa80adcafe5491a5c17183293fdc",
+      "2d128629b1d602f1739504740004c278",
+      "c4d6a1a2e3cb05f7c9cf3ba9c5e2200d",
+      "6c4e5b835d72dcf912379433e7bb9246",
+      "465565a1c806a42fb0bb2be34677a822",
+      "ca31ec841eb9a448b7f13e9321d51c5e",
+      "3a9d2bf5a391b444243b7c1a72fa1199",
+      "0272f4ab1da0bd50515a7e47fbf6e379",
+      "bf033553a1fc113c83a30b4f26e0dd5a"
+    ],
+    "member_topics": [
+      "federated learning",
+      "federated learning paradigms",
+      "federated learning client selection",
+      "federated learning in healthcare informatics",
+      "federated learning in healthcare metaverse",
+      "federated learning in network security",
+      "federated learning over mixed horizontal and vertical data partitions",
+      "federated learning over private 5G networks",
+      "federated learning with open and private data"
+    ],
+    "source_paper_ids": [
+      "2c92b01addc21d8cc8af002944fdb2d0d7c0c81b",
+      "39d3ac2b003398e4c2876cb311fd98a9ce56f21f",
+      "3de286c4f21c79ffedfece857a06ea5a756136a6",
+      "3f0254babfe7c19face9ea7eadb07e8abec49cb4",
+      "4f5550b62ca4bab355e5bc29d0aadc98c05eb085",
+      "6ba3a4a1969b70a347ac4769b5cacdc56a4791fc",
+      "8d8d6c9d065c9dfcbf1b819be9d5f2762542d94f",
+      "9792a361a2afa72f06dff997d00af376d47260da",
+      "b19471a4394aba6f9460d8b3a99c0d1471c30691",
+      "ce7b5cafe754dd6f6a93dbc602b43eb048d0f49a"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "f4c7537655348446c791f73b987be66f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated network intrusion detection",
+    "summary": "federated network intrusion detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "46efbd0db40b3d602645cd42dfc4df66"
+    ],
+    "member_topics": [
+      "federated network intrusion detection"
+    ],
+    "source_paper_ids": [
+      "3a177321eded8537709cdb8815c4eedb46b8a26b"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "6372bb9cad4a015a48e9dc46957da6fd",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated neural architecture search",
+    "summary": "federated neural architecture search",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "787ee8e9413fefd1267a2ef86b2b33b5",
+      "e944c41160d6deed376ff51543229425"
+    ],
+    "member_topics": [
+      "federated neural architecture search",
+      "vertical federated neural architecture search"
+    ],
+    "source_paper_ids": [
+      "00e80686c4c709ab158fc8f1a7a9117d0fbfa723",
+      "6f0622ab3dd82351f6d7ce6d6fde422d69b94803"
+    ],
+    "source_years": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "cluster_id": "8e06acddb6781650db602f8cd315aeee",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated recurrent neural networks",
+    "summary": "federated recurrent neural networks",
+    "member_count": 1,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "be9801baf83eb427329b2b737d61764d"
+    ],
+    "member_topics": [
+      "federated recurrent neural networks"
+    ],
+    "source_paper_ids": [
+      "03eeca2432bae9dae198cff3727f7811873befd3",
+      "259f8628b8f67875bbaaf8e8e468377c9dc73dfa"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "80bc68c1fa577c3d67c6f89e0bf52d0e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated representation fusion",
+    "summary": "federated representation fusion",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c99fad8f998e56761edc62a6d02da178"
+    ],
+    "member_topics": [
+      "federated representation fusion"
+    ],
+    "source_paper_ids": [
+      "d40c5e2d42d19dd7fd85d45201c048e3768c740d"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "12224c147c22ae7c9f22e26f5de6f2d7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated singular value decomposition",
+    "summary": "federated singular value decomposition",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3e32247cbf69a2f5688fbe080583ffab"
+    ],
+    "member_topics": [
+      "federated singular value decomposition"
+    ],
+    "source_paper_ids": [
+      "56470596bc37d953704a15f6424399ebba2c452d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "cdff3f64b52f4ed63790c8746415f81a",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated split learning",
+    "summary": "federated split learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "60548cd41220a66bdb1e4d65ecd42669"
+    ],
+    "member_topics": [
+      "federated split learning"
+    ],
+    "source_paper_ids": [
+      "8b68110e5a74bd69c94f30b96f46531287092398"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "c01f557fa429deaec3cbc2af1f50cb9b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated transfer learning",
+    "summary": "federated transfer learning",
+    "member_count": 1,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "927bd812300ebd2114a10ac1d1afa899"
+    ],
+    "member_topics": [
+      "federated transfer learning"
+    ],
+    "source_paper_ids": [
+      "026643cd595b434278a420110506c49b8bd947a6",
+      "1ed5079d19c67cf4bdb707b2e08e930e36c559b7",
+      "99868f9fb220100db7c388b63bbaca9c869c4c57",
+      "f6888fd8252b4dd42d35f51dad39169ca814bb62"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "3d20c545ddc59fee63b14e738f8e8d2d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "federated tree learning",
+    "summary": "federated tree learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "fc87d4fdb6d9d70af9c8b4c649da1b55"
+    ],
+    "member_topics": [
+      "federated tree learning"
+    ],
+    "source_paper_ids": [
+      "759b29538842f46c947c451a228210cc054074b5"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "0fba9fcb958522fbc541f1ea260fdb82",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "fuzzy prediction in vertical federated learning",
+    "summary": "fuzzy prediction in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "63b13f2bd0ecc8bc972f1845f3c808a2"
+    ],
+    "member_topics": [
+      "fuzzy prediction in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "e3663ef7b9f865a35a3b54d8e930f6eba7243668"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "1c5f09eb9c0047707e1da948d781c02c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "game-theoretic data pricing in vertical federated learning",
+    "summary": "game-theoretic data pricing in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "07ddb30632b3734a1d45198af374d7af"
+    ],
+    "member_topics": [
+      "game-theoretic data pricing in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "8af5a94b065f68b3c4378bd3bd3708e8aaac7ea1"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "55fcbefb08a89e1a50db6ee9bd4d27ed",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "game-theoretic negotiation in vertical federated learning",
+    "summary": "game-theoretic negotiation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "aae9dba84e0565b0788f64a144e9c49b"
+    ],
+    "member_topics": [
+      "game-theoretic negotiation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "17c88fab4e678443c132a2c8e06ba2e6a3a52380"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "3c26244e9475198128162f2f09890802",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "gossip-based aggregation in collaborative inference with vertically split data",
+    "summary": "gossip-based aggregation in collaborative inference with vertically split data",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "dec1403bb9b271c4ba1efb333048db31"
+    ],
+    "member_topics": [
+      "gossip-based aggregation in collaborative inference with vertically split data"
+    ],
+    "source_paper_ids": [
+      "6e8b6c78d0b9410dcafe7d7ed525662cfb098680"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "f518ad145ac0c565020487c391edea7e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "gradient compression in vertical federated learning",
+    "summary": "gradient compression in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1b435db2d9b6bd7aa34ae23e5bc54206"
+    ],
+    "member_topics": [
+      "gradient compression in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "f825e0a0e82144ded7223dab335138e98f94464e"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "d803708e2216efbcf95c0d58e351fdd5",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "gradient-based adversarial input synthesis in vertical federated learning",
+    "summary": "gradient-based adversarial input synthesis in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "42489300b9ff29fb82afa560cd92e030"
+    ],
+    "member_topics": [
+      "gradient-based adversarial input synthesis in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "c99c54b20cc8fbc5b4bfa0eb60bcb8f4439fb914"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "e2370cb2b781238e7c7dca164bbd54d6",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "gradient-boosted trees in vertical federated learning",
+    "summary": "gradient-boosted trees in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "ba078c7533b30dbb0c1195e161b4151e",
+      "0c0b19a595c40651d7b07377716d6a5e"
+    ],
+    "member_topics": [
+      "gradient-boosted trees in vertical federated learning",
+      "hybrid boosting-bagging tree ensembles in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "5207564725dd8801187ed89d137ace5f44a0b71c",
+      "c8fb4254bceeb191b057da42e791172371f97f62"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "d8da8581dcd5bf933dbb7f9984cbb1b3",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "graph neural networks in vertical federated learning",
+    "summary": "graph neural networks in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "486929ef685c1e5284a1b144b4125c94",
+      "667389d50ffdddc7e062c6cd1084f1e8"
+    ],
+    "member_topics": [
+      "graph neural network-based vertical federated learning",
+      "graph neural networks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "68f0ff1b3854d6014d6c5206ec501a79281b48d0",
+      "dde4e363fda9e10d14de928d81a2296ea3ea7894"
+    ],
+    "source_years": [
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "f66696c59230346b7a29d23977a7e912",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "hierarchical federated learning",
+    "summary": "hierarchical federated learning",
+    "member_count": 1,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "b013ffc8e6e52afd3da2cbbbcd1b435f"
+    ],
+    "member_topics": [
+      "hierarchical federated learning"
+    ],
+    "source_paper_ids": [
+      "683ecb7310ccf9ae0c376da468c6664ef53b3a2e",
+      "6b2d2a630cd32e3608922b166478b158fe5d0073"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "8eab569da2134a97d8e004e462be7e4f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "homomorphic cryptography",
+    "summary": "homomorphic cryptography",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "158600cce99ea70c758c70bd60d0213e"
+    ],
+    "member_topics": [
+      "homomorphic cryptography"
+    ],
+    "source_paper_ids": [
+      "7452d3bb4c68f79cee40abbbac4f08e97eb887f9"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "410666827e05530a79e291ea5f4f0a22",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "homomorphic encryption in federated data mining",
+    "summary": "homomorphic encryption in federated data mining",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "17523ea6454bac73da6d0fc744c6f90c"
+    ],
+    "member_topics": [
+      "homomorphic encryption in federated data mining"
+    ],
+    "source_paper_ids": [
+      "4e43368c8000b6df387da32a65ed132d50351e56"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "c89c2f8f121ceea1cccb00e6005c8bdb",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "homomorphic encryption in vertical federated learning",
+    "summary": "homomorphic encryption in vertical federated learning",
+    "member_count": 6,
+    "source_paper_count": 9,
+    "member_candidate_ids": [
+      "f21b9b9f48678cd9db0e53f77aef8cd9",
+      "0fa6945a2e3da6ff4c1be50870acbd53",
+      "c2318d32a8e912dbf1bf70aac52a834f",
+      "c1f32772196a32279107c364b50c8a9b",
+      "28be544dccaeb03c7c6b4b8d7495d950",
+      "6dee177403668c0198631591246f194e"
+    ],
+    "member_topics": [
+      "additive-homomorphic-encryption-based vertical federated learning",
+      "Batch homomorphic encryption in vertical federated learning",
+      "encrypted feature sharing in vertical federated learning",
+      "functional encryption in vertical federated learning",
+      "homomorphic encryption in vertical federated learning",
+      "multi-key homomorphic encryption in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "33d1c825be14b659f2e859c0faa642db479f5b1e",
+      "591bff66762380414ea3db63d589971e1b67ea6a",
+      "594dddcbddc9b2f5d74f60d6be583968ee1746da",
+      "6ead20b7489e51785a43e27487be9b76749b59a3",
+      "763922a2f2a3d806334e2ea36cb9bb789f042a1c",
+      "865993f1158be805b6cbdaf3c6201c0c567ab4a0",
+      "9cbc771d38cb88eb0eda8971c71eb2da2fb47998",
+      "ade0ce27dec285c5cf65663d1f45d471bad86c70",
+      "eca391e40157576a9699bdba41d9e10d2f2a17b6"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "34f578e4d4621a58e8615649809f8c62",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "hybrid horizontal-vertical federated learning",
+    "summary": "hybrid horizontal-vertical federated learning",
+    "member_count": 3,
+    "source_paper_count": 17,
+    "member_candidate_ids": [
+      "f4a3b96a5fc63c6affa86be63167a39b",
+      "7fd7c024dea1d75158a8c67ee222036d",
+      "0acdc01eb782e5fc89076ed71416ee5f"
+    ],
+    "member_topics": [
+      "horizontal-vertical hybrid federated learning",
+      "hybrid horizontal-vertical federated learning",
+      "hybrid vertical-horizontal federated learning"
+    ],
+    "source_paper_ids": [
+      "026643cd595b434278a420110506c49b8bd947a6",
+      "11b7b74021c3a6eed464d6ace954d6b81f05c113",
+      "124a3febabb64f70df5e3bfa389a2a69ba3f15d0",
+      "156c08082187d04cdeb87a2221350e187a52e045",
+      "2756a5ad92471d8f71b93e2902060651df8d1570",
+      "72a100e85f90facae34d8ed6db4c1e5997a262be",
+      "799dc3e93ecb99fd88ae2ddb6965781eb9870910",
+      "7dceb397c684ec8c2733f5a31d66c2f3c9de527c",
+      "9230446dc0ffa4881afad44b73c0496b956abd57",
+      "9d5a2c29aabfa4c64b703ef1f628dc3ad365fbb7",
+      "9f0c53db78901ee98beb48502099dd0b66ef4a4f",
+      "a1770a7a4e871db855025add7d22ee94de9f7cbd",
+      "bb2ffc96879dffef5e196f25c0e29f91c54b063d",
+      "cfccbb9d8115ea8da5845ad1bbe91d370e82974f",
+      "d2686535c537d6123aa774e3cf58c5746844fbe9",
+      "dd3a97703ac830596f617e78dda4ebbb2ec48118",
+      "e3b72271bad075e5f257b9e9febd2fb21de15b50"
+    ],
+    "source_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "adc7ff43493ef62b8e7e5311d63ce0be",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "hybrid independent/federated inference in vertical federated learning",
+    "summary": "hybrid independent/federated inference in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "2f8480a861d6d83acf5343de4490c483"
+    ],
+    "member_topics": [
+      "hybrid independent/federated inference in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "fc02babce82c818a52d9f87bf1321db55e64c7ef"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "1c03e4404c324fb0f214a288778a8c89",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "in-database federated learning",
+    "summary": "in-database federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "df63f6b6645c103b6bff80408cd4306a"
+    ],
+    "member_topics": [
+      "in-database federated learning"
+    ],
+    "source_paper_ids": [
+      "4376afd3aaab169e10c263f7de2ebb3dea0969b7"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "dab51badedfb34b41fd36cb831c2526a",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "incremental vertical federated decision tree learning",
+    "summary": "incremental vertical federated decision tree learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3d9cb9cab7721e624ce1b54b2efa0098"
+    ],
+    "member_topics": [
+      "incremental vertical federated decision tree learning"
+    ],
+    "source_paper_ids": [
+      "8fdf6bac17c3aba3f1483246b26a9a84e00eda23"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "e7f0872827d5e79162d41dc82a2a355f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "information-theoretic analysis of privacy-constrained decentralized learning",
+    "summary": "information-theoretic analysis of privacy-constrained decentralized learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "46d2c055d5335df52be7acd88220589d"
+    ],
+    "member_topics": [
+      "information-theoretic analysis of privacy-constrained decentralized learning"
+    ],
+    "source_paper_ids": [
+      "202ccbbe93bfec12ad4183c7a03aa350f84292b1"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "31f8a04be42efc9621560986a66041a7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "input reconstruction attacks in vertical federated large language models",
+    "summary": "input reconstruction attacks in vertical federated large language models",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d525fecba1d61378cde9f58504ccb532"
+    ],
+    "member_topics": [
+      "input reconstruction attacks in vertical federated large language models"
+    ],
+    "source_paper_ids": [
+      "b3d5e646fc8229e2b1634ea43b8ceec5e7b84e63"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b022251d1595b4edee27b4dae4df3b68",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "input reconstruction defenses in vertical federated learning",
+    "summary": "input reconstruction defenses in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e9a9a781ab95c08431a86a5b22ad8b64"
+    ],
+    "member_topics": [
+      "input reconstruction defenses in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "90a3037360362d2cb610186f32d7cf67fe2f21e1"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "d9a4ddf385ac98ac7340985095ad1cb9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "integrated sensing and communication in vertical federated edge learning",
+    "summary": "integrated sensing and communication in vertical federated edge learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5a6a139dd72137c34b1955c82e33e399"
+    ],
+    "member_topics": [
+      "integrated sensing and communication in vertical federated edge learning"
+    ],
+    "source_paper_ids": [
+      "da2f2aff96f62d67bd7dbcf04ddf1da66737656d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "246c67ebd9ae783463c39affda3ec24d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "joint embedding learning in vertical federated learning",
+    "summary": "joint embedding learning in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3b277564c791f8ed8e31de0fcf482153"
+    ],
+    "member_topics": [
+      "joint embedding learning in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "cd81f77c6b7ef76a1288e1aa653ab594b7165bd3"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "33bbe12cc823abf2e9e8669cf8cb7d02",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "joint record linkage and model training in vertical federated learning",
+    "summary": "joint record linkage and model training in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "cd19e4948effb26e972469e355a5a25b"
+    ],
+    "member_topics": [
+      "joint record linkage and model training in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "4ad1a539eccd70b128a0cba39ffd7acb8da319b7"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "4b6ae06853a5fc7a803e91594157c620",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "joint vertical-horizontal federated learning",
+    "summary": "joint vertical-horizontal federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "507845d85bce6dce05e011849919d4f1"
+    ],
+    "member_topics": [
+      "joint vertical-horizontal federated learning"
+    ],
+    "source_paper_ids": [
+      "20912999f5017c25f744fd8cd40dcf439ebbd306"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "2cf911f8dcb0e8c798f9a5d83a8029b7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "knowledge distillation in vertical federated learning",
+    "summary": "knowledge distillation in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "a726ec0c8e38b88ac6c45090b333ddae",
+      "e68f9bd7a18a456b8142cca9deae4e1d"
+    ],
+    "member_topics": [
+      "knowledge distillation in vertical federated learning",
+      "representation distillation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "87323d07c7f8082d25f051a5ef3a0c90586e675d",
+      "c133816f3ead6e4b0f17cfb946bddd05a3f389e5"
+    ],
+    "source_years": [
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d8e7ddc5a9789b0c54e28ad34906ad7d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "knowledge transfer in federated hyperparameter optimization",
+    "summary": "knowledge transfer in federated hyperparameter optimization",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f0b6e1043415f0714cce8ccffaf47e9a"
+    ],
+    "member_topics": [
+      "knowledge transfer in federated hyperparameter optimization"
+    ],
+    "source_paper_ids": [
+      "e14115ee8ca185390664228ffb6c62944883eec2"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "3fc1351bba2a30416a097eb35ee03c6e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "label inference attacks in split learning",
+    "summary": "label inference attacks in split learning",
+    "member_count": 2,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "2b549ee056d8fb7cba8a7220b939048c",
+      "f9416230377d97a3bfd021a880e25d93"
+    ],
+    "member_topics": [
+      "label inference attacks in split learning",
+      "Learning-based label inference attacks in split learning"
+    ],
+    "source_paper_ids": [
+      "7c59e21a9a4360a48332cf5cc33b14abd6de3d99",
+      "981eb8d34822159e731b02934457ad2b750618db",
+      "e05b0aede0b9dd9f808d7adcd87e0bfdbfb3ad3b"
+    ],
+    "source_years": [
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b49ba76b6e22dd3c5f612a974969952d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "label leakage defenses in split learning",
+    "summary": "label leakage defenses in split learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7a2cf40779473f95079c37e428eb34af"
+    ],
+    "member_topics": [
+      "label leakage defenses in split learning"
+    ],
+    "source_paper_ids": [
+      "c0c6525cf6460333e0105e5af7e26939be23b9f6"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "27907255b1365a62718a6c53a38d7621",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "label protection mechanisms in vertical logistic regression",
+    "summary": "label protection mechanisms in vertical logistic regression",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bd0a1d02145847d1d497d33591919e9a"
+    ],
+    "member_topics": [
+      "label protection mechanisms in vertical logistic regression"
+    ],
+    "source_paper_ids": [
+      "309ac07d18dea0857d634541b27b7d116a1d862d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "58c365708bf15904d8347a8c7a125df7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "large-batch gradient inversion attacks",
+    "summary": "large-batch gradient inversion attacks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "8a30330b27831883a91ae9352b4de54f"
+    ],
+    "member_topics": [
+      "large-batch gradient inversion attacks"
+    ],
+    "source_paper_ids": [
+      "e02d90762922577da792fe1aa3ce89cd12deaad5"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "bacea7785798f19bdf1d5f8fcc9a0b73",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "local update methods in vertical federated learning",
+    "summary": "local update methods in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5d498a9f6097da0135b0676d059f50cc"
+    ],
+    "member_topics": [
+      "local update methods in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "37b224941b65c905402f92eaccddd359ae9fec42"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "de903ad15f3a7690f320f416da37f3c1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "malicious client detection in federated learning",
+    "summary": "malicious client detection in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "784dce3c0727c9acedc8679fbd823c99"
+    ],
+    "member_topics": [
+      "malicious client detection in federated learning"
+    ],
+    "source_paper_ids": [
+      "967096786349a37f034e2d11be2072ae787433cc"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "a64d5ee16498d6a0c0bdc53bc29fd49c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "mixed-protocol secure multi-party computation",
+    "summary": "mixed-protocol secure multi-party computation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b73b12e5dccbf4933a2b669b14ed0f5a"
+    ],
+    "member_topics": [
+      "mixed-protocol secure multi-party computation"
+    ],
+    "source_paper_ids": [
+      "d139bab586877fefbfc1101f50e92dd5c93da8b2"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "a5bdf8e0e4df45db9f8138a6fe5b5874",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "model matching in federated learning",
+    "summary": "model matching in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "07a9c704bc4fd7d97719e1c1e6d52cc7"
+    ],
+    "member_topics": [
+      "model matching in federated learning"
+    ],
+    "source_paper_ids": [
+      "588642bc3bc34850a1faa06f3b805c7f7933649f"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "91e4b3e46d9a27610776c6fb081c26ad",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "model splitting in vertical federated graph neural networks",
+    "summary": "model splitting in vertical federated graph neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "406baf153df49af163fa92e7c5bb858a"
+    ],
+    "member_topics": [
+      "model splitting in vertical federated graph neural networks"
+    ],
+    "source_paper_ids": [
+      "b400baf6862a918355934a9ea98bf1e0c431b789"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "2e0c400bef20352c87544fcb7712f82c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multi-dimensional auction mechanisms in federated learning",
+    "summary": "multi-dimensional auction mechanisms in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "35d6a7a90f395783022ebd14f554c58e"
+    ],
+    "member_topics": [
+      "multi-dimensional auction mechanisms in federated learning"
+    ],
+    "source_paper_ids": [
+      "62bcefc753e7023155086ca17041cad47c96bbc4"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "30635bea4a7247b8e8e82b2119931c08",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multi-domain federated learning",
+    "summary": "multi-domain federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3ecb2d5caf7820cc702c06895fe434ba"
+    ],
+    "member_topics": [
+      "multi-domain federated learning"
+    ],
+    "source_paper_ids": [
+      "26b8672bd6f429ec9a6d4d1424244360ba2e6f03"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "4283ab58dc90cb99af07a6e1b4832df0",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multi-objective hyperparameter optimization in vertical federated tree boosting",
+    "summary": "multi-objective hyperparameter optimization in vertical federated tree boosting",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "64da49ab4a9d408c7939fb20acc37833"
+    ],
+    "member_topics": [
+      "multi-objective hyperparameter optimization in vertical federated tree boosting"
+    ],
+    "source_paper_ids": [
+      "2b1ab5326f39f26a05ab433b30434276bc04f2d0"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "41076cb08e446aeb97f057ccf9045691",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multi-party federated learning",
+    "summary": "multi-party federated learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "ebbdc5ee9bc77836fd58e14eaf717ab4",
+      "93b1966c0e46fe699281e5b92b5990f2",
+      "fae59b6eebe338c2488e05e9782a4e1f"
+    ],
+    "member_topics": [
+      "multi-party federated learning",
+      "multi-party vertical federated learning",
+      "multi-tier vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "124428bd793896c4929413a4e2af56b07ef33dce",
+      "c1c11930c0b03938aea077640a72ae9d99598735",
+      "f9bdcab197e2f6e84add53fc9aeb2d7dabb13844"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "9cff44a6e339deaf839fc61f6d1d8384",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal vertical federated learning",
+    "summary": "multimodal vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "2d2bdfc98e75ef0297c3562da3b7bfb5",
+      "4df7de57fa79a5bfb9a889e49ee4f901"
+    ],
+    "member_topics": [
+      "multimodal federated learning",
+      "multimodal vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "4d3b426a913791cde6c6795f9436187c727ff6d6",
+      "8d53f5c2fdbae39cad46567db844eb5206f84086",
+      "d4346bafff43d0a942a243c957195cedff80c274"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c04cce1d032f31fea7ffa5820434e139",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multiparty private set intersection",
+    "summary": "multiparty private set intersection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "802aee8bf883a81014446a147497d800"
+    ],
+    "member_topics": [
+      "multiparty private set intersection"
+    ],
+    "source_paper_ids": [
+      "53ea8110fda9dd252e16db4cb04cfd9068002fab"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a6192bdd3ba94f3dd61c41ad0086bc17",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multitask federated learning",
+    "summary": "multitask federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1f70deb635893487c035425b95af45cb"
+    ],
+    "member_topics": [
+      "multitask federated learning"
+    ],
+    "source_paper_ids": [
+      "d40c5e2d42d19dd7fd85d45201c048e3768c740d"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "d992c0295e62c0f5382dafe810fd54ad",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "mutual information estimation in vertical federated learning",
+    "summary": "mutual information estimation in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "378d8132fc0d880e1b51c778d1bf2d4a",
+      "923a7e8ce15cc41dde3494c20d1634bf"
+    ],
+    "member_topics": [
+      "mutual information estimation in vertical federated learning",
+      "mutual information regularization in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "b9db6e8fd4b503d18af2ca5e3e4d0eaa2a0ec367",
+      "c9700d8f75a42c0efc58ba969ed29abd0147f9d7"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "4349ca82ddcb18f1194f1255342b2cf6",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "network pricing mechanisms in federated learning",
+    "summary": "network pricing mechanisms in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "9b5b0dde7f66ae175de98708645c5478"
+    ],
+    "member_topics": [
+      "network pricing mechanisms in federated learning"
+    ],
+    "source_paper_ids": [
+      "71a240155bc63f859bd76fe72a0efcb2c9aae6b7"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "77984e4a28d29f7cf543b78ecdc185cb",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "neuron selection in vertical federated neural networks",
+    "summary": "neuron selection in vertical federated neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "34dbe5e739d25aa3eadbc763e16e426a"
+    ],
+    "member_topics": [
+      "neuron selection in vertical federated neural networks"
+    ],
+    "source_paper_ids": [
+      "2779775552f8104454f8b6d3cfbed3e53aa76339"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b511b4838d85c1c587d08121aa96de34",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "node alignment in vertical federated learning",
+    "summary": "node alignment in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b51651e2d8ffafea6d8caf6452b7f3d0"
+    ],
+    "member_topics": [
+      "node alignment in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "c7b56bec457b7ef8aacf0899447f2f7dffccef82"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "2f01e9bef224a05f5a4068c47ec37686",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "non-third-party vertical federated learning",
+    "summary": "non-third-party vertical federated learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "162714d1adb30a99fb99b02868a199bb",
+      "b019b598701a5c5904d461c5f35dfc61",
+      "89b929d0fc6d45a9f9d12c01605105cc"
+    ],
+    "member_topics": [
+      "non-third-party vertical federated learning",
+      "third-party-free vertical federated learning",
+      "Trusted-third-party-free secure vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "45fac6f618ddcfeaba15982eb5fdb235e9503d54",
+      "d349e54be0dcfa45856724e16694671ffde70a45",
+      "f676dc14cb5070bfcb4cdb7b8a22b6d5e3b82050"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "b27f1d41ea9ef2d8d2b5a14258fbc0a5",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "oblivious model inference in vertical federated learning",
+    "summary": "oblivious model inference in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b19f979a33a44151537c9803bd5d6c2b"
+    ],
+    "member_topics": [
+      "oblivious model inference in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "11eb75b92a92efd5ad128abfed4a1d97feb1b9c3"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "06ef4048fa0ede74fd592eb049c22fa7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "one-shot communication in vertical federated learning",
+    "summary": "one-shot communication in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "2de735108449d6fe20b421ffaac24244"
+    ],
+    "member_topics": [
+      "one-shot communication in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "0fa73e35b4ced8070c36e5891c642c49c1fe245d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "00b56a2aeb803d77a78b3bdfbb106a46",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "online vertical federated learning",
+    "summary": "online vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "4e74882b578259a846f3c2f035ee5864"
+    ],
+    "member_topics": [
+      "online vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "eea271aba368f87c481fea4b1e9aa67c64233409"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "e55a8c33a6e9976c6be4f6c08cf62428",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "over-the-air computation in vertical federated learning",
+    "summary": "over-the-air computation in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "c2a24f956947efda6c87f7b2499107f0",
+      "da28a4366f22bd6690ca433645343f9e"
+    ],
+    "member_topics": [
+      "over-the-air computation in vertical federated learning",
+      "over-the-air model aggregation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "1c1849956d8b906e2ebb26e1fdcf547c264b3953",
+      "9c706f0583597ba492ba07261b5807c44f56ae7f",
+      "f7cd418c044076e55b527e7c755a4b32d79c078c"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d662fd9cc91ec9e5b031374a78645dee",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "parameter distortion defenses in vertical federated learning",
+    "summary": "parameter distortion defenses in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "993ac7d839f6d98f0f2e41034abdcfed"
+    ],
+    "member_topics": [
+      "parameter distortion defenses in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "03e7ec3746f82ea58664c10aa58f6ff000b88b01"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "47324a4ca426dc22c82a17ceb381bac9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "participant scheduling in vertical federated learning",
+    "summary": "participant scheduling in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "03561edb256f56aef14fe4f95fc3a899"
+    ],
+    "member_topics": [
+      "participant scheduling in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "0e1ff16adb2e28eb018ebec05de9824c6c14709d"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "ff305f25c539c598efe3f21dde5c402b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "participant selection in vertical federated learning",
+    "summary": "participant selection in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "810528de6375956984cdea2ba9848033"
+    ],
+    "member_topics": [
+      "participant selection in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "5489cf55fafc954bf1d0ec5b25686a6fe249eddd"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "db01073778b9ad7f3b239b246dc95ea2",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "participation incentive mechanisms in federated learning",
+    "summary": "participation incentive mechanisms in federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "b6f46a9e6fdb9bfc5dabc11638296765",
+      "2840ebd58689e6bb21c6541e8dadaa9e"
+    ],
+    "member_topics": [
+      "contribution-aware incentive mechanisms in federated learning",
+      "participation incentive mechanisms in federated learning"
+    ],
+    "source_paper_ids": [
+      "6b2d2a630cd32e3608922b166478b158fe5d0073",
+      "71a240155bc63f859bd76fe72a0efcb2c9aae6b7"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b7ff9f74fe437352705b3f059a4edab0",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "personalized vertical federated learning",
+    "summary": "personalized vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "2e91f7e61cf88f827431c999354f8f37"
+    ],
+    "member_topics": [
+      "personalized vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "adbb502fffd4afa964f982c46db8bcb6c156fffe"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "e1bc07060b0a591b2e6d003af1b102b1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "perturbation-based feature protection in vertical federated learning",
+    "summary": "perturbation-based feature protection in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f0461dbd1c3f377a1c02ba13455b72e8"
+    ],
+    "member_topics": [
+      "perturbation-based feature protection in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "548fe402a72c7baa815cca28c538b4fdd12fd47e"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "c680606c7da729b52c656e9a809889db",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy leak defense in federated learning",
+    "summary": "privacy leak defense in federated learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "ec550a738f9b0af97b40e63db9088551",
+      "e8b4567a68e59148cdaef03a3846f0fe",
+      "0250abb51cf43884ff6cde6c0c308e70"
+    ],
+    "member_topics": [
+      "hashing-based privacy defenses in vertical federated learning",
+      "label privacy defenses in vertical federated learning",
+      "privacy leak defense in federated learning"
+    ],
+    "source_paper_ids": [
+      "8199539f96ced61e927338ae32af495adc0175e3",
+      "88058305a4a9a9469dc56498482cba1e3208690e",
+      "b8db961b2245f50e692e068491f871c813a99d74"
+    ],
+    "source_years": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "ec32d9751444d89bf061cd21d24de2fe",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving Cox proportional hazards modeling",
+    "summary": "privacy-preserving Cox proportional hazards modeling",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "48230dcb55f62819c14eef7797fa5ba6",
+      "3c444abc3a6702525ec62113a1b662bc"
+    ],
+    "member_topics": [
+      "privacy-preserving Cox proportional hazards modeling",
+      "Privacy-preserving distributed Cox proportional hazards modeling"
+    ],
+    "source_paper_ids": [
+      "6f5a0d0bbc1ad066da994cc309a7744d753df738",
+      "a5a528d607328ab122dbb0dbfc7de2a72431e352"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "63bace6210aff411df4b696ef9759ebd",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving Gaussian process regression",
+    "summary": "privacy-preserving Gaussian process regression",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bf5607e0966b8378dccf4fd829aa0573"
+    ],
+    "member_topics": [
+      "privacy-preserving Gaussian process regression"
+    ],
+    "source_paper_ids": [
+      "20a3843c930878d1775b54c606f8744dfa4be28e"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "209fd311a0efc52d303e5b849af2c9ce",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving analytics on vertically partitioned data",
+    "summary": "privacy-preserving analytics on vertically partitioned data",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "4ff5cdc46a416f12088203b2f0688166"
+    ],
+    "member_topics": [
+      "privacy-preserving analytics on vertically partitioned data"
+    ],
+    "source_paper_ids": [
+      "7f3eb429110c023017b0550b698efd205b4d6094"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "2866c3dbcedb8b3c88167d19fed8ddc7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving entity alignment",
+    "summary": "privacy-preserving entity alignment",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0ae690c7e49ba1f75df45d2e7c895c77"
+    ],
+    "member_topics": [
+      "privacy-preserving entity alignment"
+    ],
+    "source_paper_ids": [
+      "88e700e9fd6c14f3aa4502176a60512ca4020e35"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "039edf3d326ebadb08bf107d5ce9b26b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving entity matching",
+    "summary": "privacy-preserving entity matching",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "287d2dda1fea30e9149035d536072935"
+    ],
+    "member_topics": [
+      "privacy-preserving entity matching"
+    ],
+    "source_paper_ids": [
+      "32cb184f64d0c40db61dcd8a6499a4e2a6224366"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "9a6d9e16c5aabd31a9ec92ecc794b40a",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving federated data valuation",
+    "summary": "privacy-preserving federated data valuation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1313c96f2c4dd2e787c26c6891941bce"
+    ],
+    "member_topics": [
+      "privacy-preserving federated data valuation"
+    ],
+    "source_paper_ids": [
+      "c437a090a101947f7b73d13871163118ecf0594a"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "c31bf828338c266c7e2b1a85ee1539e0",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving federated itemset mining",
+    "summary": "privacy-preserving federated itemset mining",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "eba4b8f72cb1515ad949153de866a057"
+    ],
+    "member_topics": [
+      "privacy-preserving federated itemset mining"
+    ],
+    "source_paper_ids": [
+      "2caa9178bc200cd5a0b3fbb17fd2577e766fa168"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "a217909e6067c55bfd527f7dab41b318",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving federated learning",
+    "summary": "privacy-preserving federated learning",
+    "member_count": 18,
+    "source_paper_count": 38,
+    "member_candidate_ids": [
+      "7c9398bd509a7f3dec33c5201c9ffbee",
+      "0b01907c35a24122e0d2b5b548cc2c34",
+      "dab3c243057cc8ac800de757202442fd",
+      "6670dfc4e382f0f4e0a6805aa5152e12",
+      "09cc7b959ae516042f7c6c17ad4760e8",
+      "a31405f22ff05e0a0b24b9c4455285de",
+      "cd757fdb0853482863efb66036314617",
+      "fe1a3baee79225011f614cfc1456f749",
+      "d3e72da68adcf8ec2965ea1c5feacc50",
+      "e43328bc0877891b7641ddde3e05de7b",
+      "59745264fc7c0a6789787b93da68529b",
+      "08c781b1e3db50ff11cdbe48c42c39da",
+      "90aac3e39be99556605a8561f6020fe7",
+      "05c2a96d3805aaa0834d9287ed565390",
+      "24fd87858abc9e6706ee44b4c0e4514c",
+      "41e6afc155676ec4be2a557e4a5fbc21",
+      "2104323cfac8a8badfd6b2a95482ed7e",
+      "28f20f7dc6c074a6eef7faba25aaf1a2"
+    ],
+    "member_topics": [
+      "differential privacy in federated learning",
+      "differential privacy in vertical federated learning",
+      "differentially private vertical federated learning",
+      "label differential privacy in tree-based vertical federated learning",
+      "privacy-preserving aggregation in vertical federated learning",
+      "privacy-preserving data preparation in vertical federated learning",
+      "Privacy-preserving feature aggregation in vertical federated learning",
+      "privacy-preserving feature selection in vertical federated learning",
+      "privacy-preserving federated learning",
+      "privacy-preserving federated learning under hybrid partitioning",
+      "privacy-preserving label sharing in vertical federated learning",
+      "privacy-preserving protocols in vertical federated learning",
+      "privacy-preserving sampling strategies in vertical federated learning",
+      "privacy-preserving vertical federated learning",
+      "privacy-preserving vertical federated learning protocols",
+      "secure multi-party computation in vertical federated learning",
+      "secure multiparty computation in federated learning",
+      "secure multiparty computation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "0021242eee6ead1bb4846ee5e5a40dd3bce08507",
+      "004149bf36ae931f5af717f388ea6753cf5ba4c2",
+      "035da241b6bb0df1c216e2e688721e62363d2b14",
+      "0c2977e0c6274962cfa66f271ae43b1e40c5e471",
+      "0e06388407331cf3096266855693639ed554a6be",
+      "259f8628b8f67875bbaaf8e8e468377c9dc73dfa",
+      "2a6afd5969d841dc52838a1d614c155c1476b837",
+      "34b75dff9234584eb3920223759e0d1c5790388e",
+      "375862a2f19a32f33185f0dfbc7f6dcffa63a334",
+      "388c936081483fcef30dbf0da338cf0439ae5e0e",
+      "47675ae3913950f5fde2a492bb534fac9871126f",
+      "4f8c739a1e135602e96da7169737490c4eaf24a4",
+      "547dba6a39ceac281f7497587692c32d378ffcb8",
+      "59099d7d197eda0c35d0ea4df9bf27ef8eaacfcc",
+      "6639f468d81692938a26be92ee6d0053a3d36e62",
+      "6ba3a4a1969b70a347ac4769b5cacdc56a4791fc",
+      "6f535151e5a84d5603b00ecdff76018dea6af511",
+      "72a100e85f90facae34d8ed6db4c1e5997a262be",
+      "73226b8fd114d152b068836f4b8bfbfbe2fa8d6d",
+      "7f8b37f690c12ed190a7daef7f8a4dbcf0a4bddb",
+      "8d8d6c9d065c9dfcbf1b819be9d5f2762542d94f",
+      "a1770a7a4e871db855025add7d22ee94de9f7cbd",
+      "a5371126631ada472099a84b13be53bdd8fe65ed",
+      "a6b7f4a2561c90ece01805bbe6f5e3ba4d9be14c",
+      "a87af8ec4686bd8fb9594271c3348a8a6ba57aa9",
+      "b27e4f5a01466710b01aecdb95aa5391a4ef17c0",
+      "bc963dcdf9994e46a8ce113be851bdffb4c66a4d",
+      "be69d51b25a60d2ff6f4dfe3c87f93d27ccb896c",
+      "c4a0b9ba346d3537c8d0e23b686665d15fdd9c40",
+      "cfc5746ba05379426f59226361453e5f8ae6720b",
+      "dd3a97703ac830596f617e78dda4ebbb2ec48118",
+      "def6fe6bcb31fb1cdc38d7c20b7eff590522b474",
+      "df854a54e3c03942142c3d91a61274ae12eb0132",
+      "e2e476c68ec555be5fd2066cca28f4cd0740b210",
+      "e363c4346232d25131cede327c8f3e8733c7eed5",
+      "e8f686cd1b99d475766d8cad0faf96bb11c73a32",
+      "f0a01fc358de7ba8c4e9f254717d34fc204ae5b5",
+      "f13f014f51dd425661e3202067c5ef5052fe4d6a"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "b007fc58c75e19d6aad30a983264bc59",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving joint learning",
+    "summary": "privacy-preserving joint learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bb1c586b3db5769839153bc8ab974cf6"
+    ],
+    "member_topics": [
+      "privacy-preserving joint learning"
+    ],
+    "source_paper_ids": [
+      "11448e22677472c15a04fe90d2b157702566b36f"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "42ed31de0c361e81a11aab768199fb26",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving multi-party data collaboration",
+    "summary": "privacy-preserving multi-party data collaboration",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "abff860934d10bd8820e7a2989ef7d3e"
+    ],
+    "member_topics": [
+      "privacy-preserving multi-party data collaboration"
+    ],
+    "source_paper_ids": [
+      "a057747508caf3dbfc8383e32da8ce2285d53224"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "e6be71e78ac0f678e8b27d01f35cb8c4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving representation aggregation in split neural networks",
+    "summary": "privacy-preserving representation aggregation in split neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c0a0749d1a48def53aec3a6a9c7c65d6"
+    ],
+    "member_topics": [
+      "privacy-preserving representation aggregation in split neural networks"
+    ],
+    "source_paper_ids": [
+      "76c975db5a93767f43f66b6b3b942470b2e227e5"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "c86ca7302fb05e3ee19eccbaaeaac3c9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving vertical federated tree boosting",
+    "summary": "privacy-preserving vertical federated tree boosting",
+    "member_count": 4,
+    "source_paper_count": 5,
+    "member_candidate_ids": [
+      "95f52744fa915b0b01b78075f4678c4f",
+      "e2c796ef6887f3e15bf8e58e96ba6e89",
+      "032d8d7d4543a0b3d5d5623e0c543f9e",
+      "e26ffe10093ae467be26677051e62c22"
+    ],
+    "member_topics": [
+      "differentially private vertical federated tree boosting",
+      "Privacy-preserving vertical federated random forest",
+      "privacy-preserving vertical federated tree boosting",
+      "privacy-preserving vertical federated XGBoost"
+    ],
+    "source_paper_ids": [
+      "1c6e0e60ab35bc35d9cda1b9d1b1604ba859ecc9",
+      "29f84e7a5f4b35e44bd803ea148ea251c65052ed",
+      "9488923c44d18e6ca609b53d2ec09cd50a5ce1d3",
+      "e179166fc7a2f11e3ec2dc11eb47a65c1b2bee9f",
+      "f71687796caa7d2a5d68406b53b51cb9ed57f586"
+    ],
+    "source_years": [
+      2019,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "bca72e9504b6deb266a4cab1b7045ba5",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-utility evaluation frameworks in vertical federated learning",
+    "summary": "privacy-utility evaluation frameworks in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "117ee3ac5fec77a6baef94014b3b54ef"
+    ],
+    "member_topics": [
+      "privacy-utility evaluation frameworks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "767f29b966fb5fafb6cee65eecee9fc03a2eac39"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "5107d803c7be76472e9415e9b8cd0733",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "private set intersection",
+    "summary": "private set intersection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "cc94db7cd1e7b024ec8e7207d0279b98"
+    ],
+    "member_topics": [
+      "private set intersection"
+    ],
+    "source_paper_ids": [
+      "948b84da66aa8341c4ff555bde01c487adf58075"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "eb6b6e306a05b084b34a7824733acf3d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "private set union in vertical federated learning",
+    "summary": "private set union in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bbba0e642624ad82810897520aadbf79"
+    ],
+    "member_topics": [
+      "private set union in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "30c20a643de17bd3375383f3416bbe973810e846"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "697ec9228440132eb55a223962ab7726",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "private vertical decision tree learning",
+    "summary": "private vertical decision tree learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "092f09cec01ae3c4fad80c7d5c9e5853"
+    ],
+    "member_topics": [
+      "private vertical decision tree learning"
+    ],
+    "source_paper_ids": [
+      "15d44ad07ee9c4ac7a48a25728d82d711f287563"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "da47e390cc3b455613b126411afcf154",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privileged information distillation in vertical federated learning",
+    "summary": "privileged information distillation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "11d3b3e3be554294751d7a18a972814e"
+    ],
+    "member_topics": [
+      "privileged information distillation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "a8319032503cf3661416463f2727ed1ac04c7214"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "b8efabaf427d07eedb2cdf1fc240675b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "quantum-enhanced vertical federated learning",
+    "summary": "quantum-enhanced vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "15d919755f5074ebd26ec9f574a70f35"
+    ],
+    "member_topics": [
+      "quantum-enhanced vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "7253ff2911b893b957a23e717503902f880699d3"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "81a22b5d6a905008a905d0e8c2f5547d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "retraining-free Shapley value estimation in vertical federated learning",
+    "summary": "retraining-free Shapley value estimation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "ee1227ad382d1c59be07cb727aa6bc46"
+    ],
+    "member_topics": [
+      "retraining-free Shapley value estimation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "da69db272ee49580d689f6efb9fd79f387235330"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "3e41b11a96bd61f3ba5b71c1d9980af1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "robust federated aggregation",
+    "summary": "robust federated aggregation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "86b2479418a3283bc4d34e29d11336b7"
+    ],
+    "member_topics": [
+      "robust federated aggregation"
+    ],
+    "source_paper_ids": [
+      "ef4167e0513d5c1e4f1a39d126b1a64498dfb082"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "3b129b52b44fb7fd51cc5ffccb923bad",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "satellite-assisted vertical federated learning",
+    "summary": "satellite-assisted vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "4e699102eaad38846b93c67b05f88302"
+    ],
+    "member_topics": [
+      "satellite-assisted vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "bc1465c4056fbafaaf7338ad5818ef5147d005b1"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c26fdbb99e913f04767eb6823c821654",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secret sharing in vertical federated learning",
+    "summary": "secret sharing in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "623cdb2142ef13f99f80762043d194cc",
+      "15f78a504718320097f15c38af7ea9ba"
+    ],
+    "member_topics": [
+      "secret sharing in vertical federated learning",
+      "secret sharing-based vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "d6deb73f81c3c74519382ac97c9db73276ff5c16",
+      "fc139a3fbe3b62988615330e2444d8c2dea59822"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "703d80f677b026ff5c59769cb754be58",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure aggregation in federated learning",
+    "summary": "secure aggregation in federated learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "b6befdd3449a4ff1c33ea2e8ec469401",
+      "7ca0eb9515435d541857275893105532",
+      "4e482b7503de711fd039b91785abed6f"
+    ],
+    "member_topics": [
+      "secure aggregation in federated learning",
+      "secure aggregation in vertical federated learning",
+      "secure logistic regression in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "6af3e037bff823080531924dd2f6b559b199c971",
+      "745e80a778b738893b7f7a81719d4c36399dce62",
+      "d16cc90cd23f37bb7d0c5430fc14bfee5a7965a5"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a0d7a1920aedb59ebd126002f2d7cb69",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure federated learning",
+    "summary": "secure federated learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "86470ae61ef8f962f5c6a57d2e15ddb1",
+      "32957866130cf18dd8c386cbabea5858",
+      "91a68570830c327463b2d58b3e72e452"
+    ],
+    "member_topics": [
+      "secure federated learning",
+      "secure vertical federated learning",
+      "secure vertical federated learning algorithms"
+    ],
+    "source_paper_ids": [
+      "13d33bfe44a2850bfeab698d4eef4442f5dae718",
+      "62ccd99a65bfc7c735ae1f33b75b107665de95df",
+      "a87af8ec4686bd8fb9594271c3348a8a6ba57aa9"
+    ],
+    "source_years": [
+      2019,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a1f8c25b0b97b66a003cb31210c90f0d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure gradient computation in vertical federated learning",
+    "summary": "secure gradient computation in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1139bd8bf44afc85e5875d7288c586bc"
+    ],
+    "member_topics": [
+      "secure gradient computation in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "eb9959ae0033dc30179cf255fc83715ab175fed2"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "32b33928bbdd4fc4d9ddddb4b9e545fc",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure logistic regression on vertically partitioned data",
+    "summary": "secure logistic regression on vertically partitioned data",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e5905eafa99b5e43e9537332293e8a46"
+    ],
+    "member_topics": [
+      "secure logistic regression on vertically partitioned data"
+    ],
+    "source_paper_ids": [
+      "92d9420552ef4fb19c5244730ea83e6b89fc5427"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "3a560533fd4f703e7738d709c774b79b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure multi-party relational joins",
+    "summary": "secure multi-party relational joins",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "337e833d4d9fcdf5d66bc489acaf7e8f"
+    ],
+    "member_topics": [
+      "secure multi-party relational joins"
+    ],
+    "source_paper_ids": [
+      "1dbdf2c62043bdb08ce0d9ebf59f3c853e07d131"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "6f9c0a9da0c216ad59e32e715f6e0c1d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "secure vertical federated gradient tree boosting",
+    "summary": "secure vertical federated gradient tree boosting",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "23dacb35e6378a31c17625e6b7084c63"
+    ],
+    "member_topics": [
+      "secure vertical federated gradient tree boosting"
+    ],
+    "source_paper_ids": [
+      "4576939470aa20ef0121e696ede776a19fd94bf7"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "71fa943bc76bb20679154343eaa46500",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "semi-supervised vertical federated learning",
+    "summary": "semi-supervised vertical federated learning",
+    "member_count": 6,
+    "source_paper_count": 8,
+    "member_candidate_ids": [
+      "a499416490ebe71b055275d0406c9736",
+      "e92db99239756664a515167aa013f307",
+      "c879d42ab328e77e4a549f34b95f4003",
+      "e216e71bd188896de6fb43bde653c7b0",
+      "992f44bd78f7a2a7607cdf98574b8c9e",
+      "fb850241a53a3d984ad623697f698a49"
+    ],
+    "member_topics": [
+      "autoencoder-based representation learning in vertical federated learning",
+      "self-supervised representation learning in vertical federated learning",
+      "semi-supervised federated learning",
+      "semi-supervised vertical federated learning",
+      "unsupervised representation learning in vertical federated learning",
+      "unsupervised vertical federated transfer learning"
+    ],
+    "source_paper_ids": [
+      "03207ae7185a2359a50083d8022b3f714fbdc556",
+      "1e5c13afa00d2514f400ec9e4d9132d006b1d227",
+      "40fbc5ec62b4358d2f36591bddf8aa866d66a1ef",
+      "5b8188d8167fe01408828df4aa969c48454cfe63",
+      "96121d177f162a15abb89f289d4ba8b631d35dbf",
+      "a9ada3bb56822b011904d8381b5245df1eb3f132",
+      "c2d7e74af1463ab8879bb7ac2df770a33badaac6",
+      "ead26552300f5451f8332157c96c8324c9c3cf18"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "baebf4d63e74eb7b380a8ee780ad3f10",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "split learning-based graph neural networks",
+    "summary": "split learning-based graph neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "71d1e356e97b2929179341868338798b"
+    ],
+    "member_topics": [
+      "split learning-based graph neural networks"
+    ],
+    "source_paper_ids": [
+      "1e369fb54e52d6252beb68785f143e55e7d3a7fb"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "cd317141dc610aaa85ff603c907dc8c7",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "split neural networks",
+    "summary": "split neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "8a6ac9021f1ed8a901adc52a8e190504"
+    ],
+    "member_topics": [
+      "split neural networks"
+    ],
+    "source_paper_ids": [
+      "948b84da66aa8341c4ff555bde01c487adf58075"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "53c78edb1273ea355f105cb457f8b6d1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "staleness-aware federated aggregation",
+    "summary": "staleness-aware federated aggregation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f73f84b69740659983171601109b8faf"
+    ],
+    "member_topics": [
+      "staleness-aware federated aggregation"
+    ],
+    "source_paper_ids": [
+      "9d7fe30f6be9d9051d60fc7be71554671df599cb"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "9465be1a2260136b6d7bd7f091689128",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "straggler-resilient vertical federated learning systems",
+    "summary": "straggler-resilient vertical federated learning systems",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "e0c5385f52def85ad2a17f85360797c7",
+      "3dfdd793488c17d2bdf9d4c4699e8d62"
+    ],
+    "member_topics": [
+      "straggler-aware optimization in vertical federated learning",
+      "straggler-resilient vertical federated learning systems"
+    ],
+    "source_paper_ids": [
+      "2e1f7bcd29493e4c49513dd0e3d04bf9b49038d4",
+      "56b597a0b3adf8ebe83bac08b4d6d77bd5164c81"
+    ],
+    "source_years": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "4b463f72deae52902431013834e1d878",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "tiered decentralized federated optimization",
+    "summary": "tiered decentralized federated optimization",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d9c2b68ac011064dfdc4822b51f0580a"
+    ],
+    "member_topics": [
+      "tiered decentralized federated optimization"
+    ],
+    "source_paper_ids": [
+      "0ab99682534d87f08780a5b581d8f603090b05d4"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "17ac7c9c1733700a400d9d4f1977c521",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "training offloading in federated learning",
+    "summary": "training offloading in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bd428714cd3dc003b0f23cfd90b4bc22"
+    ],
+    "member_topics": [
+      "training offloading in federated learning"
+    ],
+    "source_paper_ids": [
+      "031316860c4e2b0077c776050f8580c94ed2b7e2"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "c850096a82a42ffb26ae5ea8bc932584",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "training sample selection in vertical federated learning",
+    "summary": "training sample selection in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "47ed3394d4019260902478087e8cbee6"
+    ],
+    "member_topics": [
+      "training sample selection in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "6b1f1f4632114aad2b5e1eb402d6142d1600ecaa"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d13457b61417056d05af9dc97baab947",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "trusted verification frameworks for vertical federated learning",
+    "summary": "trusted verification frameworks for vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7bd07abb8c56d900591dd047c9ab0257"
+    ],
+    "member_topics": [
+      "trusted verification frameworks for vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "88d0e089c3062f89e4cd9b1bd3e5025c9ef273a0"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "1a87978c06e0d7b0063d17d02f8174fa",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "unaligned data integration in vertical federated learning",
+    "summary": "unaligned data integration in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "4ca7a71c56f2a036e7c161c0da681317"
+    ],
+    "member_topics": [
+      "unaligned data integration in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "81a2185501641ac0e9d1a42623ace287e2e09860"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "7a2230a46103b520732dff9fd14c59dd",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "unified horizontal and vertical federated learning frameworks",
+    "summary": "unified horizontal and vertical federated learning frameworks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "386fb0ccceacbc30b1fb5587b5d2ec63"
+    ],
+    "member_topics": [
+      "unified horizontal and vertical federated learning frameworks"
+    ],
+    "source_paper_ids": [
+      "da672106721a43348266d25c8c39e0df916edec4"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "157eaa2818f668f47dddc8438a99032b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "verifiable aggregation in vertical federated learning",
+    "summary": "verifiable aggregation in vertical federated learning",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "88d75c4f8f514e8e3d155fcaf5ab67b7",
+      "6ba8c32f3f5fb906cb1751134635490d"
+    ],
+    "member_topics": [
+      "verifiable aggregation in vertical federated learning",
+      "verifiable gradient aggregation in federated learning"
+    ],
+    "source_paper_ids": [
+      "102110c438caa1b9eb160469b2c90508aa2cbe7e",
+      "d1eb31a3349fd0adbbcc924357a71fb5e7ac41ee"
+    ],
+    "source_years": [
+      2020,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "e705a141a56393bc540eb39d107db5b4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated contextual bandits",
+    "summary": "vertical federated contextual bandits",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "89879d05c39773f243292a423958aef1"
+    ],
+    "member_topics": [
+      "vertical federated contextual bandits"
+    ],
+    "source_paper_ids": [
+      "67fcf6d8ccfa5234d5d0ba53ca70f9df2fbe22b7"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "21dae77854778379e8dd70cea9e66db1",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated data poisoning defense",
+    "summary": "vertical federated data poisoning defense",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d2be784df03ec10c4fb678264dcb5ed6"
+    ],
+    "member_topics": [
+      "vertical federated data poisoning defense"
+    ],
+    "source_paper_ids": [
+      "a0528b1573be8517af2a3f92672cc95f575412e0"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "fb70ddf7e07e3efc7f2c80b66068b2cf",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated deep learning",
+    "summary": "vertical federated deep learning",
+    "member_count": 3,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "ce265486c7618dca88d644acb41e530c",
+      "8e078a08615756b5d81e7b34e9ae90a4",
+      "f808ec7bf65a505de1c665ba3d7658c9"
+    ],
+    "member_topics": [
+      "vertical federated deep learning",
+      "vertical federated learning algorithms",
+      "vertical federated learning frameworks"
+    ],
+    "source_paper_ids": [
+      "e363c4346232d25131cede327c8f3e8733c7eed5",
+      "e87b92a1198124e5c7b333d31e73036be1bb527f",
+      "efcfea1e569daffb4ed1b13a39d80ead23eb3160"
+    ],
+    "source_years": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "110e16e04a3c1601e5d1fa4aefefa75f",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated generative adversarial networks",
+    "summary": "vertical federated generative adversarial networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c0b2cd8551ed4a9e5bd14dc32af21766"
+    ],
+    "member_topics": [
+      "vertical federated generative adversarial networks"
+    ],
+    "source_paper_ids": [
+      "94ac84190c55f8c598c016f8517e51333283d8a4"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "422d1987854929d78c487476de39cd12",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated graph learning",
+    "summary": "vertical federated graph learning",
+    "member_count": 4,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "b43376a1d263d0dd1ebb0c415a7cd165",
+      "cdbbe842da9c249fce3ce75aa52214ce",
+      "47dfd6e28689ccf2845cd0ca12015b3f",
+      "2df6ac22d2799b4bb9f433961aed4262"
+    ],
+    "member_topics": [
+      "vertical federated graph convolutional networks",
+      "vertical federated graph learning",
+      "vertical federated graph neural networks",
+      "vertically federated graph neural networks"
+    ],
+    "source_paper_ids": [
+      "25c5773487991366766d53501463fe31652c590a",
+      "7257f55bfd06780b46b07420ef390fced4b7e5ec",
+      "f3872ef3743b744736da813249745545a9c1877f",
+      "f59093c03a4c78b84a023b22b346ffdb48f16836"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "222359c56ea0028709950ef87e434b0e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated kernel methods",
+    "summary": "vertical federated kernel methods",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "435e2f53d1abde87b35a2d8a2f926341",
+      "b72edb4cfebcbb0b909b76bb3e7af6bd"
+    ],
+    "member_topics": [
+      "vertical federated kernel learning",
+      "vertical federated kernel methods"
+    ],
+    "source_paper_ids": [
+      "ded38f70e97a9027b6ce954aca39d4887e0ed312",
+      "f7f281a69a4d339f375ab3286cd99e5919e80605"
+    ],
+    "source_years": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "cluster_id": "8257a979634e3e85744ae5a2c017c332",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated learning benchmarks",
+    "summary": "vertical federated learning benchmarks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "82f28550f0f49e2280dd38a0c452c52c"
+    ],
+    "member_topics": [
+      "vertical federated learning benchmarks"
+    ],
+    "source_paper_ids": [
+      "81a2185501641ac0e9d1a42623ace287e2e09860"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a7f769171ccf1019045aae7aecdec788",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated learning on structured medical data",
+    "summary": "vertical federated learning on structured medical data",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "39b166b04548aec708bd60b26e34cb46"
+    ],
+    "member_topics": [
+      "vertical federated learning on structured medical data"
+    ],
+    "source_paper_ids": [
+      "70a1881b38c80f7ea6eb17db309216e5cea0c589"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "22c99a920cd7ad7c405d3caf81520104",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated logistic regression",
+    "summary": "vertical federated logistic regression",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "614b1d10ff909284c4d9d213d81fdbae",
+      "7b04cbc48b69265a71b75f3b6fbff925"
+    ],
+    "member_topics": [
+      "constrained vertical federated logistic regression",
+      "vertical federated logistic regression"
+    ],
+    "source_paper_ids": [
+      "9bca247ced2cf09ad514b2c24bada3e4493866e3",
+      "b5059b3c7c8a96ade6519dd31bdbc13924e173af"
+    ],
+    "source_years": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "02d8243780de7301f0e3d8de53962db4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated matrix factorization",
+    "summary": "vertical federated matrix factorization",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "9176886a51d4f0a9d93996647e74b97d"
+    ],
+    "member_topics": [
+      "vertical federated matrix factorization"
+    ],
+    "source_paper_ids": [
+      "cbeab833dc7d0dbc103882d235a37be65d46f5ff"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "904d433b8448d9e4d56b30421d3d2b9c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated mobility forecasting",
+    "summary": "vertical federated mobility forecasting",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "96261ef70c46d1b91358b18bb4c8f822"
+    ],
+    "member_topics": [
+      "vertical federated mobility forecasting"
+    ],
+    "source_paper_ids": [
+      "d12d4f08fa5e124cbeee5f8fa4966ef82499aa1b"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "0f1a65ece457bd816df512adfc1a650e",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated multi-view learning",
+    "summary": "vertical federated multi-view learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "931b936cd6ec785c43afd4889023da62"
+    ],
+    "member_topics": [
+      "vertical federated multi-view learning"
+    ],
+    "source_paper_ids": [
+      "0c439fd480d2ffc8a0258dcd2098dccf2f700a10"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "b25c06951fcd5c63f59ef779021259a9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated principal component analysis",
+    "summary": "vertical federated principal component analysis",
+    "member_count": 2,
+    "source_paper_count": 3,
+    "member_candidate_ids": [
+      "ccd387d5a4c72de591d285b2971e4456",
+      "bd610e06fb91261593ca517f79b60b62"
+    ],
+    "member_topics": [
+      "federated principal component analysis",
+      "vertical federated principal component analysis"
+    ],
+    "source_paper_ids": [
+      "1f4cc2dcf9cb1265ad258e3771e7656b226dbc36",
+      "2ba66a123bed6ca610de3d2f84bca5a06efbefb8",
+      "9195ca66d3d246c3dd42f2dcb6c2250078cf0eef"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "694ba276c4a845eb145aaa2039c3a6ac",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated random forests",
+    "summary": "vertical federated random forests",
+    "member_count": 2,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "9a70d1951c32d999a7c5434c770545b0",
+      "38c3edf0ce67f7791a5c4de4920a2cad"
+    ],
+    "member_topics": [
+      "vertical federated random forests",
+      "vertically federated random forests"
+    ],
+    "source_paper_ids": [
+      "70d83c86e33776d40346ffacdd9b1698b989139a",
+      "b5059b3c7c8a96ade6519dd31bdbc13924e173af",
+      "da4a05db33c8d96a7cc9bcc7d2e392a51139e63f",
+      "ded38f70e97a9027b6ce954aca39d4887e0ed312"
+    ],
+    "source_years": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "e7b9ad39357fab8e805c6ce8bc2dc0ef",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated recommender systems",
+    "summary": "vertical federated recommender systems",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "bec14718e3a9b6d90ea204f9bfadc9f8",
+      "55def9abb11baa0e81c191c1d4c669e1"
+    ],
+    "member_topics": [
+      "vertical federated recommender systems",
+      "vertically federated recommender systems"
+    ],
+    "source_paper_ids": [
+      "117896edca8b76b75a8c2eab40f133ac6904610f",
+      "9cbc771d38cb88eb0eda8971c71eb2da2fb47998"
+    ],
+    "source_years": [
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "7f2f0c868aae3ccdface1a4efc5f8d8a",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated ridge regression",
+    "summary": "vertical federated ridge regression",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5614e397c0ad702f932906d83544815c"
+    ],
+    "member_topics": [
+      "vertical federated ridge regression"
+    ],
+    "source_paper_ids": [
+      "455dd266d1edcefb07f6746b4475fe4d250a4f52"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "7c65e6f330c5edb36ecdca50932f7c64",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated scorecard modeling",
+    "summary": "vertical federated scorecard modeling",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "0f950c432a35fb2c44ab2f6ddc3162f8"
+    ],
+    "member_topics": [
+      "vertical federated scorecard modeling"
+    ],
+    "source_paper_ids": [
+      "ed430fbfcc3d7fc805f8fee553e3f8b6eacca525"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "b391f567b39df3ead27ce2bfa7e8621d",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated time-series forecasting",
+    "summary": "vertical federated time-series forecasting",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b053f87f810b0e512044ebe7d329b842"
+    ],
+    "member_topics": [
+      "vertical federated time-series forecasting"
+    ],
+    "source_paper_ids": [
+      "110332457f28301b06a78dbc7a88741c623f3db1"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d09db17d3841a9769739603fffe61557",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated tree boosting",
+    "summary": "vertical federated tree boosting",
+    "member_count": 4,
+    "source_paper_count": 6,
+    "member_candidate_ids": [
+      "f5300b4b70bfe195a65891b573dde245",
+      "93623e0d6d7a3343c047097935f829a0",
+      "5c61ebab427522ed760108c0a3caa7f8",
+      "73136c58a583eae9e4020ee216809c80"
+    ],
+    "member_topics": [
+      "vertical federated gradient boosting",
+      "vertical federated gradient boosting decision tree learning",
+      "vertical federated gradient boosting decision trees",
+      "vertical federated tree boosting"
+    ],
+    "source_paper_ids": [
+      "11eb75b92a92efd5ad128abfed4a1d97feb1b9c3",
+      "4a8caf81d404daadbe1522e21a6f0f162465f714",
+      "5c02a87bfd516cf364f774e8bbf1e68a9a3a0c5d",
+      "85a272bc9609128977dd095e6b7acecc98793cf8",
+      "9d6a48d53eeb56614cd2eb77b161c55622ac6844",
+      "f4db75fb3e88bb43f910cda272ecba758dd87325"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "15e0ae55b109ce44ee3a06be85db7f95",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical federated unlearning",
+    "summary": "vertical federated unlearning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f2303106ecec8b72b6b73b5da7097a0a"
+    ],
+    "member_topics": [
+      "vertical federated unlearning"
+    ],
+    "source_paper_ids": [
+      "4e26fc4fe687c7471e44f2a5e6feef0facfc4be1"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "04cb70e73ceeeb7262b2f6c8aa184b3c",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical partitioning in federated learning",
+    "summary": "vertical partitioning in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "42741944fc3c413a1359b60b503cbad2"
+    ],
+    "member_topics": [
+      "vertical partitioning in federated learning"
+    ],
+    "source_paper_ids": [
+      "4edb9d8097d6236b5fb9488190c852ff65302a18"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "4c9de2e5d8df6d19453bf92bbc190bca",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertical-horizontal cooperation in federated edge intelligence",
+    "summary": "vertical-horizontal cooperation in federated edge intelligence",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "44b3080fe11b2db7a22a27b649808249"
+    ],
+    "member_topics": [
+      "vertical-horizontal cooperation in federated edge intelligence"
+    ],
+    "source_paper_ids": [
+      "796e2d68dfbe3d70b397fecf2c0e6eaed98058a1"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "c2b17b76c0a5a3275451009afd149be4",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "vertically decomposed neural networks in federated learning",
+    "summary": "vertically decomposed neural networks in federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "f513b4a711fa3eba112b4469097a0242"
+    ],
+    "member_topics": [
+      "vertically decomposed neural networks in federated learning"
+    ],
+    "source_paper_ids": [
+      "2704850185c3ebde55c1bad22ae388637d2376e0"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "9e1dafbe65b183fd7b571eac8f96075b",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "visual analytics in vertical federated learning",
+    "summary": "visual analytics in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "8e09deb98a1f1537d12e84c6ad09edbf"
+    ],
+    "member_topics": [
+      "visual analytics in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "937c2d5dad7e07eeeb0eeeb59177b70f455355bd"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "3373dffa76c9d5900c4dea37c22a7fc9",
+    "target_topic": "vertical federated learning",
+    "target_topic_slug": "vertical-federated-learning",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "zero-background-knowledge label inference attacks in vertical federated learning",
+    "summary": "zero-background-knowledge label inference attacks in vertical federated learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1847fc8e5284934dcbb4cd3a3ad52119"
+    ],
+    "member_topics": [
+      "zero-background-knowledge label inference attacks in vertical federated learning"
+    ],
+    "source_paper_ids": [
+      "ca051292a8d3ea8b6a8eabec9b0340d76531a323"
+    ],
+    "source_years": [
+      2023
+    ]
+  }
+]

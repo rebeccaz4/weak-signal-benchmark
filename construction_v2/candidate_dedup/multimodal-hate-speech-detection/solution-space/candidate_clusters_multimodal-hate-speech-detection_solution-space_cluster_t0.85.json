@@ -1,0 +1,949 @@
+[
+  {
+    "cluster_id": "e00232ad09445c565c6b91ade317a603",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "adversarially robust harmful content detection",
+    "summary": "adversarially robust harmful content detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "041c2909aab4064452a48d4162539f1b"
+    ],
+    "member_topics": [
+      "adversarially robust harmful content detection"
+    ],
+    "source_paper_ids": [
+      "84d46ceddf7f0f47b923b6fe19663d5447703c9f"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "47bc1f6656c42291baa5ad1f3fb59f58",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "audio-text multimodal fusion",
+    "summary": "audio-text multimodal fusion",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "74735446f42f7e12cd4122aad44d5544"
+    ],
+    "member_topics": [
+      "audio-text multimodal fusion"
+    ],
+    "source_paper_ids": [
+      "f5e49c92eebd7a059451d36ce5dc0aed7348b0a8"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "5eb6616bf844f6a552dca885be76af54",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "caption-enhanced multimodal reasoning",
+    "summary": "caption-enhanced multimodal reasoning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "64f0f75d4ed9f0037b18bd5670cf3d78"
+    ],
+    "member_topics": [
+      "caption-enhanced multimodal reasoning"
+    ],
+    "source_paper_ids": [
+      "14e5d984af4ac965579644bd0ea4ae42587b6a00"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "b62222c71e374ec070a2abaffcef70eb",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "caption-enriched multimodal training",
+    "summary": "caption-enriched multimodal training",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "746eb6a5fa57fdd3d94f11ffb03fa692"
+    ],
+    "member_topics": [
+      "caption-enriched multimodal training"
+    ],
+    "source_paper_ids": [
+      "67b870fce2d18a92651e3cc9397e6f8d1b9ddee3"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "c65a498ff3a6f35007394b038b46cd5c",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "comment-aware multimodal learning",
+    "summary": "comment-aware multimodal learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "aabbef90d357df273f8b9db5ee3d8b33"
+    ],
+    "member_topics": [
+      "comment-aware multimodal learning"
+    ],
+    "source_paper_ids": [
+      "982a06ddea4fabfdf55f7272231ff1506123d170"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "51757fc81e6af328c8a9f18635dbc033",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "counter-narrative interventions",
+    "summary": "counter-narrative interventions",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e3710bda8a0522c04963951cd0f3e993"
+    ],
+    "member_topics": [
+      "counter-narrative interventions"
+    ],
+    "source_paper_ids": [
+      "c14302fbbc1db9b92d35b2e1d27bc3a1a39c6da5"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "e83f845272e77067e56ec8afad16c969",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-attention multimodal fusion",
+    "summary": "cross-attention multimodal fusion",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "80164b02240132b7d0d9e4baaa777f8d"
+    ],
+    "member_topics": [
+      "cross-attention multimodal fusion"
+    ],
+    "source_paper_ids": [
+      "3828a8c97e5c39f08f01ff1ae6a2891e2b71a48b"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "db223c4d84b79354d461bb6204e73dda",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-domain knowledge transfer",
+    "summary": "cross-domain knowledge transfer",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "a0758b420345ed1cb232cb0114c8f697"
+    ],
+    "member_topics": [
+      "cross-domain knowledge transfer"
+    ],
+    "source_paper_ids": [
+      "f118a713952c49f96382d9b8fdc153d9f54bcd3c"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "7a9fab7ea4ef70f9a1659a7526d8905a",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-modal alignment via optimal transport",
+    "summary": "cross-modal alignment via optimal transport",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "5b5d6fd22a0783adc3da546d9465fb8f",
+      "0657fa7aad739ae9b304077a031f7476"
+    ],
+    "member_topics": [
+      "cross-modal alignment via optimal transport",
+      "optimal transport-based cross-modal alignment"
+    ],
+    "source_paper_ids": [
+      "35714a53af79bd1ea5efc4b50c43e4f6bd2c8854",
+      "c90d18d5cd8b1e07f8a8b6b9d14a85b03d55b4b6"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c69f153398a9dbec6755db8d44b1b395",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "cross-modal relation modeling",
+    "summary": "cross-modal relation modeling",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "60b49c25fd7126fe957ff025104c7e2f"
+    ],
+    "member_topics": [
+      "cross-modal relation modeling"
+    ],
+    "source_paper_ids": [
+      "55ede1009ae41c288815cf79e2067789138046b7"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "d52f5d61bd874b08febe1403abc9aa19",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "deep learning-based cyberbullying detection",
+    "summary": "deep learning-based cyberbullying detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7740ac0889f8b2547e77e4e8b836262f"
+    ],
+    "member_topics": [
+      "deep learning-based cyberbullying detection"
+    ],
+    "source_paper_ids": [
+      "bd367c4e0ec3379f53b69eba69d5a0b5847ab281"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c0c01da0545abd7589515a95f40ff457",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "domain-specific pretraining for hateful meme classification",
+    "summary": "domain-specific pretraining for hateful meme classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3b9cecbd4038f4b880ceea84bba85432"
+    ],
+    "member_topics": [
+      "domain-specific pretraining for hateful meme classification"
+    ],
+    "source_paper_ids": [
+      "8908598c1b811038f4123cd3a6bb97a90430f9cc"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "0076442820317f9474cd0f4b6a478d6e",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "emotion-aware hate speech detection",
+    "summary": "emotion-aware hate speech detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "fab81f778474afe922df81950d57b0d5"
+    ],
+    "member_topics": [
+      "emotion-aware hate speech detection"
+    ],
+    "source_paper_ids": [
+      "a738219bf8b6d3b15fcbed0a1f0cd88153a12e3b"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "d1400efdcb1e6d27600dffea5b4a13fe",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "end-to-end speech toxicity classification",
+    "summary": "end-to-end speech toxicity classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e9c46bff053f9964783b483c7178a0fb"
+    ],
+    "member_topics": [
+      "end-to-end speech toxicity classification"
+    ],
+    "source_paper_ids": [
+      "bc201ee7af8e782e082f7dd92bac753f6c350235"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "f22e4a309c9c311435cc4f764828be19",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "fine-tuning pretrained language and vision models",
+    "summary": "fine-tuning pretrained language and vision models",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "5819bbd724d92af76a7356ee3e184a87"
+    ],
+    "member_topics": [
+      "fine-tuning pretrained language and vision models"
+    ],
+    "source_paper_ids": [
+      "0d2f279be0e985cf875e57ee7af45b80de81962b"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "a6fa65b42b714e951d77981f0c2252b3",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "image-text auxiliary objectives",
+    "summary": "image-text auxiliary objectives",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "72b011367663f5b663e5e7931c87a2ab"
+    ],
+    "member_topics": [
+      "image-text auxiliary objectives"
+    ],
+    "source_paper_ids": [
+      "790a4e08f6880deadd32eea9b10110714e4c37ed"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "16ee83ac205df5bf51399968eb959b7b",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "knowledge-enhanced hateful meme detection",
+    "summary": "knowledge-enhanced hateful meme detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d3c8d47df05731874d34ae24ed112bd9"
+    ],
+    "member_topics": [
+      "knowledge-enhanced hateful meme detection"
+    ],
+    "source_paper_ids": [
+      "506b55cd66460f23b6400c0d888d4d8e582cbcc0"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "c9e81196083f9f6d7a5f8762fae7ac92",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "large multimodal models for social media analysis",
+    "summary": "large multimodal models for social media analysis",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "a7523100dfcff558f6464a2b4f0b3f05"
+    ],
+    "member_topics": [
+      "large multimodal models for social media analysis"
+    ],
+    "source_paper_ids": [
+      "d0d0b06f3988ab6e81550035cf9d6f60d4ffb09a"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "22603f1b810923e691208de9d98d1c7a",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "modality ablation in multimodal models",
+    "summary": "modality ablation in multimodal models",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d17fe24e06e41010638ed347a3cbc153"
+    ],
+    "member_topics": [
+      "modality ablation in multimodal models"
+    ],
+    "source_paper_ids": [
+      "004cdb5b17c861fb3d2a0cb2d362bcc3607ac381"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "5e3415f75d40054b71ff4b18c545bdbe",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multilingual hate speech detection",
+    "summary": "multilingual hate speech detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "7a4f835911c9da9461768515ba8c4aed"
+    ],
+    "member_topics": [
+      "multilingual hate speech detection"
+    ],
+    "source_paper_ids": [
+      "c14302fbbc1db9b92d35b2e1d27bc3a1a39c6da5"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "0ff26044b53654ce1cd4340112ad6f50",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multilingual misinformation datasets",
+    "summary": "multilingual misinformation datasets",
+    "member_count": 2,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "5d53f54f0b4a29a9f7eb800d593a8127",
+      "9695c0073e7a59c51936224e48b3fba9"
+    ],
+    "member_topics": [
+      "multilingual misinformation datasets",
+      "multilingual multimodal misinformation datasets"
+    ],
+    "source_paper_ids": [
+      "48ca40748556f24c77d443e3e78e2848348294d0",
+      "6c3d4b4ca3d0a8dfba8ed722aad5dd39317b04e6"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "6f581e2914ded28cf33f57536eded566",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal context modeling",
+    "summary": "multimodal context modeling",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "919e12b7bcac7f6ba5e4a5f9c46b6448"
+    ],
+    "member_topics": [
+      "multimodal context modeling"
+    ],
+    "source_paper_ids": [
+      "69d45dfa4d5049671df9e9214264fbd57d99951e"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "6f08a8135d6e8a94f7b280ee02cf4df9",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal data augmentation",
+    "summary": "multimodal data augmentation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "3e1d3b5d5da2455d3bf5ecba649b3de7"
+    ],
+    "member_topics": [
+      "multimodal data augmentation"
+    ],
+    "source_paper_ids": [
+      "772d888f32b75e9a77d83db06312ddc96f09fb65"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "61cffc1442bbc319801dbbc05db2ac79",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal deepfake detection",
+    "summary": "multimodal deepfake detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "eb1a0cc02a8a52357b6341659dc8276d"
+    ],
+    "member_topics": [
+      "multimodal deepfake detection"
+    ],
+    "source_paper_ids": [
+      "599f6c4dd3045d770ae76248333dff844b2aff9f"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "3867c4e518f81b0f4161e77bfa4954f6",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal ensemble learning",
+    "summary": "multimodal ensemble learning",
+    "member_count": 1,
+    "source_paper_count": 2,
+    "member_candidate_ids": [
+      "69b71d9c5fe34f80827a1542db5ffb82"
+    ],
+    "member_topics": [
+      "multimodal ensemble learning"
+    ],
+    "source_paper_ids": [
+      "76e266d5220f963886cf30ae747d72fdf8c84378",
+      "a48ec3c0d50221917c2a8576ff2fbf1c08d8042b"
+    ],
+    "source_years": [
+      2020,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "983c63f5571bcfcf423c9cdd7fa6cc7a",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal feature fusion",
+    "summary": "multimodal feature fusion",
+    "member_count": 1,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "d70bb9db28d960e2cd4448463f267703"
+    ],
+    "member_topics": [
+      "multimodal feature fusion"
+    ],
+    "source_paper_ids": [
+      "14e29c60e685d3fed9daf002d90cde3eac13c043",
+      "24fe946eb5aa57676fb8568cd9dc51028c476b45",
+      "3c1c5f1355496c5a96e7c7e0928219276609974d",
+      "9f3e98ab042af03ccd0d752e5fac704f32a66c25"
+    ],
+    "source_years": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "cluster_id": "160bf5205bd4f2fb2fe285b88a79d99e",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal hate meme datasets",
+    "summary": "multimodal hate meme datasets",
+    "member_count": 4,
+    "source_paper_count": 4,
+    "member_candidate_ids": [
+      "1022f59d565bf4c0e742b3b1bd596a13",
+      "f37b2dec6560b90a34f559bb8f39e88c",
+      "1e0f0cf0ff90c241c67c1039cace8564",
+      "6c4107b7042d632c8f8106149a99a0f0"
+    ],
+    "member_topics": [
+      "multimodal hate meme datasets",
+      "multimodal hate speech benchmark datasets",
+      "multimodal hate speech datasets",
+      "multimodal hateful meme datasets"
+    ],
+    "source_paper_ids": [
+      "2cc478a27c355f179c979214bb3cee603f6061ec",
+      "4104cfd71b219b5a532677fe8eac151ec6bf182a",
+      "8583e6f2dd9347c23078e55e48f86754df11dcd7",
+      "eaf0ced3774a2e82a41e7102beb0f4bc00d4ea7e"
+    ],
+    "source_years": [
+      2019,
+      2022
+    ]
+  },
+  {
+    "cluster_id": "1ba4c5fad19b38902059b766e4442f5d",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal hate speech classification",
+    "summary": "multimodal hate speech classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "64e61b81a927c23226bcc2da93d0d845"
+    ],
+    "member_topics": [
+      "multimodal hate speech classification"
+    ],
+    "source_paper_ids": [
+      "b74e8aabecce9df495aa251c7b9ad248141515f7"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "661bd41b4c912c3953e8cb6ad3acfc67",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal late fusion",
+    "summary": "multimodal late fusion",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c2778361cbe1786dc0b569bb89ba3b5e"
+    ],
+    "member_topics": [
+      "multimodal late fusion"
+    ],
+    "source_paper_ids": [
+      "7ea0c43226ddb3727475286f461d4f90ff63a106"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "342280466eafd12a9cafca7810df79d3",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal meme classification benchmarks",
+    "summary": "multimodal meme classification benchmarks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "41ea6d497e21032424497f1715403481"
+    ],
+    "member_topics": [
+      "multimodal meme classification benchmarks"
+    ],
+    "source_paper_ids": [
+      "1f2bead7d7ca7c61a6e1773b6c6f2fe68e156441"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "50b5a0a4705158bd470af3dd6369b8ef",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal multi-task learning",
+    "summary": "multimodal multi-task learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "da5d5468d124ecb884454ecfdb02c71f"
+    ],
+    "member_topics": [
+      "multimodal multi-task learning"
+    ],
+    "source_paper_ids": [
+      "e4f57e7e56b5819e8e7189d254f746796a396240"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "07ae918aa35351364d6d8bd171f5d6e4",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal neural networks",
+    "summary": "multimodal neural networks",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "e0e3633042a693e1bf576c7e6fd0e603"
+    ],
+    "member_topics": [
+      "multimodal neural networks"
+    ],
+    "source_paper_ids": [
+      "5fa12d1a3484430e6f81ca7d4c3c3f6d3a5ed9ea"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "00721849572c4c4bc9799f5533d68e97",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal one-class learning",
+    "summary": "multimodal one-class learning",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "1eafd8488d8583876a47316b3c788378"
+    ],
+    "member_topics": [
+      "multimodal one-class learning"
+    ],
+    "source_paper_ids": [
+      "21fdb636f00f44a78617a15cbee68cbf47a2b9ca"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "a22b0d0c832319af22982b23decff383",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multimodal text-to-text generation",
+    "summary": "multimodal text-to-text generation",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "992bad985eb34df3a5140ccabb13e7fc"
+    ],
+    "member_topics": [
+      "multimodal text-to-text generation"
+    ],
+    "source_paper_ids": [
+      "597ec7f0789ff61c0856ff9e1ff9a85de9654ce7"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "4d72a4cbd4a26221b01a8f2502e751e4",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "multitask learning for multimodal classification",
+    "summary": "multitask learning for multimodal classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "bc9225844add4d17e11a3e5e8de928e0"
+    ],
+    "member_topics": [
+      "multitask learning for multimodal classification"
+    ],
+    "source_paper_ids": [
+      "04ec465265bedf07334b5306acdfb546dfcf4d29"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "49d254c9e0f76e6cc024992a71c9f760",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "named entity augmentation in multimodal hate speech detection",
+    "summary": "named entity augmentation in multimodal hate speech detection",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c687106d209adffe28e0433b66164d8f"
+    ],
+    "member_topics": [
+      "named entity augmentation in multimodal hate speech detection"
+    ],
+    "source_paper_ids": [
+      "841ddbc1cd7e0a699a9f5b45d243e54e82d639c5"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "714bb678843ede1339380ce4b9235fcc",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "pretrained multimodal embeddings",
+    "summary": "pretrained multimodal embeddings",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "d7e3b490f0ade0b07bea4860a22bdd52"
+    ],
+    "member_topics": [
+      "pretrained multimodal embeddings"
+    ],
+    "source_paper_ids": [
+      "336e531a59cafbe215b950fd749bca866b89cea0"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "e9d03ea67e9b075e4d01e2ee230874a2",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "privacy-preserving multimodal representations",
+    "summary": "privacy-preserving multimodal representations",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "8905c9482eea2f933a5c4984a6afead3"
+    ],
+    "member_topics": [
+      "privacy-preserving multimodal representations"
+    ],
+    "source_paper_ids": [
+      "43697482bf65b98506f77d80ef35676470d52925"
+    ],
+    "source_years": [
+      2020
+    ]
+  },
+  {
+    "cluster_id": "2d3c87956fa63dabab55794fddd4fc06",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "prompt-based caption generation with frozen vision-language models",
+    "summary": "prompt-based caption generation with frozen vision-language models",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b2cab9ec3afb113dfab87edb6369cdc6"
+    ],
+    "member_topics": [
+      "prompt-based caption generation with frozen vision-language models"
+    ],
+    "source_paper_ids": [
+      "9db8034f51981ce588caa9f44633a0b46e16d5cc"
+    ],
+    "source_years": [
+      2023
+    ]
+  },
+  {
+    "cluster_id": "01a6785d54213ea6da5911eec0ec7bb9",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "retrieval-augmented classification",
+    "summary": "retrieval-augmented classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "dcb5e74c0e4f56a366db804ae5bbd2bc"
+    ],
+    "member_topics": [
+      "retrieval-augmented classification"
+    ],
+    "source_paper_ids": [
+      "706e3fb58b38c1eedb4155b52cefadb8824efe2c"
+    ],
+    "source_years": [
+      2021
+    ]
+  },
+  {
+    "cluster_id": "df3e3e729638c3a129e8d342575aee93",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "supervised hate speech classification",
+    "summary": "supervised hate speech classification",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "c227a90ac4125c93025fbc1a0866e330"
+    ],
+    "member_topics": [
+      "supervised hate speech classification"
+    ],
+    "source_paper_ids": [
+      "bc2753de3ac60d9eca1fc20fbdefdfd416c74db8"
+    ],
+    "source_years": [
+      2022
+    ]
+  },
+  {
+    "cluster_id": "fd49923f6776c48f10cb0178e5c9e508",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic_type": "solution-space",
+    "canonical_topic": "target entity disentanglement in multimodal memes",
+    "summary": "target entity disentanglement in multimodal memes",
+    "member_count": 1,
+    "source_paper_count": 1,
+    "member_candidate_ids": [
+      "b5363822133747498b24d1f6a8b2a5f6"
+    ],
+    "member_topics": [
+      "target entity disentanglement in multimodal memes"
+    ],
+    "source_paper_ids": [
+      "81c3853bb76cda671853b32b9c13f649a5b65a05"
+    ],
+    "source_years": [
+      2021
+    ]
+  }
+]

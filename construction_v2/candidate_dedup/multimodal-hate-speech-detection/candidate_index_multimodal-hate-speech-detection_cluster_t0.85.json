@@ -1,0 +1,2225 @@
+[
+  {
+    "candidate_id": "7ad63b1e91a5390f11c055389e0614cd",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "adversarial robustness of harmful content detection models",
+    "candidate_topic_norm": "adversarial robustness of harmful content detection models",
+    "candidate_topic_type": "problem-space",
+    "match_text": "adversarial robustness of harmful content detection models",
+    "source_paper_ids": [
+      "b520fd84d4febc66bad1c89528e2663bed797809"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"Robustifying detection models against adversarial actors\""
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "bbb50f64d362cbd15781d6b0402389ed",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "audio-visual deepfake detection",
+    "candidate_topic_norm": "audio-visual deepfake detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "audio-visual deepfake detection",
+    "source_paper_ids": [
+      "599f6c4dd3045d770ae76248333dff844b2aff9f"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "Detection of fake audio and video is a challenging problem."
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "4cdf8c5a136a88a89c67f2542cb68cc8",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "class imbalance in multimodal hate speech detection",
+    "candidate_topic_norm": "class imbalance in multimodal hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "class imbalance in multimodal hate speech detection",
+    "source_paper_ids": [
+      "f118a713952c49f96382d9b8fdc153d9f54bcd3c"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "the influence of the unbalanced and widely distributed samples for various attacks in hate speech"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "ef0b53b200224b99a4c29202c55769c8",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "code-mixed hateful meme detection",
+    "candidate_topic_norm": "code-mixed hateful meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "code-mixed hateful meme detection",
+    "source_paper_ids": [
+      "4104cfd71b219b5a532677fe8eac151ec6bf182a"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "memes might have code-mixed captions (English+Bangla), and the existing models can not provide accurate inference in such cases"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "beee6f86bfc210662f7cd3b07b3544a7",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-modal reasoning in hateful meme detection",
+    "candidate_topic_norm": "cross-modal reasoning in hateful meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "cross-modal reasoning in hateful meme detection",
+    "source_paper_ids": [
+      "9db8034f51981ce588caa9f44633a0b46e16d5cc"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "requires comprehension of both vision and language, as well as cross-modal interactions"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "2558c455a301353463458760f3bed456",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-platform generalization in hateful meme detection",
+    "candidate_topic_norm": "cross-platform generalization in hateful meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "cross-platform generalization in hateful meme detection",
+    "source_paper_ids": [
+      "405d39f7a8c568dac5f42c95bfd50fc9ec2a004e"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "generalizability across platforms ... models fail to ... generalize across social media platforms"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3e72309127678a262b3cfcc360920d83",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "domain generalization in multimodal hate speech detection",
+    "candidate_topic_norm": "domain generalization in multimodal hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "domain generalization in multimodal hate speech detection",
+    "source_paper_ids": [
+      "4f808f1334cee0c59ed60f20d36699e4b2faf438"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "it is unclear whether these synthetic examples generalize to 'memes in the wild' and they evaluate out-of-sample performance"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "7a82a57247a15c08a5f49591c910b031",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hate speech detection in internet memes",
+    "candidate_topic_norm": "hate speech detection in internet memes",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hate speech detection in internet memes",
+    "source_paper_ids": [
+      "e4f57e7e56b5819e8e7189d254f746796a396240"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "Internet memes, which combine text with a representative image ... even hate"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3920fe889f7875c86ca3ebb63851f6fc",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hate speech detection in spoken multimedia",
+    "candidate_topic_norm": "hate speech detection in spoken multimedia",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hate speech detection in spoken multimedia",
+    "source_paper_ids": [
+      "a738219bf8b6d3b15fcbed0a1f0cd88153a12e3b"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "no research has focused on detecting hateful content in multimedia data"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "39a2f3aea32bd1f2ce42bfd500334e6f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hate speech detection in text-embedded images",
+    "candidate_topic_norm": "hate speech detection in text-embedded images",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hate speech detection in text-embedded images",
+    "source_paper_ids": [
+      "a48ec3c0d50221917c2a8576ff2fbf1c08d8042b"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "classifying text-embedded images into two labels, namely 'Hate Speech' and 'No Hate Speech'"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "aecd0fd210dc335e9b7503e70f94b60a",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hate speech detection in under-resourced languages",
+    "candidate_topic_norm": "hate speech detection in under-resourced languages",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hate speech detection in under-resourced languages",
+    "source_paper_ids": [
+      "f5e49c92eebd7a059451d36ce5dc0aed7348b0a8"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "Amharic is also one of the under-resourced languages that benefits from hate speech detection"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "2321a96559deb86c0f91b2e163ff12fb",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hate speech identification in internet memes",
+    "candidate_topic_norm": "hate speech identification in internet memes",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hate speech identification in internet memes",
+    "source_paper_ids": [
+      "04ec465265bedf07334b5306acdfb546dfcf4d29",
+      "1f2bead7d7ca7c61a6e1773b6c6f2fe68e156441"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "Italian Internet memes ... classification tasks ... Hate Speech Identification",
+      "DANKMEMES features three tasks: A) Meme Detection, B) Hate Speech Identification"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 2,
+    "source_count": 2
+  },
+  {
+    "candidate_id": "c677b1d1250053767c00e4920c223c46",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hateful meme classification",
+    "candidate_topic_norm": "hateful meme classification",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hateful meme classification",
+    "source_paper_ids": [
+      "81c3853bb76cda671853b32b9c13f649a5b65a05"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "classification of multimodal hateful content on hateful and offensive memes datasets"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "80b23af5c3b80b801d5621529abe6e01",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hateful meme correction",
+    "candidate_topic_norm": "hateful meme correction",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hateful meme correction",
+    "source_paper_ids": [
+      "60f4dc690ea42fb77b04fc685e9d9c3a1e209319"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "there is a lack of related work on detecting or correcting hateful memes... hateful meme correction tasks"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "5326aaa4045860767de3be3803f4f61f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hateful meme detection",
+    "candidate_topic_norm": "hateful meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hateful meme detection",
+    "source_paper_ids": [
+      "76e266d5220f963886cf30ae747d72fdf8c84378",
+      "5fa12d1a3484430e6f81ca7d4c3c3f6d3a5ed9ea",
+      "67b870fce2d18a92651e3cc9397e6f8d1b9ddee3",
+      "706e3fb58b38c1eedb4155b52cefadb8824efe2c",
+      "772d888f32b75e9a77d83db06312ddc96f09fb65",
+      "7ea0c43226ddb3727475286f461d4f90ff63a106",
+      "b74e8aabecce9df495aa251c7b9ad248141515f7",
+      "60f4dc690ea42fb77b04fc685e9d9c3a1e209319",
+      "9f3e98ab042af03ccd0d752e5fac704f32a66c25"
+    ],
+    "source_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "source_evidence": [
+      "develop a multimodal framework for the detection of hateful memes",
+      "memes became an important method for spreading hate speech against individuals or targeted groups",
+      "\"the hateful meme challenge demonstrates the difficulty of determining whether a meme is hateful or not\"",
+      "\"The Shared Task on Hateful Memes is a challenge that aims at the detection of hateful content in memes\"",
+      "detect hateful speech in multi-modal memes",
+      "identify whether a given meme is hateful or not",
+      "\"challenges of hate speech detection in memes\" and \"early automatic detection is necessary\"",
+      "we study the ability of VLMs on hateful meme detection",
+      "\"Hateful memes ... have become increasingly prevalent ... posing a significant challenge to content moderation efforts\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 9,
+    "source_count": 9
+  },
+  {
+    "candidate_id": "5696485b5ef9621b1f0111eb93096a39",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "hateful user detection",
+    "candidate_topic_norm": "hateful user detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "hateful user detection",
+    "source_paper_ids": [
+      "e86783ad69b738de2fb7d45831ca251a23c92f56"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"hateful user detection\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "dd7c8fb1da4fe32b7b4443ecda32b179",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "implicit harm detection",
+    "candidate_topic_norm": "implicit harm detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "implicit harm detection",
+    "source_paper_ids": [
+      "35714a53af79bd1ea5efc4b50c43e4f6bd2c8854"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "most of their approaches neglect the analysis of implicit harm, which is particularly challenging"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "8e1fe098b15d601256dd7a6520142e79",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "implicit hate detection",
+    "candidate_topic_norm": "implicit hate detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "implicit hate detection",
+    "source_paper_ids": [
+      "c90d18d5cd8b1e07f8a8b6b9d14a85b03d55b4b6"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"neglect the analysis of implicit harm, which is particularly challenging\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "88df8aa3022585654de707e44cd7f79f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "implicit hate in memes",
+    "candidate_topic_norm": "implicit hate in memes",
+    "candidate_topic_type": "problem-space",
+    "match_text": "implicit hate in memes",
+    "source_paper_ids": [
+      "506b55cd66460f23b6400c0d888d4d8e582cbcc0"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "These memes often employ subtlety, sarcasm, and symbolism, presenting formidable challenges for automated detection systems"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "4bfc45fee53b7eca26d6d0615be738c0",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "implicit hate speech detection",
+    "candidate_topic_norm": "implicit hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "implicit hate speech detection",
+    "source_paper_ids": [
+      "69d45dfa4d5049671df9e9214264fbd57d99951e"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "Implicit hate is particularly challenging as such content tends to have unusual syntax, polysemic words, and fewer markers of prejudice"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3329835269db5d23bd154bad293077bc",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "implicit image-text relation modeling",
+    "candidate_topic_norm": "implicit image-text relation modeling",
+    "candidate_topic_type": "problem-space",
+    "match_text": "implicit image-text relation modeling",
+    "source_paper_ids": [
+      "982a06ddea4fabfdf55f7272231ff1506123d170"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "social media posts tend to exhibit more implicit image-text relations"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "a008bf5735f84913d77e66a8545faa4f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "interpretability in hate speech detection",
+    "candidate_topic_norm": "interpretability in hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "interpretability in hate speech detection",
+    "source_paper_ids": [
+      "14e29c60e685d3fed9daf002d90cde3eac13c043"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"The interpretability of such models has received very little attention\" in hate speech identification"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "85257345452bc1e662c6c62395098584",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "low-resource multilingual abusive speech detection",
+    "candidate_topic_norm": "low-resource multilingual abusive speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "low-resource multilingual abusive speech detection",
+    "source_paper_ids": [
+      "e86783ad69b738de2fb7d45831ca251a23c92f56"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"detecting low-resource multilingual abusive speech\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "1246bd639d6d6dc3b2a860a56efa5264",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "malicious online content detection",
+    "candidate_topic_norm": "malicious online content detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "malicious online content detection",
+    "source_paper_ids": [
+      "21fdb636f00f44a78617a15cbee68cbf47a2b9ca"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "discriminate between benign and malicious posts"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "4294953f43a0c9ca20a1c158f664cffa",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "misogynistic meme detection",
+    "candidate_topic_norm": "misogynistic meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "misogynistic meme detection",
+    "source_paper_ids": [
+      "8908598c1b811038f4123cd3a6bb97a90430f9cc"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"identifying misogynistic memes online is one of utmost importance\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "189d376ff63786cb8a684a317fa7713d",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "misogynous meme detection",
+    "candidate_topic_norm": "misogynous meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "misogynous meme detection",
+    "source_paper_ids": [
+      "24fe946eb5aa57676fb8568cd9dc51028c476b45"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "\"detect misogynous memes\" and \"Misogynous content detection is especially challenging when textual and visual modalities are combined\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "5dc33255fb95e9969c2892d9f29d3058",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "modality influence in multimodal classification",
+    "candidate_topic_norm": "modality influence in multimodal classification",
+    "candidate_topic_type": "problem-space",
+    "match_text": "modality influence in multimodal classification",
+    "source_paper_ids": [
+      "004cdb5b17c861fb3d2a0cb2d362bcc3607ac381"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "limited investigations have been conducted on the influence of different modalities in Multimodal Machine Learning systems"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "ecf6cce98e7864571a42872b67a9e84f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multilingual fake news detection",
+    "candidate_topic_norm": "multilingual fake news detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multilingual fake news detection",
+    "source_paper_ids": [
+      "48ca40748556f24c77d443e3e78e2848348294d0",
+      "6c3d4b4ca3d0a8dfba8ed722aad5dd39317b04e6"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "\"to help better combat the COVID-19 fake news\" and \"provides the multilingual fake news\"",
+      "\"fake news detection dataset\" with fake news content collected across 6 different languages"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 2,
+    "source_count": 2
+  },
+  {
+    "candidate_id": "f4abd8ab5195cab08181d4c1bbdb14a0",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal cyberbullying detection",
+    "candidate_topic_norm": "multimodal cyberbullying detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal cyberbullying detection",
+    "source_paper_ids": [
+      "bd367c4e0ec3379f53b69eba69d5a0b5847ab281"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"spanning unimodal and multimodal approaches\" to cyberbullying detection"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "84bb77849729b686037103ebae1e4a06",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal cyberbullying detection in memes",
+    "candidate_topic_norm": "multimodal cyberbullying detection in memes",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal cyberbullying detection in memes",
+    "source_paper_ids": [
+      "597ec7f0789ff61c0856ff9e1ff9a85de9654ce7"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "detecting cyberbullying ... in memes that combine text and image modalities"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "987773000656267cb8f69b908db2f551",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal fusion limitations in hate speech detection",
+    "candidate_topic_norm": "multimodal fusion limitations in hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal fusion limitations in hate speech detection",
+    "source_paper_ids": [
+      "eaf0ced3774a2e82a41e7102beb0f4bc00d4ea7e"
+    ],
+    "source_years": [
+      2019
+    ],
+    "source_evidence": [
+      "\"current multimodal models cannot outperform models analyzing only text\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "d337ecd45849ed8b124706a339feda5d",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal harmful content detection",
+    "candidate_topic_norm": "multimodal harmful content detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal harmful content detection",
+    "source_paper_ids": [
+      "84d46ceddf7f0f47b923b6fe19663d5447703c9f",
+      "b520fd84d4febc66bad1c89528e2663bed797809"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "Detection of harmful content ... across platforms, languages, and modalities",
+      "\"Detection of harmful content ... across platforms, languages, and modalities\" and \"content (NLP, multimodality)\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 2,
+    "source_count": 2
+  },
+  {
+    "candidate_id": "6b4e3776ec82ed9fe6f682b7349e5e91",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech detection in code-switched languages",
+    "candidate_topic_norm": "multimodal hate speech detection in code-switched languages",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal hate speech detection in code-switched languages",
+    "source_paper_ids": [
+      "2cc478a27c355f179c979214bb3cee603f6061ec"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "task of hate and offense detection from multimodal data... that contain text in code-switched languages"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "4529e0a4888b77e2b5090a74cbd0e91e",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech detection in low-resource languages",
+    "candidate_topic_norm": "multimodal hate speech detection in low-resource languages",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal hate speech detection in low-resource languages",
+    "source_paper_ids": [
+      "8583e6f2dd9347c23078e55e48f86754df11dcd7"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "languages like Bengali are under-resourced... only the textual data is not enough to judge them since images might give extra context"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "d1f5b5e6c66b6a5aadd33202a02c4b16",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech target detection",
+    "candidate_topic_norm": "multimodal hate speech target detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal hate speech target detection",
+    "source_paper_ids": [
+      "841ddbc1cd7e0a699a9f5b45d243e54e82d639c5"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"For the second subtask, target detection\" in Multimodal Hate Speech Event Detection 2023"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "859f111628ca50dad8950402dc404a22",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal meme detection",
+    "candidate_topic_norm": "multimodal meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal meme detection",
+    "source_paper_ids": [
+      "336e531a59cafbe215b950fd749bca866b89cea0"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "\"simple classification models for meme detection\" and \"The main challenge is to effectively combine textual and image inputs\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "329a6e7eafa6b29d39a6fe3a7ecadb2a",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal model robustness",
+    "candidate_topic_norm": "multimodal model robustness",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal model robustness",
+    "source_paper_ids": [
+      "43697482bf65b98506f77d80ef35676470d52925"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "ensuring that the predictions are robust to various situations"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3ddcab93ac467633f71b81acbe4014ca",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal social bias analysis",
+    "candidate_topic_norm": "multimodal social bias analysis",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal social bias analysis",
+    "source_paper_ids": [
+      "55ede1009ae41c288815cf79e2067789138046b7"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"social bias analyses\" in web and social media multimodal data"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3cdbc6cfbc991e0370caeffaa7a938f4",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal social media content understanding",
+    "candidate_topic_norm": "multimodal social media content understanding",
+    "candidate_topic_type": "problem-space",
+    "match_text": "multimodal social media content understanding",
+    "source_paper_ids": [
+      "d0d0b06f3988ab6e81550035cf9d6f60d4ffb09a"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"Understanding social multimedia content remains a challenging problem\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "0a1f6702bbdf0f3a09f304209d235366",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "noisy hate speech detection",
+    "candidate_topic_norm": "noisy hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "noisy hate speech detection",
+    "source_paper_ids": [
+      "3c1c5f1355496c5a96e7c7e0928219276609974d"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"A Multimodal Classification of Noisy Hate Speech\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "eeb1884b45c38dd239a0e67e0f99a1eb",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "OCR noise robustness in multimodal hate speech detection",
+    "candidate_topic_norm": "ocr noise robustness in multimodal hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "OCR noise robustness in multimodal hate speech detection",
+    "source_paper_ids": [
+      "4f808f1334cee0c59ed60f20d36699e4b2faf438"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "captions must be extracted via OCR, injecting noise and diminishing performance of multimodal models"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "f228ee701ca4d5271ca1da7ea5f1838e",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "social media hate speech detection",
+    "candidate_topic_norm": "social media hate speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "social media hate speech detection",
+    "source_paper_ids": [
+      "bc2753de3ac60d9eca1fc20fbdefdfd416c74db8"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "classify speeches into hate and non-hate categories in real time ... on social media"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "808ab846442408e456c21e5093d8d863",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "spoken toxicity detection",
+    "candidate_topic_norm": "spoken toxicity detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "spoken toxicity detection",
+    "source_paper_ids": [
+      "bc201ee7af8e782e082f7dd92bac753f6c350235"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "detecting toxicity from spoken utterances"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "1c7a01b679580eeb3f837af3825cf8d5",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "visual cultural connotation understanding in hateful meme detection",
+    "candidate_topic_norm": "visual cultural connotation understanding in hateful meme detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "visual cultural connotation understanding in hateful meme detection",
+    "source_paper_ids": [
+      "405d39f7a8c568dac5f42c95bfd50fc9ec2a004e"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "further concentration on its visual elements to improve their interpretation of underlying cultural connotations"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "123d169bfcfd5cc24c9031570d8ed742",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "weak cross-modal alignment in multimodal social media classification",
+    "candidate_topic_norm": "weak cross-modal alignment in multimodal social media classification",
+    "candidate_topic_type": "problem-space",
+    "match_text": "weak cross-modal alignment in multimodal social media classification",
+    "source_paper_ids": [
+      "790a4e08f6880deadd32eea9b10110714e4c37ed"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"cross-modal semantics might be hidden or the relation between image and text is weak\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "bb3a8bf277e585960afe5bb8d3b15c07",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "weakly aligned image-text understanding",
+    "candidate_topic_norm": "weakly aligned image-text understanding",
+    "candidate_topic_type": "problem-space",
+    "match_text": "weakly aligned image-text understanding",
+    "source_paper_ids": [
+      "14e5d984af4ac965579644bd0ea4ae42587b6a00"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "the image and text in memes are weakly aligned or even irrelevant"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "e5219c2847021a145cdb26f997377835",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "weakly correlated multimodal fusion",
+    "candidate_topic_norm": "weakly correlated multimodal fusion",
+    "candidate_topic_type": "problem-space",
+    "match_text": "weakly correlated multimodal fusion",
+    "source_paper_ids": [
+      "3828a8c97e5c39f08f01ff1ae6a2891e2b71a48b"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "the majority of memes have images and text that are only weakly consistent or even uncorrelated"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "939291548fad44995c967ab54615ff57",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "xenophobic and racist speech detection",
+    "candidate_topic_norm": "xenophobic and racist speech detection",
+    "candidate_topic_type": "problem-space",
+    "match_text": "xenophobic and racist speech detection",
+    "source_paper_ids": [
+      "0d2f279be0e985cf875e57ee7af45b80de81962b"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"hateful, xenophobic, and racist speech in Greek aimed at refugees and migrants\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "041c2909aab4064452a48d4162539f1b",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "adversarially robust harmful content detection",
+    "candidate_topic_norm": "adversarially robust harmful content detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "adversarially robust harmful content detection",
+    "source_paper_ids": [
+      "84d46ceddf7f0f47b923b6fe19663d5447703c9f"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "Robust detection models against adversarial actors"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "74735446f42f7e12cd4122aad44d5544",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "audio-text multimodal fusion",
+    "candidate_topic_norm": "audio-text multimodal fusion",
+    "candidate_topic_type": "solution-space",
+    "match_text": "audio-text multimodal fusion",
+    "source_paper_ids": [
+      "f5e49c92eebd7a059451d36ce5dc0aed7348b0a8"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "a multi-modal, which is a mix of the acoustic and textual elements"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "64f0f75d4ed9f0037b18bd5670cf3d78",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "caption-enhanced multimodal reasoning",
+    "candidate_topic_norm": "caption-enhanced multimodal reasoning",
+    "candidate_topic_type": "solution-space",
+    "match_text": "caption-enhanced multimodal reasoning",
+    "source_paper_ids": [
+      "14e5d984af4ac965579644bd0ea4ae42587b6a00"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "proposes a novel method incorporating the image captioning process into the memes detection process"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "746eb6a5fa57fdd3d94f11ffb03fa692",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "caption-enriched multimodal training",
+    "candidate_topic_norm": "caption-enriched multimodal training",
+    "candidate_topic_type": "solution-space",
+    "match_text": "caption-enriched multimodal training",
+    "source_paper_ids": [
+      "67b870fce2d18a92651e3cc9397e6f8d1b9ddee3"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"incorporation of such automatic captions during fine-tuning\" and \"continuing the pre-training... on augmented and original caption pairs\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "aabbef90d357df273f8b9db5ee3d8b33",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "comment-aware multimodal learning",
+    "candidate_topic_norm": "comment-aware multimodal learning",
+    "candidate_topic_type": "solution-space",
+    "match_text": "comment-aware multimodal learning",
+    "source_paper_ids": [
+      "982a06ddea4fabfdf55f7272231ff1506123d170"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "we capture hinting features from user comments"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "e3710bda8a0522c04963951cd0f3e993",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "counter-narrative interventions",
+    "candidate_topic_norm": "counter-narrative interventions",
+    "candidate_topic_type": "solution-space",
+    "match_text": "counter-narrative interventions",
+    "source_paper_ids": [
+      "c14302fbbc1db9b92d35b2e1d27bc3a1a39c6da5"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"the study of counter-narrative as an alternative to mitigate the effects of hate speech\""
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "80164b02240132b7d0d9e4baaa777f8d",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-attention multimodal fusion",
+    "candidate_topic_norm": "cross-attention multimodal fusion",
+    "candidate_topic_type": "solution-space",
+    "match_text": "cross-attention multimodal fusion",
+    "source_paper_ids": [
+      "3828a8c97e5c39f08f01ff1ae6a2891e2b71a48b"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "proposed a novel cross-attention network to address this task"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "a0758b420345ed1cb232cb0114c8f697",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-domain knowledge transfer",
+    "candidate_topic_norm": "cross-domain knowledge transfer",
+    "candidate_topic_type": "solution-space",
+    "match_text": "cross-domain knowledge transfer",
+    "source_paper_ids": [
+      "f118a713952c49f96382d9b8fdc153d9f54bcd3c"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "an initial attempt of common knowledge transfer based on the above two tasks"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "5b5d6fd22a0783adc3da546d9465fb8f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-modal alignment via optimal transport",
+    "candidate_topic_norm": "cross-modal alignment via optimal transport",
+    "candidate_topic_type": "solution-space",
+    "match_text": "cross-modal alignment via optimal transport",
+    "source_paper_ids": [
+      "35714a53af79bd1ea5efc4b50c43e4f6bd2c8854"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "formulates the cross-modal aligning problem as solutions for optimal transportation plans"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "60b49c25fd7126fe957ff025104c7e2f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "cross-modal relation modeling",
+    "candidate_topic_norm": "cross-modal relation modeling",
+    "candidate_topic_type": "solution-space",
+    "match_text": "cross-modal relation modeling",
+    "source_paper_ids": [
+      "55ede1009ae41c288815cf79e2067789138046b7"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"modelling the modalities and their complex interactions\" and \"cross-modal relations\""
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "7740ac0889f8b2547e77e4e8b836262f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "deep learning-based cyberbullying detection",
+    "candidate_topic_norm": "deep learning-based cyberbullying detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "deep learning-based cyberbullying detection",
+    "source_paper_ids": [
+      "bd367c4e0ec3379f53b69eba69d5a0b5847ab281"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"research in cyberbullying detection, encompassing both traditional machine learning and deep learning studies\""
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3b9cecbd4038f4b880ceea84bba85432",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "domain-specific pretraining for hateful meme classification",
+    "candidate_topic_norm": "domain-specific pretraining for hateful meme classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "domain-specific pretraining for hateful meme classification",
+    "source_paper_ids": [
+      "8908598c1b811038f4123cd3a6bb97a90430f9cc"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"pretraining BERT on hateful memes ... outperforms state of the art models\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "fab81f778474afe922df81950d57b0d5",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "emotion-aware hate speech detection",
+    "candidate_topic_norm": "emotion-aware hate speech detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "emotion-aware hate speech detection",
+    "source_paper_ids": [
+      "a738219bf8b6d3b15fcbed0a1f0cd88153a12e3b"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "the most essential features in classifying hate speech would be the speaker's emotional state"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "e9c46bff053f9964783b483c7178a0fb",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "end-to-end speech toxicity classification",
+    "candidate_topic_norm": "end-to-end speech toxicity classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "end-to-end speech toxicity classification",
+    "source_paper_ids": [
+      "bc201ee7af8e782e082f7dd92bac753f6c350235"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "development of E2E speech models"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "5819bbd724d92af76a7356ee3e184a87",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "fine-tuning pretrained language and vision models",
+    "candidate_topic_norm": "fine-tuning pretrained language and vision models",
+    "candidate_topic_type": "solution-space",
+    "match_text": "fine-tuning pretrained language and vision models",
+    "source_paper_ids": [
+      "0d2f279be0e985cf875e57ee7af45b80de81962b"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"combine transfer learning and fine-tuning of BERT and Resnet\""
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "72b011367663f5b663e5e7931c87a2ab",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "image-text auxiliary objectives",
+    "candidate_topic_norm": "image-text auxiliary objectives",
+    "candidate_topic_type": "solution-space",
+    "match_text": "image-text auxiliary objectives",
+    "source_paper_ids": [
+      "790a4e08f6880deadd32eea9b10110714e4c37ed"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"using two auxiliary losses jointly with the main task\" including Image-Text Contrastive and Image-Text Matching"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "d3c8d47df05731874d34ae24ed112bd9",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "knowledge-enhanced hateful meme detection",
+    "candidate_topic_norm": "knowledge-enhanced hateful meme detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "knowledge-enhanced hateful meme detection",
+    "source_paper_ids": [
+      "506b55cd66460f23b6400c0d888d4d8e582cbcc0"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "utilizing a Dual Stream Transformer Model, real-world knowledge integration ... and cultural reference understanding"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "a7523100dfcff558f6464a2b4f0b3f05",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "large multimodal models for social media analysis",
+    "candidate_topic_norm": "large multimodal models for social media analysis",
+    "candidate_topic_type": "solution-space",
+    "match_text": "large multimodal models for social media analysis",
+    "source_paper_ids": [
+      "d0d0b06f3988ab6e81550035cf9d6f60d4ffb09a"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"explore GPT-4V(ision)'s capabilities for social multimedia analysis\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "d17fe24e06e41010638ed347a3cbc153",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "modality ablation in multimodal models",
+    "candidate_topic_norm": "modality ablation in multimodal models",
+    "candidate_topic_type": "solution-space",
+    "match_text": "modality ablation in multimodal models",
+    "source_paper_ids": [
+      "004cdb5b17c861fb3d2a0cb2d362bcc3607ac381"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "training SOTA MultiModal Machine Learning models with masked modalities to evaluate their impact on performance"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "7a4f835911c9da9461768515ba8c4aed",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multilingual hate speech detection",
+    "candidate_topic_norm": "multilingual hate speech detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multilingual hate speech detection",
+    "source_paper_ids": [
+      "c14302fbbc1db9b92d35b2e1d27bc3a1a39c6da5"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"multilingual (both in English and Spanish) approaches\" for automatic detection of hate"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "5d53f54f0b4a29a9f7eb800d593a8127",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multilingual misinformation datasets",
+    "candidate_topic_norm": "multilingual misinformation datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multilingual misinformation datasets",
+    "source_paper_ids": [
+      "48ca40748556f24c77d443e3e78e2848348294d0"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "\"we propose a new fake news detection dataset\" and collect data in \"6 different languages\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "9695c0073e7a59c51936224e48b3fba9",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multilingual multimodal misinformation datasets",
+    "candidate_topic_norm": "multilingual multimodal misinformation datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multilingual multimodal misinformation datasets",
+    "source_paper_ids": [
+      "6c3d4b4ca3d0a8dfba8ed722aad5dd39317b04e6"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "\"MM-COVID (Multilingual and Multidimensional COVID-19 Fake News Data Repository)\" providing multilingual fake news and relevant social context"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "919e12b7bcac7f6ba5e4a5f9c46b6448",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal context modeling",
+    "candidate_topic_norm": "multimodal context modeling",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal context modeling",
+    "source_paper_ids": [
+      "69d45dfa4d5049671df9e9214264fbd57d99951e"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "the role of semantic and multimodal context for detecting implicit and explicit hate; both text- and visual-enrichment improves model performance"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "3e1d3b5d5da2455d3bf5ecba649b3de7",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal data augmentation",
+    "candidate_topic_norm": "multimodal data augmentation",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal data augmentation",
+    "source_paper_ids": [
+      "772d888f32b75e9a77d83db06312ddc96f09fb65"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "adding training datasets generated from data augmentation"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "eb1a0cc02a8a52357b6341659dc8276d",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal deepfake detection",
+    "candidate_topic_norm": "multimodal deepfake detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal deepfake detection",
+    "source_paper_ids": [
+      "599f6c4dd3045d770ae76248333dff844b2aff9f"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "This article is mainly focused on multimodal data modalities to detect audio-visual fakes."
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "69b71d9c5fe34f80827a1542db5ffb82",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal ensemble learning",
+    "candidate_topic_norm": "multimodal ensemble learning",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal ensemble learning",
+    "source_paper_ids": [
+      "76e266d5220f963886cf30ae747d72fdf8c84378",
+      "a48ec3c0d50221917c2a8576ff2fbf1c08d8042b"
+    ],
+    "source_years": [
+      2020,
+      2023
+    ],
+    "source_evidence": [
+      "ensemble learning based on cross-validation to improve robustness",
+      "we present our novel ensemble learning approach... incorporated state-of-art models including InceptionV3, BERT, and XLNet"
+    ],
+    "source_confidences": [
+      "medium",
+      "high"
+    ],
+    "raw_mentions": 2,
+    "source_count": 2
+  },
+  {
+    "candidate_id": "d70bb9db28d960e2cd4448463f267703",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal feature fusion",
+    "candidate_topic_norm": "multimodal feature fusion",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal feature fusion",
+    "source_paper_ids": [
+      "3c1c5f1355496c5a96e7c7e0928219276609974d",
+      "24fe946eb5aa57676fb8568cd9dc51028c476b45",
+      "14e29c60e685d3fed9daf002d90cde3eac13c043",
+      "9f3e98ab042af03ccd0d752e5fac704f32a66c25"
+    ],
+    "source_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "source_evidence": [
+      "\"builds upon BERT, Capsule Network, and EfficientNet involving four modalities\"",
+      "\"a multimodal architecture that combines textual and visual features\"",
+      "\"a novel mechanism is devised to fuse the features from the multimodal inputs\"",
+      "\"utilizes both visual and textual modalities\" and \"combine the visual and textual cues\""
+    ],
+    "source_confidences": [
+      "medium",
+      "high"
+    ],
+    "raw_mentions": 4,
+    "source_count": 4
+  },
+  {
+    "candidate_id": "1022f59d565bf4c0e742b3b1bd596a13",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate meme datasets",
+    "candidate_topic_norm": "multimodal hate meme datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal hate meme datasets",
+    "source_paper_ids": [
+      "2cc478a27c355f179c979214bb3cee603f6061ec"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "present a novel triply annotated Indian political Memes (IPM) dataset"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "f37b2dec6560b90a34f559bb8f39e88c",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech benchmark datasets",
+    "candidate_topic_norm": "multimodal hate speech benchmark datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal hate speech benchmark datasets",
+    "source_paper_ids": [
+      "eaf0ced3774a2e82a41e7102beb0f4bc00d4ea7e"
+    ],
+    "source_years": [
+      2019
+    ],
+    "source_evidence": [
+      "\"We gather and annotate a large scale dataset from Twitter, MMHS150K\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "64e61b81a927c23226bcc2da93d0d845",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech classification",
+    "candidate_topic_norm": "multimodal hate speech classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal hate speech classification",
+    "source_paper_ids": [
+      "b74e8aabecce9df495aa251c7b9ad248141515f7"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "\"used to test the various unimodal and a multimodal approach to baseline performance\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "1e0f0cf0ff90c241c67c1039cace8564",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hate speech datasets",
+    "candidate_topic_norm": "multimodal hate speech datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal hate speech datasets",
+    "source_paper_ids": [
+      "8583e6f2dd9347c23078e55e48f86754df11dcd7"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "We prepared the only multimodal hate speech dataset... for Bengali"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "6c4107b7042d632c8f8106149a99a0f0",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal hateful meme datasets",
+    "candidate_topic_norm": "multimodal hateful meme datasets",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal hateful meme datasets",
+    "source_paper_ids": [
+      "4104cfd71b219b5a532677fe8eac151ec6bf182a"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "this paper introduces a multimodal hate speech dataset (named MUTE) consisting of 4158 memes having Bengali and code-mixed captions"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "c2778361cbe1786dc0b569bb89ba3b5e",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal late fusion",
+    "candidate_topic_norm": "multimodal late fusion",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal late fusion",
+    "source_paper_ids": [
+      "7ea0c43226ddb3727475286f461d4f90ff63a106"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "Late fusion technique is used to combine the image and text mode"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "41ea6d497e21032424497f1715403481",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal meme classification benchmarks",
+    "candidate_topic_norm": "multimodal meme classification benchmarks",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal meme classification benchmarks",
+    "source_paper_ids": [
+      "1f2bead7d7ca7c61a6e1773b6c6f2fe68e156441"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "DANKMEMES is a shared task... focusing on the automatic classification of Internet memes"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "da5d5468d124ecb884454ecfdb02c71f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal multi-task learning",
+    "candidate_topic_norm": "multimodal multi-task learning",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal multi-task learning",
+    "source_paper_ids": [
+      "e4f57e7e56b5819e8e7189d254f746796a396240"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "a multimodal multi-task learning architecture based on two main components"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "e0e3633042a693e1bf576c7e6fd0e603",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal neural networks",
+    "candidate_topic_norm": "multimodal neural networks",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal neural networks",
+    "source_paper_ids": [
+      "5fa12d1a3484430e6f81ca7d4c3c3f6d3a5ed9ea"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "a multimodal one, consisting of two parallel processing branches, one textual and one visual, that are joined in a final classification step"
+    ],
+    "source_confidences": [
+      "medium"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "1eafd8488d8583876a47316b3c788378",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal one-class learning",
+    "candidate_topic_norm": "multimodal one-class learning",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal one-class learning",
+    "source_paper_ids": [
+      "21fdb636f00f44a78617a15cbee68cbf47a2b9ca"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "proposing a multimodal one-class learning approach"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "992bad985eb34df3a5140ccabb13e7fc",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multimodal text-to-text generation",
+    "candidate_topic_norm": "multimodal text-to-text generation",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multimodal text-to-text generation",
+    "source_paper_ids": [
+      "597ec7f0789ff61c0856ff9e1ff9a85de9654ce7"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "reframing ... as a multimodal text-to-text generation problem"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "bc9225844add4d17e11a3e5e8de928e0",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "multitask learning for multimodal classification",
+    "candidate_topic_norm": "multitask learning for multimodal classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "multitask learning for multimodal classification",
+    "source_paper_ids": [
+      "04ec465265bedf07334b5306acdfb546dfcf4d29"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "The task was mainly approached with multi-task learning frameworks, leveraging the multimodality"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "c687106d209adffe28e0433b66164d8f",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "named entity augmentation in multimodal hate speech detection",
+    "candidate_topic_norm": "named entity augmentation in multimodal hate speech detection",
+    "candidate_topic_type": "solution-space",
+    "match_text": "named entity augmentation in multimodal hate speech detection",
+    "source_paper_ids": [
+      "841ddbc1cd7e0a699a9f5b45d243e54e82d639c5"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"we employ multimodal deep learning models boosted by named entity features\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "0657fa7aad739ae9b304077a031f7476",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "optimal transport-based cross-modal alignment",
+    "candidate_topic_norm": "optimal transport-based cross-modal alignment",
+    "candidate_topic_type": "solution-space",
+    "match_text": "optimal transport-based cross-modal alignment",
+    "source_paper_ids": [
+      "c90d18d5cd8b1e07f8a8b6b9d14a85b03d55b4b6"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "\"formulates the cross-modal aligning problem as solutions for optimal transportation plans\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "d7e3b490f0ade0b07bea4860a22bdd52",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "pretrained multimodal embeddings",
+    "candidate_topic_norm": "pretrained multimodal embeddings",
+    "candidate_topic_type": "solution-space",
+    "match_text": "pretrained multimodal embeddings",
+    "source_paper_ids": [
+      "336e531a59cafbe215b950fd749bca866b89cea0"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "\"They leverage existing pretrained embeddings, both for text and image representation\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "8905c9482eea2f933a5c4984a6afead3",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "privacy-preserving multimodal representations",
+    "candidate_topic_norm": "privacy-preserving multimodal representations",
+    "candidate_topic_type": "solution-space",
+    "match_text": "privacy-preserving multimodal representations",
+    "source_paper_ids": [
+      "43697482bf65b98506f77d80ef35676470d52925"
+    ],
+    "source_years": [
+      2020
+    ],
+    "source_evidence": [
+      "privacy of the generated representations"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "b2cab9ec3afb113dfab87edb6369cdc6",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "prompt-based caption generation with frozen vision-language models",
+    "candidate_topic_norm": "prompt-based caption generation with frozen vision-language models",
+    "candidate_topic_type": "solution-space",
+    "match_text": "prompt-based caption generation with frozen vision-language models",
+    "source_paper_ids": [
+      "9db8034f51981ce588caa9f44633a0b46e16d5cc"
+    ],
+    "source_years": [
+      2023
+    ],
+    "source_evidence": [
+      "prompt a frozen PVLM by asking hateful content-related questions and use the answers as image captions"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "dcb5e74c0e4f56a366db804ae5bbd2bc",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "retrieval-augmented classification",
+    "candidate_topic_norm": "retrieval-augmented classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "retrieval-augmented classification",
+    "source_paper_ids": [
+      "706e3fb58b38c1eedb4155b52cefadb8824efe2c"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "\"We also experimented with retrieval augmented classification models\""
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "c227a90ac4125c93025fbc1a0866e330",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "supervised hate speech classification",
+    "candidate_topic_norm": "supervised hate speech classification",
+    "candidate_topic_type": "solution-space",
+    "match_text": "supervised hate speech classification",
+    "source_paper_ids": [
+      "bc2753de3ac60d9eca1fc20fbdefdfd416c74db8"
+    ],
+    "source_years": [
+      2022
+    ],
+    "source_evidence": [
+      "investigate selected supervised machine learning algorithm model for the classification of hate speech"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  },
+  {
+    "candidate_id": "b5363822133747498b24d1f6a8b2a5f6",
+    "target_topic": "multimodal hate speech detection",
+    "target_topic_slug": "multimodal-hate-speech-detection",
+    "candidate_topic": "target entity disentanglement in multimodal memes",
+    "candidate_topic_norm": "target entity disentanglement in multimodal memes",
+    "candidate_topic_type": "solution-space",
+    "match_text": "target entity disentanglement in multimodal memes",
+    "source_paper_ids": [
+      "81c3853bb76cda671853b32b9c13f649a5b65a05"
+    ],
+    "source_years": [
+      2021
+    ],
+    "source_evidence": [
+      "designed to disentangle target entities in multimodal memes to improve the hateful content classification and explainability"
+    ],
+    "source_confidences": [
+      "high"
+    ],
+    "raw_mentions": 1,
+    "source_count": 1
+  }
+]
