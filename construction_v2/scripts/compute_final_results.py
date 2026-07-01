@@ -80,13 +80,28 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pre-peak-tolerance", type=float, default=0.6)
     parser.add_argument("--validation-lift-threshold", type=float, default=1.5)
     parser.add_argument(
-        "--late-gate1-min-ref-n",
+        "--mode",
+        choices=["core", "strict"],
+        default="core",
+        help="Gate mode. core uses weak-signal evidence gates; strict uses trajectory/retention gates.",
+    )
+    parser.add_argument(
+        "--core-small-topic-ref-n-threshold",
+        type=int,
+        default=1000,
+        help="Use the small-topic core reference count threshold when ref_N_2024 is below this value.",
+    )
+    parser.add_argument(
+        "--core-small-topic-min-ref-n",
         type=int,
         default=3,
-        help=(
-            "Minimum 2024 reference-adoption count for the late-emergence Gate 1 path. "
-            "This path still requires 2023 topic presence and the standard Gate 2 validation."
-        ),
+        help="Core Gate 1 minimum ref_n_2024 for topics with ref_N_2024 below the small-topic threshold.",
+    )
+    parser.add_argument(
+        "--core-default-min-ref-n",
+        type=int,
+        default=5,
+        help="Core Gate 1 minimum ref_n_2024 for topics with ref_N_2024 at or above the small-topic threshold.",
     )
     return parser.parse_args()
 
@@ -467,29 +482,12 @@ def add_scores_and_gates(
         cols = [f"topic_f_{year}" for year in args.early_years if year >= onset]
         onset_peak.append(float(row[cols].max()) if cols else 0.0)
     scored["onset_to_2023_peak"] = onset_peak
-    scored["gate2_2024_validation_peak"] = (
+    scored["gate2_strict_2024_validation_peak"] = (
         scored["ref_f_2024"] + EPSILON >= args.validation_lift_threshold * scored["early_topic_peak"]
     )
-    scored["gate1_score_positive"] = scored["score"] > 0.0
-    scored["gate1_late_2023_validated"] = (
-        (scored["topic_n_2023"].astype(int) > 0)
-        & (scored["ref_n_2024"].astype(int) >= args.late_gate1_min_ref_n)
-        & scored["gate2_2024_validation_peak"]
-    )
-    scored["gate1_signal_presence"] = scored["gate1_score_positive"] | scored["gate1_late_2023_validated"]
-    scored["gate1_path"] = np.select(
-        [
-            scored["gate1_score_positive"] & scored["gate1_late_2023_validated"],
-            scored["gate1_score_positive"],
-            scored["gate1_late_2023_validated"],
-        ],
-        [
-            "strict_and_late",
-            "strict_trajectory",
-            "late_2023_validated",
-        ],
-        default="failed",
-    )
+    scored["gate1_strict_score_positive"] = scored["score"] > 0.0
+    scored["gate1_score_positive"] = scored["gate1_strict_score_positive"]
+    scored["gate2_2024_validation_peak"] = scored["gate2_strict_2024_validation_peak"]
     if space == "solution":
         gate3 = []
         gate3_strict = []
@@ -524,20 +522,24 @@ def add_scores_and_gates(
             gate3_strict.append(pass_strict_gate)
             gate3_skipped_steps.append(";".join(skipped_steps))
             gate3_failed_steps.append(";".join(failed_steps))
-        scored["gate3_solution_strict_smooth_growth"] = gate3_strict
+        scored["gate3_solution_no_skipped_decline"] = gate3_strict
         scored["gate3_solution_skipped_sparse_steps"] = gate3_skipped_steps
         scored["gate3_solution_failed_steps"] = gate3_failed_steps
-        scored["gate3_solution_smooth_growth"] = gate3
+        scored["gate3_strict_solution_smooth_growth"] = gate3
+        scored["gate3_solution_strict_smooth_growth"] = gate3_strict
+        scored["gate3_solution_smooth_growth"] = scored["gate3_strict_solution_smooth_growth"]
     else:
-        scored["gate3_problem_2023_retention"] = (
+        scored["gate3_strict_problem_2023_retention"] = (
             scored["topic_f_2023"] + EPSILON >= args.retention_tolerance * scored["onset_to_2023_peak"]
         )
+        scored["gate3_problem_2023_retention"] = scored["gate3_strict_problem_2023_retention"]
     gate4 = []
     for _, row in scored.iterrows():
         onset = int(row[f"{prefix}_onset"])
         threshold = max(float(row[f"topic_f_{onset}"]), args.pre_peak_tolerance * float(row["topic_f_2023"]))
         gate4.append(float(row[f"{prefix}_pre_peak"]) <= threshold + EPSILON)
-    scored["gate4_pre_onset_not_too_high"] = gate4
+    scored["gate4_strict_pre_onset_not_too_high"] = gate4
+    scored["gate4_pre_onset_not_too_high"] = scored["gate4_strict_pre_onset_not_too_high"]
     topic_2023 = scored["topic_f_2023"].astype(float)
     ref_2024 = scored["ref_f_2024"].astype(float)
     scored["validation_lift_2024_vs_2023"] = np.where(
@@ -550,35 +552,83 @@ def add_scores_and_gates(
         ref_2024 / scored["early_topic_peak"],
         np.where(ref_2024 > 0.0, np.inf, 0.0),
     )
-    gate_cols = gate_columns(space)
+
+    topic_n_cols = [f"topic_n_{year}" for year in args.early_years]
+    scored["early_support_n"] = scored[topic_n_cols].sum(axis=1).astype(int)
+    scored["early_active_years"] = (scored[topic_n_cols] > 0).sum(axis=1).astype(int)
+    ref_n_col = f"ref_n_{args.later_year}"
+    ref_N_col = f"ref_N_{args.later_year}"
+    scored["core_min_ref_n"] = np.where(
+        scored[ref_N_col].astype(int) < args.core_small_topic_ref_n_threshold,
+        args.core_small_topic_min_ref_n,
+        args.core_default_min_ref_n,
+    ).astype(int)
+    scored["gate1_core_2024_validation"] = (
+        (scored[ref_n_col].astype(int) >= scored["core_min_ref_n"])
+        & (scored["ref_f_2024"] + EPSILON >= args.validation_lift_threshold * scored["early_topic_peak"])
+    )
+    scored["gate2_core_early_evidence"] = (
+        (scored["early_support_n"] >= 2)
+        | (scored["early_active_years"] >= 2)
+    )
+    scored["gate3_core_pre_onset_not_too_high"] = scored["gate4_strict_pre_onset_not_too_high"]
+
+    if args.mode == "strict":
+        scored["gate1_selected"] = scored["gate1_strict_score_positive"]
+        scored["gate2_selected"] = scored["gate2_strict_2024_validation_peak"]
+        if space == "solution":
+            scored["gate3_selected"] = scored["gate3_strict_solution_smooth_growth"]
+        else:
+            scored["gate3_selected"] = scored["gate3_strict_problem_2023_retention"]
+        scored["gate4_selected"] = scored["gate4_strict_pre_onset_not_too_high"]
+        scored["gate_path"] = np.where(scored["gate1_selected"], "strict_trajectory", "failed")
+    else:
+        scored["gate1_selected"] = scored["gate1_core_2024_validation"]
+        scored["gate2_selected"] = scored["gate2_core_early_evidence"]
+        scored["gate3_selected"] = scored["gate3_core_pre_onset_not_too_high"]
+        scored["gate_path"] = np.where(scored["gate1_selected"], "core_validated", "failed")
+    scored["gate_mode"] = args.mode
+    gate_cols = gate_columns(space, args.mode)
     scored["passed_all_gates"] = scored[gate_cols].all(axis=1)
     scored.sort_values("score", ascending=False, inplace=True)
     return scored.reset_index(drop=True)
 
 
-def gate_columns(space: str) -> list[str]:
+def gate_columns(space: str, mode: str) -> list[str]:
+    if mode == "core":
+        return [
+            "gate1_core_2024_validation",
+            "gate2_core_early_evidence",
+            "gate3_core_pre_onset_not_too_high",
+        ]
     cols = [
-        "gate1_signal_presence",
-        "gate2_2024_validation_peak",
+        "gate1_strict_score_positive",
+        "gate2_strict_2024_validation_peak",
     ]
     if space == "solution":
-        cols.append("gate3_solution_smooth_growth")
+        cols.append("gate3_strict_solution_smooth_growth")
     else:
-        cols.append("gate3_problem_2023_retention")
-    cols.append("gate4_pre_onset_not_too_high")
+        cols.append("gate3_strict_problem_2023_retention")
+    cols.append("gate4_strict_pre_onset_not_too_high")
     return cols
 
 
-def gate_labels(space: str) -> dict[str, str]:
+def gate_labels(space: str, mode: str) -> dict[str, str]:
+    if mode == "core":
+        return {
+            "gate1_core_2024_validation": "gate1_core_2024_validation",
+            "gate2_core_early_evidence": "gate2_core_early_evidence",
+            "gate3_core_pre_onset_not_too_high": "gate3_core_pre_onset_not_too_high",
+        }
     labels = {
-        "gate1_signal_presence": "gate1_signal_presence",
-        "gate2_2024_validation_peak": "gate2_2024_validation_peak",
+        "gate1_strict_score_positive": "gate1_strict_score_positive",
+        "gate2_strict_2024_validation_peak": "gate2_strict_2024_validation_peak",
     }
     if space == "solution":
-        labels["gate3_solution_smooth_growth"] = "gate3_solution_smooth_growth"
+        labels["gate3_strict_solution_smooth_growth"] = "gate3_strict_solution_smooth_growth"
     else:
-        labels["gate3_problem_2023_retention"] = "gate3_problem_2023_retention"
-    labels["gate4_pre_onset_not_too_high"] = "gate4_pre_onset_not_too_high"
+        labels["gate3_strict_problem_2023_retention"] = "gate3_strict_problem_2023_retention"
+    labels["gate4_strict_pre_onset_not_too_high"] = "gate4_strict_pre_onset_not_too_high"
     return labels
 
 
@@ -596,14 +646,15 @@ def write_markdown(df: pd.DataFrame, path: Path, space: str) -> None:
     lines = [
         f"# Final {space.title()} Weak Signals",
         "",
-        "| rank | candidate_topic | score | gate1_path | onset | ref_f_2024 | topic_f_2023 | passed_all_gates |",
-        "| ---: | --- | ---: | --- | ---: | ---: | ---: | --- |",
+        "| rank | candidate_topic | score | gate_mode | gate_path | onset | ref_f_2024 | topic_f_2023 | passed_all_gates |",
+        "| ---: | --- | ---: | --- | --- | ---: | ---: | ---: | --- |",
     ]
     prefix = "solution" if space == "solution" else "problem"
     for rank, (_, row) in enumerate(df.iterrows(), start=1):
         lines.append(
             f"| {rank} | {row['candidate_topic']} | {float(row['score']):.6g} | "
-            f"{row.get('gate1_path', '')} | {int(row[f'{prefix}_onset'])} | {float(row['ref_f_2024']):.6g} | "
+            f"{row.get('gate_mode', '')} | {row.get('gate_path', '')} | "
+            f"{int(row[f'{prefix}_onset'])} | {float(row['ref_f_2024']):.6g} | "
             f"{float(row['topic_f_2023']):.6g} | {bool(row['passed_all_gates'])} |"
         )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -654,7 +705,7 @@ def write_space_outputs(scored: pd.DataFrame, topic_slug: str, space: str, args:
     scored_out.head(args.top_n_plots).to_csv(space_dir / "top30_by_score.csv", index=False)
     plot_top_n(scored, space_dir, space, args)
 
-    for gate_col, gate_dir_name in gate_labels(space).items():
+    for gate_col, gate_dir_name in gate_labels(space, args.mode).items():
         gate_dir = space_dir / gate_dir_name
         image_dir = gate_dir / "top30_failed_images"
         gate_dir.mkdir(parents=True, exist_ok=True)

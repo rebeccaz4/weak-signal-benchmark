@@ -3,6 +3,8 @@ set -euo pipefail
 
 TOPIC=""
 SPACE="all"
+MODE="core"
+OUTPUT_DIR=""
 CONDA_ENV="osworld"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
@@ -10,11 +12,13 @@ ROOT_DIR="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 usage() {
   cat <<'USAGE'
 Usage:
-  bash construction_v2/scripts/run_final_pipeline.sh --topic "large language models" [--space all|problem-space|solution-space]
+  bash construction_v2/scripts/run_final_pipeline.sh --topic "large language models" [--space all|problem-space|solution-space] [--mode core|strict] [--output-dir PATH]
 
 Options:
   --topic      Target topic name from construction_v2/topics.json. Required.
   --space      Candidate space to process: all, problem-space, or solution-space. Default: all.
+  --mode       Final gate mode: core or strict. Default: core.
+  --output-dir Final results directory. Default: construction_v2/final_results_<mode>.
   --conda-env  Conda environment name. Default: osworld.
 USAGE
 }
@@ -32,6 +36,14 @@ while [[ $# -gt 0 ]]; do
       ;;
     --space)
       SPACE="${2:-all}"
+      shift 2
+      ;;
+    --mode)
+      MODE="${2:-core}"
+      shift 2
+      ;;
+    --output-dir)
+      OUTPUT_DIR="${2:-}"
       shift 2
       ;;
     --conda-env)
@@ -59,6 +71,15 @@ fi
 if [[ "${SPACE}" != "all" && "${SPACE}" != "problem-space" && "${SPACE}" != "solution-space" ]]; then
   echo "--space must be one of: all, problem-space, solution-space." >&2
   exit 2
+fi
+
+if [[ "${MODE}" != "core" && "${MODE}" != "strict" ]]; then
+  echo "--mode must be one of: core, strict." >&2
+  exit 2
+fi
+
+if [[ -z "${OUTPUT_DIR}" ]]; then
+  OUTPUT_DIR="construction_v2/final_results_${MODE}"
 fi
 
 cd "${ROOT_DIR}"
@@ -99,7 +120,9 @@ run_py construction_v2/scripts/compute_final_results.py \
   --candidate-topic-type "${SPACE}" \
   --candidate-source cluster \
   --dedup-suffix _cluster_t0.85 \
-  --matching-suffix _cluster_t0.85
+  --matching-suffix _cluster_t0.85 \
+  --mode "${MODE}" \
+  --output-dir "${OUTPUT_DIR}"
 
 echo
-echo "Done. Results are under construction_v2/final_results/."
+echo "Done. Mode=${MODE}. Results are under ${OUTPUT_DIR}."

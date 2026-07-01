@@ -1,5 +1,5 @@
 (function () {
-  const storageKey = "weak-signal-calibrate-annotation-v1";
+  const storageKey = "weak-signal-core-manual-annotation-v2";
   const data = Array.isArray(window.WEAK_SIGNAL_DATA) ? window.WEAK_SIGNAL_DATA : [];
   let index = Number.parseInt(localStorage.getItem(`${storageKey}:index`) || "0", 10);
   let labels = loadLabels();
@@ -10,6 +10,7 @@
     candidateTopic: document.getElementById("candidateTopic"),
     matureTopic: document.getElementById("matureTopic"),
     space: document.getElementById("space"),
+    source: document.getElementById("source"),
     rank: document.getElementById("rank"),
     frequencyLine: document.getElementById("frequencyLine"),
     plotImage: document.getElementById("plotImage"),
@@ -67,6 +68,7 @@
     el.candidateTopic.textContent = row.candidate_topic;
     el.matureTopic.textContent = row.mature_topic;
     el.space.textContent = row.space;
+    el.source.textContent = row.selection_source || "";
     el.rank.textContent = row.rank;
     const frequencyValues = [
       `2019 ${fmt(row.topic_f_2019)}`,
@@ -125,8 +127,12 @@
       "annotation_id",
       "mature_topic",
       "space",
+      "selection_source",
       "rank",
       "candidate_topic",
+      "manual_reason",
+      "manual_lift_threshold",
+      "manual_lift_2024_vs_peak",
       "label",
       "annotated_at",
       "image_path",
