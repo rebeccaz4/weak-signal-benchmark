@@ -1,0 +1,243 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --text: #171a1f;
+  --muted: #667085;
+  --line: #d9dde5;
+  --accent: #185abc;
+  --yes: #1b7f4a;
+  --yes-bg: #e8f5ee;
+  --no: #b42318;
+  --no-bg: #fdecea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+  min-height: 42px;
+  padding: 0 16px;
+}
+
+button:hover {
+  border-color: #aab2c0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.topbar {
+  align-items: center;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 28px;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 4px;
+}
+
+p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.workspace {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 360px minmax(0, 1fr);
+  min-height: 0;
+  padding: 0 18px 18px;
+}
+
+.instruction {
+  background: #fff8e6;
+  border-bottom: 1px solid #ead8a2;
+  color: #3f3420;
+  display: grid;
+  gap: 5px;
+  padding: 12px 28px;
+}
+
+.instruction p {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.instruction strong {
+  font-weight: 800;
+}
+
+.meta-panel,
+.image-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.meta-panel {
+  align-content: start;
+  display: grid;
+  gap: 14px;
+  overflow: auto;
+  padding: 18px;
+}
+
+.field {
+  border-bottom: 1px solid #edf0f4;
+  display: grid;
+  gap: 5px;
+  padding-bottom: 13px;
+}
+
+.field:last-child {
+  border-bottom: 0;
+}
+
+.field span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.field strong {
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.field.compact strong {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.image-panel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px;
+}
+
+#plotImage {
+  display: block;
+  max-height: calc(100vh - 180px);
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.decision-bar {
+  align-items: center;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 140px 1fr 140px;
+  padding: 14px 28px;
+}
+
+.decision-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.decision-group button {
+  min-width: 150px;
+}
+
+button.secondary {
+  color: #344054;
+}
+
+button.yes {
+  border-color: #9ed6b8;
+  color: var(--yes);
+}
+
+button.no {
+  border-color: #f1aaa5;
+  color: var(--no);
+}
+
+button.selected.yes {
+  background: var(--yes-bg);
+  border-color: var(--yes);
+}
+
+button.selected.no {
+  background: var(--no-bg);
+  border-color: var(--no);
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .decision-bar {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .workspace {
+    grid-template-columns: 1fr;
+    padding: 0 12px 12px;
+  }
+
+  .instruction {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .decision-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-group button {
+    flex: 1;
+    min-width: 0;
+  }
+}
