@@ -663,16 +663,10 @@ def write_markdown(df: pd.DataFrame, path: Path, space: str) -> None:
 def plot_candidate(row: pd.Series, out_path: Path, space: str, early_years: list[int], later_year: int) -> None:
     prefix = "solution" if space == "solution" else "problem"
     onset = int(row[f"{prefix}_onset"])
-    slope = float(row[f"{prefix}_slope"])
-    intercept = float(row[f"{prefix}_intercept"])
     topic_vals = [float(row[f"topic_f_{year}"]) for year in early_years]
-    fit_years = [year for year in early_years if year >= onset]
-    fit_vals = [math.exp(intercept + slope * idx) - EPSILON for idx, _ in enumerate(fit_years)]
     out_path.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(7.5, 4.8))
     plt.plot(early_years, topic_vals, marker="o", label="topic_f")
-    if fit_years and any(value > 0 for value in fit_vals):
-        plt.plot(fit_years, fit_vals, linestyle="--", linewidth=2.0, label="exponential fit")
     plt.scatter([later_year], [float(row["ref_f_2024"])], marker="X", s=90, label="2024 ref validation")
     plt.xlabel("Year")
     plt.ylabel("frequency")
